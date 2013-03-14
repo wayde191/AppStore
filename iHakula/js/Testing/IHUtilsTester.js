@@ -32,7 +32,7 @@ ih.defineClass("ih.UtilsTester", null, null, function(TESTER, tester) {
   };
   
   tester.prototype.testBrowserDetect = function(){
-    console.log(ih.BrowserDetect());
+    console.log(ih.browserDetect());
   };
   
   tester.prototype.testLoadScript = function(){

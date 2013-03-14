@@ -12,5 +12,8 @@
   window.onTest = function(){
     var aobjectTester = new ih.ObjectTester();
     var autilsTester = new ih.UtilsTester();
+    var packageTester = new ih.PackageTester();
+    var xmlTester = new ih.XMLTester();
+    var scrollTester = new ih.ScrollTester();
   };
   window.onTest();

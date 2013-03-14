@@ -26,7 +26,7 @@ ih.defineClass('ih.XML', null, null, function(XML, xml){
     * According to Browser type, overwrite the Dom Document
     */
   xml.prototype.initData = function(){
-    var b = ih.BrowserDetect();
+    var b = ih.browserDetect();
     //IE : Find out the valid MSXML type
     if(b == 'IE'){
       var blnSuccess = false;
@@ -45,7 +45,16 @@ ih.defineClass('ih.XML', null, null, function(XML, xml){
         ih.blnFailed = true;
       }
     }else if(b == 'MZ'){
-      //It seems that Document has take some measure to protect load function from rewritten
+      // It seems that Document has take some measure to protect load function from rewritten
+      // Recommend blow by MZ
+//      function reqListener () {
+//        console.log(this.responseText);
+//      };
+//       
+//      var oReq = new XMLHttpRequest();
+//      oReq.onload = reqListener;
+//      oReq.open("get", "yourFile.txt", true);
+//      oReq.send();
       Document.prototype.__load__ = Document.prototype.load;
       Document.prototype.load = ih.XML._Moz_Document_load;
       
@@ -212,7 +221,7 @@ ih.defineClass('ih.XML', null, null, function(XML, xml){
     */
   xml.prototype.createDOMDocument = function(){
     var oDOMDocument = null;
-    var b = ih.BrowserDetect();
+    var b = ih.browserDetect();
     if(b == 'IE'){
       oDOMDocument = new ActiveXObject(ih.XML.strMSXMLProgID);
       oDOMDocument.preservWhiteSpace = true;

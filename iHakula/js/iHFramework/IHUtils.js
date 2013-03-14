@@ -23,7 +23,7 @@
     }
   };
   
-  ih.BrowserDetect = function(){
+  ih.browserDetect = function(){
     if('\v' == 'v'){
       return 'IE';
     }else if(/Mozilla/.test(navigator.userAgent) && /Firefox/.test(navigator.userAgent)){

@@ -23,6 +23,11 @@
 		B712F79216F0C44500D193B7 /* IHObjectTester.js in Sources */ = {isa = PBXBuildFile; fileRef = B712F79116F0C44500D193B7 /* IHObjectTester.js */; };
 		B712F79416F0C6B000D193B7 /* IHTestCenter.js in Sources */ = {isa = PBXBuildFile; fileRef = B712F79316F0C6B000D193B7 /* IHTestCenter.js */; };
 		B725AB4D16F155570057A0A4 /* IHUtilsTester.js in Sources */ = {isa = PBXBuildFile; fileRef = B725AB4C16F155570057A0A4 /* IHUtilsTester.js */; };
+		B75C212B16F1F5B1004B8CB3 /* IHPackageTester.js in Sources */ = {isa = PBXBuildFile; fileRef = B75C212A16F1F5B1004B8CB3 /* IHPackageTester.js */; };
+		B75C212E16F1FF06004B8CB3 /* IHXMLTester.js in Sources */ = {isa = PBXBuildFile; fileRef = B75C212D16F1FF06004B8CB3 /* IHXMLTester.js */; };
+		B75C213016F20296004B8CB3 /* testXML.xml in Resources */ = {isa = PBXBuildFile; fileRef = B75C212F16F20296004B8CB3 /* testXML.xml */; };
+		B75C213216F20F3B004B8CB3 /* IHScroll.js in Sources */ = {isa = PBXBuildFile; fileRef = B75C213116F20F3B004B8CB3 /* IHScroll.js */; };
+		B75C213416F21508004B8CB3 /* IHScrollTester.js in Sources */ = {isa = PBXBuildFile; fileRef = B75C213316F21508004B8CB3 /* IHScrollTester.js */; };
 		B7BBF7FD16E7377800D86F69 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = B7BBF7FC16E7377800D86F69 /* index.html */; };
 		B7BBF80116E739EC00D86F69 /* objc.css in Resources */ = {isa = PBXBuildFile; fileRef = B7BBF7FE16E739EC00D86F69 /* objc.css */; };
 		B7BBF80216E739EC00D86F69 /* reset.css in Resources */ = {isa = PBXBuildFile; fileRef = B7BBF7FF16E739EC00D86F69 /* reset.css */; };
@@ -67,6 +72,11 @@
 		B712F79116F0C44500D193B7 /* IHObjectTester.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHObjectTester.js; sourceTree = "<group>"; };
 		B712F79316F0C6B000D193B7 /* IHTestCenter.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHTestCenter.js; sourceTree = "<group>"; };
 		B725AB4C16F155570057A0A4 /* IHUtilsTester.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHUtilsTester.js; sourceTree = "<group>"; };
+		B75C212A16F1F5B1004B8CB3 /* IHPackageTester.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHPackageTester.js; sourceTree = "<group>"; };
+		B75C212D16F1FF06004B8CB3 /* IHXMLTester.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHXMLTester.js; sourceTree = "<group>"; };
+		B75C212F16F20296004B8CB3 /* testXML.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = testXML.xml; sourceTree = "<group>"; };
+		B75C213116F20F3B004B8CB3 /* IHScroll.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHScroll.js; sourceTree = "<group>"; };
+		B75C213316F21508004B8CB3 /* IHScrollTester.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHScrollTester.js; sourceTree = "<group>"; };
 		B7BBF7FC16E7377800D86F69 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		B7BBF7FE16E739EC00D86F69 /* objc.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = objc.css; sourceTree = "<group>"; };
 		B7BBF7FF16E739EC00D86F69 /* reset.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = reset.css; sourceTree = "<group>"; };
@@ -118,6 +128,10 @@
 				B712F79316F0C6B000D193B7 /* IHTestCenter.js */,
 				B712F79116F0C44500D193B7 /* IHObjectTester.js */,
 				B725AB4C16F155570057A0A4 /* IHUtilsTester.js */,
+				B75C212A16F1F5B1004B8CB3 /* IHPackageTester.js */,
+				B75C212D16F1FF06004B8CB3 /* IHXMLTester.js */,
+				B75C212F16F20296004B8CB3 /* testXML.xml */,
+				B75C213316F21508004B8CB3 /* IHScrollTester.js */,
 			);
 			path = Testing;
 			sourceTree = "<group>";
@@ -145,6 +159,7 @@
 				B712F78116F0C12800D193B7 /* IHUser.js */,
 				B712F78216F0C12800D193B7 /* IHUtils.js */,
 				B712F78316F0C12800D193B7 /* IHXML.js */,
+				B75C213116F20F3B004B8CB3 /* IHScroll.js */,
 			);
 			path = iHFramework;
 			sourceTree = "<group>";
@@ -349,6 +364,7 @@
 				B7BBF80B16E739F800D86F69 /* 1.ico in Resources */,
 				B7BBF80C16E739F800D86F69 /* logo.png in Resources */,
 				B7BBF80D16E739F800D86F69 /* texture.png in Resources */,
+				B75C213016F20296004B8CB3 /* testXML.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +393,10 @@
 				B712F79216F0C44500D193B7 /* IHObjectTester.js in Sources */,
 				B712F79416F0C6B000D193B7 /* IHTestCenter.js in Sources */,
 				B725AB4D16F155570057A0A4 /* IHUtilsTester.js in Sources */,
+				B75C212B16F1F5B1004B8CB3 /* IHPackageTester.js in Sources */,
+				B75C212E16F1FF06004B8CB3 /* IHXMLTester.js in Sources */,
+				B75C213216F20F3B004B8CB3 /* IHScroll.js in Sources */,
+				B75C213416F21508004B8CB3 /* IHScrollTester.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
