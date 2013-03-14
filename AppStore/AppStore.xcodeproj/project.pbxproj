@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B712F78416F0C12800D193B7 /* IHBlock.js in Sources */ = {isa = PBXBuildFile; fileRef = B712F77716F0C12800D193B7 /* IHBlock.js */; };
+		B712F78516F0C12800D193B7 /* IHCategory.js in Sources */ = {isa = PBXBuildFile; fileRef = B712F77816F0C12800D193B7 /* IHCategory.js */; };
+		B712F78616F0C12800D193B7 /* IHEngine.js in Sources */ = {isa = PBXBuildFile; fileRef = B712F77916F0C12800D193B7 /* IHEngine.js */; };
+		B712F78716F0C12800D193B7 /* IHGantt.js in Sources */ = {isa = PBXBuildFile; fileRef = B712F77A16F0C12800D193B7 /* IHGantt.js */; };
+		B712F78816F0C12800D193B7 /* IHKeyMap.js in Sources */ = {isa = PBXBuildFile; fileRef = B712F77B16F0C12800D193B7 /* IHKeyMap.js */; };
+		B712F78916F0C12800D193B7 /* IHMessage.js in Sources */ = {isa = PBXBuildFile; fileRef = B712F77C16F0C12800D193B7 /* IHMessage.js */; };
+		B712F78A16F0C12800D193B7 /* IHObject.js in Sources */ = {isa = PBXBuildFile; fileRef = B712F77D16F0C12800D193B7 /* IHObject.js */; };
+		B712F78B16F0C12800D193B7 /* IHPackage.js in Sources */ = {isa = PBXBuildFile; fileRef = B712F77E16F0C12800D193B7 /* IHPackage.js */; };
+		B712F78C16F0C12800D193B7 /* IHPubSub.js in Sources */ = {isa = PBXBuildFile; fileRef = B712F77F16F0C12800D193B7 /* IHPubSub.js */; };
+		B712F78D16F0C12800D193B7 /* IHService.js in Sources */ = {isa = PBXBuildFile; fileRef = B712F78016F0C12800D193B7 /* IHService.js */; };
+		B712F78E16F0C12800D193B7 /* IHUser.js in Sources */ = {isa = PBXBuildFile; fileRef = B712F78116F0C12800D193B7 /* IHUser.js */; };
+		B712F78F16F0C12800D193B7 /* IHUtils.js in Sources */ = {isa = PBXBuildFile; fileRef = B712F78216F0C12800D193B7 /* IHUtils.js */; };
+		B712F79016F0C12800D193B7 /* IHXML.js in Sources */ = {isa = PBXBuildFile; fileRef = B712F78316F0C12800D193B7 /* IHXML.js */; };
+		B712F79216F0C44500D193B7 /* IHObjectTester.js in Sources */ = {isa = PBXBuildFile; fileRef = B712F79116F0C44500D193B7 /* IHObjectTester.js */; };
+		B712F79416F0C6B000D193B7 /* IHTestCenter.js in Sources */ = {isa = PBXBuildFile; fileRef = B712F79316F0C6B000D193B7 /* IHTestCenter.js */; };
+		B725AB4D16F155570057A0A4 /* IHUtilsTester.js in Sources */ = {isa = PBXBuildFile; fileRef = B725AB4C16F155570057A0A4 /* IHUtilsTester.js */; };
 		B7BBF7FD16E7377800D86F69 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = B7BBF7FC16E7377800D86F69 /* index.html */; };
 		B7BBF80116E739EC00D86F69 /* objc.css in Resources */ = {isa = PBXBuildFile; fileRef = B7BBF7FE16E739EC00D86F69 /* objc.css */; };
 		B7BBF80216E739EC00D86F69 /* reset.css in Resources */ = {isa = PBXBuildFile; fileRef = B7BBF7FF16E739EC00D86F69 /* reset.css */; };
@@ -35,6 +51,22 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B712F77716F0C12800D193B7 /* IHBlock.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHBlock.js; sourceTree = "<group>"; };
+		B712F77816F0C12800D193B7 /* IHCategory.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHCategory.js; sourceTree = "<group>"; };
+		B712F77916F0C12800D193B7 /* IHEngine.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHEngine.js; sourceTree = "<group>"; };
+		B712F77A16F0C12800D193B7 /* IHGantt.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHGantt.js; sourceTree = "<group>"; };
+		B712F77B16F0C12800D193B7 /* IHKeyMap.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHKeyMap.js; sourceTree = "<group>"; };
+		B712F77C16F0C12800D193B7 /* IHMessage.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHMessage.js; sourceTree = "<group>"; };
+		B712F77D16F0C12800D193B7 /* IHObject.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHObject.js; sourceTree = "<group>"; };
+		B712F77E16F0C12800D193B7 /* IHPackage.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHPackage.js; sourceTree = "<group>"; };
+		B712F77F16F0C12800D193B7 /* IHPubSub.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHPubSub.js; sourceTree = "<group>"; };
+		B712F78016F0C12800D193B7 /* IHService.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHService.js; sourceTree = "<group>"; };
+		B712F78116F0C12800D193B7 /* IHUser.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHUser.js; sourceTree = "<group>"; };
+		B712F78216F0C12800D193B7 /* IHUtils.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHUtils.js; sourceTree = "<group>"; };
+		B712F78316F0C12800D193B7 /* IHXML.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHXML.js; sourceTree = "<group>"; };
+		B712F79116F0C44500D193B7 /* IHObjectTester.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHObjectTester.js; sourceTree = "<group>"; };
+		B712F79316F0C6B000D193B7 /* IHTestCenter.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHTestCenter.js; sourceTree = "<group>"; };
+		B725AB4C16F155570057A0A4 /* IHUtilsTester.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHUtilsTester.js; sourceTree = "<group>"; };
 		B7BBF7FC16E7377800D86F69 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		B7BBF7FE16E739EC00D86F69 /* objc.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = objc.css; sourceTree = "<group>"; };
 		B7BBF7FF16E739EC00D86F69 /* reset.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = reset.css; sourceTree = "<group>"; };
@@ -80,6 +112,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B712F77116F0BF9600D193B7 /* Testing */ = {
+			isa = PBXGroup;
+			children = (
+				B712F79316F0C6B000D193B7 /* IHTestCenter.js */,
+				B712F79116F0C44500D193B7 /* IHObjectTester.js */,
+				B725AB4C16F155570057A0A4 /* IHUtilsTester.js */,
+			);
+			path = Testing;
+			sourceTree = "<group>";
+		};
+		B712F77216F0BF9600D193B7 /* ThirdPartFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ThirdPartFrameworks;
+			sourceTree = "<group>";
+		};
+		B712F77616F0C12800D193B7 /* iHFramework */ = {
+			isa = PBXGroup;
+			children = (
+				B712F77716F0C12800D193B7 /* IHBlock.js */,
+				B712F77816F0C12800D193B7 /* IHCategory.js */,
+				B712F77916F0C12800D193B7 /* IHEngine.js */,
+				B712F77A16F0C12800D193B7 /* IHGantt.js */,
+				B712F77B16F0C12800D193B7 /* IHKeyMap.js */,
+				B712F77C16F0C12800D193B7 /* IHMessage.js */,
+				B712F77D16F0C12800D193B7 /* IHObject.js */,
+				B712F77E16F0C12800D193B7 /* IHPackage.js */,
+				B712F77F16F0C12800D193B7 /* IHPubSub.js */,
+				B712F78016F0C12800D193B7 /* IHService.js */,
+				B712F78116F0C12800D193B7 /* IHUser.js */,
+				B712F78216F0C12800D193B7 /* IHUtils.js */,
+				B712F78316F0C12800D193B7 /* IHXML.js */,
+			);
+			path = iHFramework;
+			sourceTree = "<group>";
+		};
 		B7BBF7F716E7376400D86F69 /* iHakula */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +185,9 @@
 		B7BBF7FA16E7376400D86F69 /* js */ = {
 			isa = PBXGroup;
 			children = (
+				B712F77616F0C12800D193B7 /* iHFramework */,
+				B712F77116F0BF9600D193B7 /* Testing */,
+				B712F77216F0BF9600D193B7 /* ThirdPartFrameworks */,
 			);
 			path = js;
 			sourceTree = "<group>";
@@ -289,6 +361,22 @@
 			files = (
 				B7FC971E16BBA157006F6893 /* main.m in Sources */,
 				B7FC972216BBA157006F6893 /* iHAppDelegate.m in Sources */,
+				B712F78416F0C12800D193B7 /* IHBlock.js in Sources */,
+				B712F78516F0C12800D193B7 /* IHCategory.js in Sources */,
+				B712F78616F0C12800D193B7 /* IHEngine.js in Sources */,
+				B712F78716F0C12800D193B7 /* IHGantt.js in Sources */,
+				B712F78816F0C12800D193B7 /* IHKeyMap.js in Sources */,
+				B712F78916F0C12800D193B7 /* IHMessage.js in Sources */,
+				B712F78A16F0C12800D193B7 /* IHObject.js in Sources */,
+				B712F78B16F0C12800D193B7 /* IHPackage.js in Sources */,
+				B712F78C16F0C12800D193B7 /* IHPubSub.js in Sources */,
+				B712F78D16F0C12800D193B7 /* IHService.js in Sources */,
+				B712F78E16F0C12800D193B7 /* IHUser.js in Sources */,
+				B712F78F16F0C12800D193B7 /* IHUtils.js in Sources */,
+				B712F79016F0C12800D193B7 /* IHXML.js in Sources */,
+				B712F79216F0C44500D193B7 /* IHObjectTester.js in Sources */,
+				B712F79416F0C6B000D193B7 /* IHTestCenter.js in Sources */,
+				B725AB4D16F155570057A0A4 /* IHUtilsTester.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
