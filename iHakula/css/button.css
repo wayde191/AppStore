@@ -1,0 +1,274 @@
+
+
+/*
+ * Copyright (c) 2012-2020, iHakula Studio Software Inc.
+ * Use, modification, and distribution subject to terms of license.
+ * @version: 1.0
+ * @date: 4/17/2012
+ * @author: Wayde Sun
+ * @email: hakula@ihakula.com
+ * @website: www.ihakula.com
+ */
+
+/* Button Fillet */
+
+a.button-fillet{
+	
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	border-radius:20px;
+
+	-moz-box-shadow:0 1px 0 rgba(0,0,0,0.3);
+	-webkit-box-shadow:0 1px 0 rgba(0,0,0,0.3); 
+	box-shadow:0 1px 0 rgba(0,0,0,0.3);
+	
+	background: -moz-linear-gradient(19% 75% 90deg, #E0E0E0, #FAFAFA);
+	background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#E0E0E0));
+	
+	color:#4A4A4A;
+	float:left;
+	font-size:14px;
+	font-weight:bold;
+	padding:10px 15px;
+	text-shadow:1px 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+a.button-fillet2{
+    cursor:pointer;
+	-moz-border-radius:50px;
+	-webkit-border-radius:50px; 
+	border-radius:50px;
+	
+	-moz-box-shadow:0 1px 0 rgba(0, 0, 0, 0.9);
+	-webkit-box-shadow:0 1px 0 rgba(0, 0, 0, 0.9);
+	box-shadow:0 1px 0 rgba(0, 0, 0, 0.9);
+	
+	background: -moz-linear-gradient(19% 75% 90deg, #4183D4, #55a9e8);
+	
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#55a9e8), to(#4183D4));
+	
+	color:#f0f0f0;
+	float:left;
+	font-family:arial,helvetica,sans-serif;
+	font-size:13px;
+	font-weight:bold;
+	padding:5px 16px;
+	text-shadow:0 -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+a.button-fillet2:hover{
+	background: -moz-linear-gradient(19% 75% 90deg, #4183D4, #55a9e8);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#378dcd), to(#20559A));
+	-moz-box-shadow:0 0 8px rgba(0, 0, 0, 0.6) inset;
+	-webkit-box-shadow: none;
+	box-shadow:0 0 8px rgba(0, 0, 0, 0.6) inset;
+}
+
+a.button-fillet:hover{
+	background: -moz-linear-gradient(19% 75% 90deg,#D6D6D6, #FAFAFA);
+	background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#D6D6D6));
+}
+
+/* Button rectangle */
+
+a.button-rect1{
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	
+	-moz-box-shadow:2px 2px 0 #C6E5E7;
+	-webkit-box-shadow:2px 2px 0 #C6E5E7;
+	box-shadow:2px 2px 0 #C6E5E7;
+	
+	background: -moz-linear-gradient(19% 75% 90deg, #CAEAFF, #e2f2ff);
+	
+	background: -webkit-gradient(linear, left top, left bottom, from(#e2f2ff), to(#CAEAFF));
+	
+	color:#637897;
+	float:left;
+	font-size:14px;
+	font-weight:bold;
+	padding:10px 25px;
+	text-shadow:1px 1px 0 rgba(255, 255, 255, 0.7);
+	text-transform:uppercase;
+	border: 1px solid #C6E5E7;
+}
+
+a.button-rect1:hover{
+	background: -moz-linear-gradient(19% 75% 90deg,#C6E5FA, #e2f2ff);
+	background: -webkit-gradient(linear, left top, left bottom, from(#e2f2ff), to(#C6E5FA));
+}
+
+
+a.button-rect2{
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px; 
+	border-radius:3px;
+	
+	-moz-box-shadow:1px 1px 2px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow:1px 1px 2px rgba(0, 0, 0, 0.5);
+	box-shadow:1px 1px 2px rgba(0, 0, 0, 0.5);
+	
+	background: -moz-linear-gradient(19% 65% 90deg,#0087B4, #0099CC, #0099CC 51%);
+	background: -webkit-gradient(linear, 0% 45%, 0% 60%, from(#0099CC), to(#0087B4));
+	
+	color:#f0f0f0;
+	float:left;
+	font-size:14px;
+	font-weight:bold;
+	padding:10px 25px;
+	text-shadow:0 1px 1px rgba(0, 0, 0, 0.5);
+	border: 1px solid #267ed4;
+}
+
+a.button-rect2:hover{
+	background: -moz-linear-gradient(19% 65% 90deg,#0082AD, #0099CC, #0099CC 51%);
+	background: -webkit-gradient(linear, 0% 45%, 0% 60%, from(#0099CC), to(#0082AD));
+	color: #f1f1f1;
+}
+
+a.button-rect3{
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px; 
+	border-radius:5px;
+	
+	-moz-box-shadow:0 1px 0 rgba(0, 0, 0, 0.6);
+	-webkit-box-shadow:0 1px 0 rgba(0, 0, 0, 0.6);
+	box-shadow:0 1px 0 rgba(0, 0, 0, 0.6);
+	
+	background: -moz-linear-gradient(19% 75% 90deg, #FF4D01, #FF8924);
+	
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FF8924), to(#FF4D01));
+	
+	color:#fff;
+	float:left;
+	font-size:15px;
+	font-weight:bold;
+	padding:8px 20px;
+}
+
+a.button-rect3:hover{
+	background: -moz-linear-gradient(19% 75% 90deg, #EB4701, #F58423);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F58423), to(#EB4701));
+}
+
+a.button-rect4{
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px; 
+	border-radius:3px;
+	
+	-moz-box-shadow:0 2px 0 #b7245a;
+	-webkit-box-shadow:0 2px 0 #b7245a;
+	box-shadow:0 2px 0 #b7245a;
+	
+	background: -moz-linear-gradient(0% 50% 90deg,#E22E6D, #EB3373, #EB3373 15%);
+	
+	background: -webkit-gradient(linear, 0% 0%, 0% 56%, from(#EB3373), to(#E22E6D), color-stop(.9,#EB3373));
+	
+	color:#fff;
+	float:left;
+	font-size:17px;
+	font-weight:bold;
+	padding:7px 20px;
+	text-shadow:1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+a.button-rect4:hover{
+	background: -moz-linear-gradient(0% 50% 90deg,#D62C67, #DE306D, #EB3373 15%);
+	background: -webkit-gradient(linear, 0% 0%, 0% 56%, from(#DE306D), to(#D62C67), color-stop(.9,#EB3373));
+}
+
+
+a.button-rect5{
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px; 
+	border-radius:3px;
+	
+	background: -moz-linear-gradient(19% 75% 90deg,#F0DEB8, #FDF0D1, #fff 100%);
+	
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFFFF), to(#F0DEB8), color-stop(.3,#FDF0D1));
+	
+	color:#836d4d;
+	float:left;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 70px;
+	border: 1px solid #d4c198;
+}
+
+a.button-rect5:hover{
+	background: -moz-linear-gradient(19% 75% 90deg,#EBD9B4, #F2E6C8, #F5F5F5 100%);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F5F5F5), to(#EBD9B4), color-stop(.3,#F2E6C8));
+}
+
+a.button-rect6{
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px; 
+	border-radius:5px;
+	
+	-moz-box-shadow:2px 2px 0 rgba(0, 0, 0, 0.7);
+	-webkit-box-shadow:2px 2px 0 rgba(0, 0, 0, 0.7);
+	box-shadow:2px 2px 0 rgba(0, 0, 0, 0.7);
+	
+	background: -moz-linear-gradient(19% 100% 90deg,#025C25, #038836, #5D9B75 100%);
+	
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#5D9B75), to(#025C25), color-stop(.2,#038836));
+	
+	color:#E6F2EB;
+	float:left;
+	font-size:17px;
+	font-weight:bold;
+	padding:10px 40px;
+	text-shadow:-1px -1px 1px #4F5B54;
+}
+
+a.button-rect6:hover{
+	background: -moz-linear-gradient(19% 100% 90deg,#025221, #037D32, #599470 100%);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#599470), to(#025221), color-stop(.2,#037D32));
+}
+
+a.button-rect7{
+	-moz-border-radius:1px;
+	-webkit-border-radius:1px; 
+	border-radius:1px;
+	
+	background: -moz-linear-gradient(19% 50% 90deg,#55792F, #608736, #608736 0%);
+	
+	background: -webkit-gradient(linear, 0% 50%, 0% 51%, from(#608736), to(#55792F), color-stop(0,#608736));
+	
+	color:#f5f5f5;
+	float:left;
+	font-size:17px;
+	font-weight:bold;
+	padding:10px 40px;
+	text-shadow:0 1px 0 #000000;
+	border-bottom:1px solid rgba(255, 255, 255, 0.7);
+	border-top:1px solid rgba(255, 255, 255, 0.7);
+}
+
+a.button-rect7:hover{
+	background: -moz-linear-gradient(19% 50% 90deg,#486628, #4E6E2C, #4E6E2C 0%);
+	background: -webkit-gradient(linear, 0% 50%, 0% 51%, from(#4E6E2C), to(#486628), color-stop(0,#4E6E2C));
+}
+
+a.button-rect8{
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px; 
+	border-radius:5px;
+	
+	background: -moz-linear-gradient(0% 45% 90deg,#E0B324, #FAD121, #FFE678 100%);
+	
+	background: -webkit-gradient(linear, 0% 0%, 0% 65%, from(#FFE678), to(#E0B324), color-stop(.2,#FAD121));
+	
+	color:#312f30;
+	float:left;
+	font-size:17px;
+	font-weight:bold;
+	padding:10px 20px;
+	text-shadow:1px 1px 0 #ebd663;
+}
+
+a.button-rect8:hover{
+	background: -moz-linear-gradient(40% 51% 90deg,#D4A922, #EBC41F, #EDD670 100%);
+	background: -webkit-gradient(linear, 0% 0%, 0% 65%, from(#EDD670), to(#D4A922), color-stop(.2,#EBC41F));
+}

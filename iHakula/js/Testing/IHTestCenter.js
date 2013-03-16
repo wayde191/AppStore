@@ -15,5 +15,8 @@
     var packageTester = new ih.PackageTester();
     var xmlTester = new ih.XMLTester();
     var scrollTester = new ih.ScrollTester();
+    var pubsubTester = new ih.PubSubTester();
+    var messageTester = new ih.MessageTester();
+    var ampengineTester = new ih.AMPEngineTester();
   };
   window.onTest();

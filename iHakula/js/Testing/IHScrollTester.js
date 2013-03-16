@@ -13,8 +13,8 @@
 ih.defineClass("ih.ScrollTester", null, null, function(TESTER, tester) {
                
   tester.prototype.init = function(){
-    var sc = new ih.Scroll("scrollWrapper");
-    sc.toElement("scrollRight", 750);
+//    var sc = new ih.Scroll("scrollWrapper");
+//    sc.toElement("scrollRight", 750);
   };
   
   // Test element below

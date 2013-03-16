@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<plugin>
+	<info id="ihakula.root" parentId="" lazyLoad="false"></info>
+  
+  <resource>
+    <script path='./js/iHFramework/IHBlock.js'></script>
+    <script path='./js/iHFramework/IHCategory.js'></script>
+	</resource>
+	
+	<extension-point>
+		<child>./js/Plugins/home/</child>
+    <child>./js/Plugins/products/</child>
+	</extension-point>
+</plugin>

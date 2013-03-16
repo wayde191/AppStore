@@ -36,6 +36,24 @@
 		B7BBF80B16E739F800D86F69 /* 1.ico in Resources */ = {isa = PBXBuildFile; fileRef = B7BBF80616E739F800D86F69 /* 1.ico */; };
 		B7BBF80C16E739F800D86F69 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B7BBF80816E739F800D86F69 /* logo.png */; };
 		B7BBF80D16E739F800D86F69 /* texture.png in Resources */ = {isa = PBXBuildFile; fileRef = B7BBF80916E739F800D86F69 /* texture.png */; };
+		B7F0CB1616F48FAF00BD49F3 /* IHPubSubTester.js in Sources */ = {isa = PBXBuildFile; fileRef = B7F0CB1516F48FAF00BD49F3 /* IHPubSubTester.js */; };
+		B7F0CB1916F4949B00BD49F3 /* IHMessageTester.js in Sources */ = {isa = PBXBuildFile; fileRef = B7F0CB1816F4949B00BD49F3 /* IHMessageTester.js */; };
+		B7F0CB1B16F4949B00BD49F3 /* IH$Service.js in Sources */ = {isa = PBXBuildFile; fileRef = B7F0CB1A16F4949B00BD49F3 /* IH$Service.js */; };
+		B7F0CB1F16F4949B00BD49F3 /* jquery-1.9.1.js in Sources */ = {isa = PBXBuildFile; fileRef = B7F0CB1C16F4949B00BD49F3 /* jquery-1.9.1.js */; };
+		B7F0CB2016F4949B00BD49F3 /* jquery-plugin-data.js in Sources */ = {isa = PBXBuildFile; fileRef = B7F0CB1D16F4949B00BD49F3 /* jquery-plugin-data.js */; };
+		B7F0CB2116F4949B00BD49F3 /* jquery-ui-1.8.21.custom.min.js in Sources */ = {isa = PBXBuildFile; fileRef = B7F0CB1E16F4949B00BD49F3 /* jquery-ui-1.8.21.custom.min.js */; };
+		B7F0CB2616F4949B00BD49F3 /* animate.css in Resources */ = {isa = PBXBuildFile; fileRef = B7F0CB2216F4949B00BD49F3 /* animate.css */; };
+		B7F0CB2716F4949B00BD49F3 /* button.css in Resources */ = {isa = PBXBuildFile; fileRef = B7F0CB2316F4949B00BD49F3 /* button.css */; };
+		B7F0CB2816F4949B00BD49F3 /* gantt.css in Resources */ = {isa = PBXBuildFile; fileRef = B7F0CB2416F4949B00BD49F3 /* gantt.css */; };
+		B7F0CB2916F4949B00BD49F3 /* jquery-ui-1.8.21.custom.css in Resources */ = {isa = PBXBuildFile; fileRef = B7F0CB2516F4949B00BD49F3 /* jquery-ui-1.8.21.custom.css */; };
+		B7F0CB2B16F4949B00BD49F3 /* jquery-plugin-animation.js in Sources */ = {isa = PBXBuildFile; fileRef = B7F0CB2A16F4949B00BD49F3 /* jquery-plugin-animation.js */; };
+		B7F0CB2D16F4949B00BD49F3 /* IHAMPEngine.js in Sources */ = {isa = PBXBuildFile; fileRef = B7F0CB2C16F4949B00BD49F3 /* IHAMPEngine.js */; };
+		B7F0CB2F16F4949B00BD49F3 /* IHAMPPlugin.js in Sources */ = {isa = PBXBuildFile; fileRef = B7F0CB2E16F4949B00BD49F3 /* IHAMPPlugin.js */; };
+		B7F0CB3216F4949B00BD49F3 /* ampConf.xml in Resources */ = {isa = PBXBuildFile; fileRef = B7F0CB3116F4949B00BD49F3 /* ampConf.xml */; };
+		B7F0CB3416F4949B00BD49F3 /* IHAMPEngineTester.js in Sources */ = {isa = PBXBuildFile; fileRef = B7F0CB3316F4949B00BD49F3 /* IHAMPEngineTester.js */; };
+		B7F0CB3616F4949B00BD49F3 /* jquery-1.9.1.min.js in Sources */ = {isa = PBXBuildFile; fileRef = B7F0CB3516F4949B00BD49F3 /* jquery-1.9.1.min.js */; };
+		B7F0CB3A16F4949B00BD49F3 /* plugin.js in Sources */ = {isa = PBXBuildFile; fileRef = B7F0CB3816F4949B00BD49F3 /* plugin.js */; };
+		B7F0CB3B16F4949B00BD49F3 /* plugin.xml in Resources */ = {isa = PBXBuildFile; fileRef = B7F0CB3916F4949B00BD49F3 /* plugin.xml */; };
 		B7FC971216BBA157006F6893 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7FC971116BBA157006F6893 /* UIKit.framework */; };
 		B7FC971416BBA157006F6893 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7FC971316BBA157006F6893 /* Foundation.framework */; };
 		B7FC971616BBA157006F6893 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7FC971516BBA157006F6893 /* CoreGraphics.framework */; };
@@ -85,6 +103,24 @@
 		B7BBF80616E739F800D86F69 /* 1.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = 1.ico; sourceTree = "<group>"; };
 		B7BBF80816E739F800D86F69 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		B7BBF80916E739F800D86F69 /* texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture.png; sourceTree = "<group>"; };
+		B7F0CB1516F48FAF00BD49F3 /* IHPubSubTester.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHPubSubTester.js; sourceTree = "<group>"; };
+		B7F0CB1816F4949B00BD49F3 /* IHMessageTester.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHMessageTester.js; sourceTree = "<group>"; };
+		B7F0CB1A16F4949B00BD49F3 /* IH$Service.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IH$Service.js; sourceTree = "<group>"; };
+		B7F0CB1C16F4949B00BD49F3 /* jquery-1.9.1.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-1.9.1.js"; sourceTree = "<group>"; };
+		B7F0CB1D16F4949B00BD49F3 /* jquery-plugin-data.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-plugin-data.js"; sourceTree = "<group>"; };
+		B7F0CB1E16F4949B00BD49F3 /* jquery-ui-1.8.21.custom.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-ui-1.8.21.custom.min.js"; sourceTree = "<group>"; };
+		B7F0CB2216F4949B00BD49F3 /* animate.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = animate.css; sourceTree = "<group>"; };
+		B7F0CB2316F4949B00BD49F3 /* button.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = button.css; sourceTree = "<group>"; };
+		B7F0CB2416F4949B00BD49F3 /* gantt.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = gantt.css; sourceTree = "<group>"; };
+		B7F0CB2516F4949B00BD49F3 /* jquery-ui-1.8.21.custom.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "jquery-ui-1.8.21.custom.css"; sourceTree = "<group>"; };
+		B7F0CB2A16F4949B00BD49F3 /* jquery-plugin-animation.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-plugin-animation.js"; sourceTree = "<group>"; };
+		B7F0CB2C16F4949B00BD49F3 /* IHAMPEngine.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHAMPEngine.js; sourceTree = "<group>"; };
+		B7F0CB2E16F4949B00BD49F3 /* IHAMPPlugin.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHAMPPlugin.js; sourceTree = "<group>"; };
+		B7F0CB3116F4949B00BD49F3 /* ampConf.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ampConf.xml; sourceTree = "<group>"; };
+		B7F0CB3316F4949B00BD49F3 /* IHAMPEngineTester.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHAMPEngineTester.js; sourceTree = "<group>"; };
+		B7F0CB3516F4949B00BD49F3 /* jquery-1.9.1.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-1.9.1.min.js"; sourceTree = "<group>"; };
+		B7F0CB3816F4949B00BD49F3 /* plugin.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = plugin.js; sourceTree = "<group>"; };
+		B7F0CB3916F4949B00BD49F3 /* plugin.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = plugin.xml; sourceTree = "<group>"; };
 		B7FC970D16BBA157006F6893 /* AppStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7FC971116BBA157006F6893 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B7FC971316BBA157006F6893 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -132,6 +168,9 @@
 				B75C212D16F1FF06004B8CB3 /* IHXMLTester.js */,
 				B75C212F16F20296004B8CB3 /* testXML.xml */,
 				B75C213316F21508004B8CB3 /* IHScrollTester.js */,
+				B7F0CB1516F48FAF00BD49F3 /* IHPubSubTester.js */,
+				B7F0CB1816F4949B00BD49F3 /* IHMessageTester.js */,
+				B7F0CB3316F4949B00BD49F3 /* IHAMPEngineTester.js */,
 			);
 			path = Testing;
 			sourceTree = "<group>";
@@ -139,6 +178,12 @@
 		B712F77216F0BF9600D193B7 /* ThirdPartFrameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B7F0CB1C16F4949B00BD49F3 /* jquery-1.9.1.js */,
+				B7F0CB3516F4949B00BD49F3 /* jquery-1.9.1.min.js */,
+				B7F0CB1D16F4949B00BD49F3 /* jquery-plugin-data.js */,
+				B7F0CB1E16F4949B00BD49F3 /* jquery-ui-1.8.21.custom.min.js */,
+				B7F0CB1A16F4949B00BD49F3 /* IH$Service.js */,
+				B7F0CB2A16F4949B00BD49F3 /* jquery-plugin-animation.js */,
 			);
 			path = ThirdPartFrameworks;
 			sourceTree = "<group>";
@@ -160,6 +205,8 @@
 				B712F78216F0C12800D193B7 /* IHUtils.js */,
 				B712F78316F0C12800D193B7 /* IHXML.js */,
 				B75C213116F20F3B004B8CB3 /* IHScroll.js */,
+				B7F0CB2C16F4949B00BD49F3 /* IHAMPEngine.js */,
+				B7F0CB2E16F4949B00BD49F3 /* IHAMPPlugin.js */,
 			);
 			path = iHFramework;
 			sourceTree = "<group>";
@@ -179,6 +226,10 @@
 		B7BBF7F816E7376400D86F69 /* css */ = {
 			isa = PBXGroup;
 			children = (
+				B7F0CB2216F4949B00BD49F3 /* animate.css */,
+				B7F0CB2316F4949B00BD49F3 /* button.css */,
+				B7F0CB2416F4949B00BD49F3 /* gantt.css */,
+				B7F0CB2516F4949B00BD49F3 /* jquery-ui-1.8.21.custom.css */,
 				B7BBF7FE16E739EC00D86F69 /* objc.css */,
 				B7BBF7FF16E739EC00D86F69 /* reset.css */,
 				B7BBF80016E739EC00D86F69 /* style.css */,
@@ -200,6 +251,7 @@
 		B7BBF7FA16E7376400D86F69 /* js */ = {
 			isa = PBXGroup;
 			children = (
+				B7F0CB3016F4949B00BD49F3 /* Plugins */,
 				B712F77616F0C12800D193B7 /* iHFramework */,
 				B712F77116F0BF9600D193B7 /* Testing */,
 				B712F77216F0BF9600D193B7 /* ThirdPartFrameworks */,
@@ -221,6 +273,24 @@
 				B7BBF80816E739F800D86F69 /* logo.png */,
 			);
 			path = logos;
+			sourceTree = "<group>";
+		};
+		B7F0CB3016F4949B00BD49F3 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				B7F0CB3716F4949B00BD49F3 /* root */,
+				B7F0CB3116F4949B00BD49F3 /* ampConf.xml */,
+			);
+			path = Plugins;
+			sourceTree = "<group>";
+		};
+		B7F0CB3716F4949B00BD49F3 /* root */ = {
+			isa = PBXGroup;
+			children = (
+				B7F0CB3816F4949B00BD49F3 /* plugin.js */,
+				B7F0CB3916F4949B00BD49F3 /* plugin.xml */,
+			);
+			path = root;
 			sourceTree = "<group>";
 		};
 		B7FC970216BBA157006F6893 = {
@@ -365,6 +435,12 @@
 				B7BBF80C16E739F800D86F69 /* logo.png in Resources */,
 				B7BBF80D16E739F800D86F69 /* texture.png in Resources */,
 				B75C213016F20296004B8CB3 /* testXML.xml in Resources */,
+				B7F0CB2616F4949B00BD49F3 /* animate.css in Resources */,
+				B7F0CB2716F4949B00BD49F3 /* button.css in Resources */,
+				B7F0CB2816F4949B00BD49F3 /* gantt.css in Resources */,
+				B7F0CB2916F4949B00BD49F3 /* jquery-ui-1.8.21.custom.css in Resources */,
+				B7F0CB3216F4949B00BD49F3 /* ampConf.xml in Resources */,
+				B7F0CB3B16F4949B00BD49F3 /* plugin.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +473,18 @@
 				B75C212E16F1FF06004B8CB3 /* IHXMLTester.js in Sources */,
 				B75C213216F20F3B004B8CB3 /* IHScroll.js in Sources */,
 				B75C213416F21508004B8CB3 /* IHScrollTester.js in Sources */,
+				B7F0CB1616F48FAF00BD49F3 /* IHPubSubTester.js in Sources */,
+				B7F0CB1916F4949B00BD49F3 /* IHMessageTester.js in Sources */,
+				B7F0CB1B16F4949B00BD49F3 /* IH$Service.js in Sources */,
+				B7F0CB1F16F4949B00BD49F3 /* jquery-1.9.1.js in Sources */,
+				B7F0CB2016F4949B00BD49F3 /* jquery-plugin-data.js in Sources */,
+				B7F0CB2116F4949B00BD49F3 /* jquery-ui-1.8.21.custom.min.js in Sources */,
+				B7F0CB2B16F4949B00BD49F3 /* jquery-plugin-animation.js in Sources */,
+				B7F0CB2D16F4949B00BD49F3 /* IHAMPEngine.js in Sources */,
+				B7F0CB2F16F4949B00BD49F3 /* IHAMPPlugin.js in Sources */,
+				B7F0CB3416F4949B00BD49F3 /* IHAMPEngineTester.js in Sources */,
+				B7F0CB3616F4949B00BD49F3 /* jquery-1.9.1.min.js in Sources */,
+				B7F0CB3A16F4949B00BD49F3 /* plugin.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
