@@ -28,6 +28,10 @@
 		B75C213016F20296004B8CB3 /* testXML.xml in Resources */ = {isa = PBXBuildFile; fileRef = B75C212F16F20296004B8CB3 /* testXML.xml */; };
 		B75C213216F20F3B004B8CB3 /* IHScroll.js in Sources */ = {isa = PBXBuildFile; fileRef = B75C213116F20F3B004B8CB3 /* IHScroll.js */; };
 		B75C213416F21508004B8CB3 /* IHScrollTester.js in Sources */ = {isa = PBXBuildFile; fileRef = B75C213316F21508004B8CB3 /* IHScrollTester.js */; };
+		B785030116F6E4500045A26F /* plugin.js in Sources */ = {isa = PBXBuildFile; fileRef = B78502FC16F6E4500045A26F /* plugin.js */; };
+		B785030216F6E4500045A26F /* plugin.xml in Resources */ = {isa = PBXBuildFile; fileRef = B78502FD16F6E4500045A26F /* plugin.xml */; };
+		B785030916F6E5170045A26F /* plugin.js in Sources */ = {isa = PBXBuildFile; fileRef = B785030716F6E5170045A26F /* plugin.js */; };
+		B785030A16F6E5170045A26F /* plugin.xml in Resources */ = {isa = PBXBuildFile; fileRef = B785030816F6E5170045A26F /* plugin.xml */; };
 		B7BBF7FD16E7377800D86F69 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = B7BBF7FC16E7377800D86F69 /* index.html */; };
 		B7BBF80116E739EC00D86F69 /* objc.css in Resources */ = {isa = PBXBuildFile; fileRef = B7BBF7FE16E739EC00D86F69 /* objc.css */; };
 		B7BBF80216E739EC00D86F69 /* reset.css in Resources */ = {isa = PBXBuildFile; fileRef = B7BBF7FF16E739EC00D86F69 /* reset.css */; };
@@ -95,6 +99,10 @@
 		B75C212F16F20296004B8CB3 /* testXML.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = testXML.xml; sourceTree = "<group>"; };
 		B75C213116F20F3B004B8CB3 /* IHScroll.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHScroll.js; sourceTree = "<group>"; };
 		B75C213316F21508004B8CB3 /* IHScrollTester.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHScrollTester.js; sourceTree = "<group>"; };
+		B78502FC16F6E4500045A26F /* plugin.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = plugin.js; sourceTree = "<group>"; };
+		B78502FD16F6E4500045A26F /* plugin.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = plugin.xml; sourceTree = "<group>"; };
+		B785030716F6E5170045A26F /* plugin.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = plugin.js; sourceTree = "<group>"; };
+		B785030816F6E5170045A26F /* plugin.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = plugin.xml; sourceTree = "<group>"; };
 		B7BBF7FC16E7377800D86F69 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		B7BBF7FE16E739EC00D86F69 /* objc.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = objc.css; sourceTree = "<group>"; };
 		B7BBF7FF16E739EC00D86F69 /* reset.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = reset.css; sourceTree = "<group>"; };
@@ -211,6 +219,24 @@
 			path = iHFramework;
 			sourceTree = "<group>";
 		};
+		B78502FB16F6E4500045A26F /* home */ = {
+			isa = PBXGroup;
+			children = (
+				B78502FC16F6E4500045A26F /* plugin.js */,
+				B78502FD16F6E4500045A26F /* plugin.xml */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		B785030616F6E5170045A26F /* products */ = {
+			isa = PBXGroup;
+			children = (
+				B785030716F6E5170045A26F /* plugin.js */,
+				B785030816F6E5170045A26F /* plugin.xml */,
+			);
+			path = products;
+			sourceTree = "<group>";
+		};
 		B7BBF7F716E7376400D86F69 /* iHakula */ = {
 			isa = PBXGroup;
 			children = (
@@ -278,6 +304,8 @@
 		B7F0CB3016F4949B00BD49F3 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
+				B785030616F6E5170045A26F /* products */,
+				B78502FB16F6E4500045A26F /* home */,
 				B7F0CB3716F4949B00BD49F3 /* root */,
 				B7F0CB3116F4949B00BD49F3 /* ampConf.xml */,
 			);
@@ -441,6 +469,8 @@
 				B7F0CB2916F4949B00BD49F3 /* jquery-ui-1.8.21.custom.css in Resources */,
 				B7F0CB3216F4949B00BD49F3 /* ampConf.xml in Resources */,
 				B7F0CB3B16F4949B00BD49F3 /* plugin.xml in Resources */,
+				B785030216F6E4500045A26F /* plugin.xml in Resources */,
+				B785030A16F6E5170045A26F /* plugin.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +515,8 @@
 				B7F0CB3416F4949B00BD49F3 /* IHAMPEngineTester.js in Sources */,
 				B7F0CB3616F4949B00BD49F3 /* jquery-1.9.1.min.js in Sources */,
 				B7F0CB3A16F4949B00BD49F3 /* plugin.js in Sources */,
+				B785030116F6E4500045A26F /* plugin.js in Sources */,
+				B785030916F6E5170045A26F /* plugin.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

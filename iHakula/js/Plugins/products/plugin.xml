@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<plugin>
+	<info id="ihakula.plugins.products" parentId="" lazyLoad="false"></info>
+  
+  <resource>
+    <script path='./js/Plugins/products/plugin.js'></script>
+	</resource>
+	
+	<extension-point>
+	</extension-point>
+</plugin>

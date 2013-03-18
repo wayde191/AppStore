@@ -48,11 +48,9 @@
           
           var childNodes = this.documentElement.getElementsByTagName('child');
           for(var i = 0; i < childNodes.length; i++) {
-            
-            console.log(childNodes[i].firstChild.nodeValue);
-          }
-          
-          console.log(me);
+            var aampPlugin = new ih.AMPPlugin(childNodes[i].firstChild.nodeValue);
+            me.childs.push(aampPlugin);
+          }          
         }
       };
       objXML.load(this.confXmlPath);
@@ -78,6 +76,15 @@
       };
       
       this.scripts.each(tempF);
+    };
+    
+    plugin.prototype.findChildPluginById = function(id){
+      return this.childs.find(ih.$F(function(obj){
+        if(obj.id == id) {
+          return true;
+        }
+        return false;
+      }).bind(this));
     };
     
   });
