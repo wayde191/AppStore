@@ -178,9 +178,9 @@ nav, #globalnav li, #globalnav li a {
 
 article
 {
-	width: 620px;
+	width: 820px;
 	margin: 0 auto;
-	padding: 100px 0;
+	padding: 10px 0;
 }
 
 h1
@@ -363,7 +363,7 @@ figcaption
 
 hr
 {
-	background: url("hr.png") no-repeat scroll 50% 50% transparent;
+	background: url("../images/hr.png") no-repeat scroll 50% 50% transparent;
 	border: 0;
 	height: 5px;
 	margin: 54px -18px 36px;
@@ -421,6 +421,21 @@ aside blockquote
 	margin: 12px 18px;
 }
 
+aside .ih-aux ul 
+{
+  margin-left: 10px;
+}
+
+aside .ih-aux li 
+{
+  display: inline;
+}
+
+aside .ih-aux li+li:before {
+  content: "·";
+  padding: 0 3px;
+}
+
 table
 {
 	width: 100%;
@@ -457,10 +472,27 @@ span.enlarge-image a
 
 #topheader
 {
-    color: #bbb;
-    font-size: 36px;
-    font-weight: normal;
-    line-height: 1;
+  color: #bbb;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 1;
+}
+
+#ih-main .main-cols
+{
+  width: auto;
+  height: 150px;
+  margin: 0 -15px;
+  position: relative;
+  zoom: 1;
+}
+
+#ih-main .main-cols .main-col 
+{
+  width: 250px;
+  float: left;
+  margin: 0 15px 20px;
+  display:inline;
 }
 
 

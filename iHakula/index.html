@@ -9,6 +9,19 @@
         <link href="images/icons/1.ico" rel="shortcut icon" type="image/x-icon">
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
         <link rel="stylesheet" type="text/css" href="css/objc.css"/>
+        <link rel="stylesheet" type="text/css" href="css/coverflow.css"/>
+            
+            <script src="./js/ThirdPartFrameworks/main.js"></script>
+            <script src="./js/ThirdPartFrameworks/modernizr.js"></script>
+            <script src="./js/ThirdPartFrameworks/signal.js"></script>
+            <script src="./js/ThirdPartFrameworks/cover.js"></script>
+            <script src="./js/ThirdPartFrameworks/coverflow.js"></script>
+            <script src="./js/ThirdPartFrameworks/utils.js"></script>
+            <script src="./js/ThirdPartFrameworks/playlistloader.js"></script>
+            <script src="./js/ThirdPartFrameworks/controller.js"></script>
+            <script src="./js/ThirdPartFrameworks/flash.js"></script>
+            <script src="./js/ThirdPartFrameworks/html5.js"></script>
+            
             
         <script type="text/javascript" src="./js/iHFramework/IHObject.js"></script>
         <script type="text/javascript" src="./js/iHFramework/IHUtils.js"></script>
@@ -37,15 +50,118 @@
         <section>
             <nav id="globalheader">
                 <ul id="globalnav" role="navigation">
-                    <li id="gn-store"><a class="store" class="" onclick='s_objectID="http://store.apple.com/_1";return this.s_oc?this.s_oc(e):true' href="http://store.apple.com/"><span>Store</span></a></li>
-                    <li id="gn-mac"><a onclick='s_objectID="http://www.apple.com/mac/_1";return this.s_oc?this.s_oc(e):true' href="http://www.apple.com/mac/"><span>Mac</span></a></li>
-                    <li id="gn-ipod"><a onclick='s_objectID="http://www.apple.com/ipod/_1";return this.s_oc?this.s_oc(e):true' href="http://www.apple.com/ipod/"><span>iPod</span></a></li>
-                    <li id="gn-iphone"><a onclick='s_objectID="http://www.apple.com/iphone/_1";return this.s_oc?this.s_oc(e):true' href="http://www.apple.com/iphone/"><span>iPhone</span></a></li>
+                    <li id="gn-store"><a class="store" class="" href=""><span>Store</span></a></li>
+                    <li id="gn-mac"><a href=""><span>Mac</span></a></li>
+                    <li id="gn-ipod"><a href=""><span>iPod</span></a></li>
+                    <li id="gn-iphone"><a href=""><span>iPhone</span></a></li>
                 </ul>
             </nav>
             <article>
-            
+              <div id="ih-recommands"></div>
+              <hr>
+              
+              <div id="ih-main" role="main">
+                <h3 class="secondary"> 让我们的生活从此变得简单 </h3>
+                  <div class="main-cols">
+                    <div class="main-col">
+                      <h4>精品推荐</h4>
+                      <p>工作上我们可能会用到的</p>
+                      <p><a href="features/multichannel-funnels.html">了解详情</a></p>
+                    </div>
+                    <div class="main-col">
+                      <h4>生活常用</h4>
+                      <p>生活必需居于中心，一切以它展开</p>
+                      <p><a href="features/mobile.html">了解详情</a></p>
+                    </div>
+                    <div class="main-col">
+                      <h4>友情推荐</h3>
+                      <p>不要对你的财富视而不见</p>
+                      <p><a href="features/social.html">了解详情</a></p>
+                    </div>
+                  </div>
+              </div>
+              
+              <aside id="ih-footer">
+                <div class="ih-aux">
+                  <ul>
+                    <li>
+                      <a href="/">iHakula</a>
+                    </li>
+                    <li>
+                      <a href="/intl/zh-CN/about/">关于我</a>
+                    </li>
+                    <li>
+                      <a href="/intl/zh-CN/policies/">隐私权和条款</a>
+                    </li>
+                  </ul>
+                </div>
+              </aside>
+
             </article>
         </section>
     </body>
+    
+    
+    <script>
+		function reset() {
+            
+			var replacement = document.getElementById('ih-recommands');
+			replacement.id = "ih-recommands";
+            
+			var el = document.getElementById('ih-recommands');
+			el.parentNode.replaceChild(replacement, el);
+			
+			//$('#container').coverflow({
+			coverflow('ih-recommands').setup({
+                                         width: '100%',
+                                         item: 1,
+                                         playlist: [
+                                                    {
+                                                    "title": "snow-motion",
+                                                    "description": "what a massive and unbelievable winter we're having!",
+                                                    "image": "http://d3el35u4qe4frz.cloudfront.net/eawtAP1q-720.jpg",
+                                                    "link": "http://www.google.com/",
+                                                    "duration": "183"
+                                                    },
+                                                    {
+                                                    "title": "driving rain",
+                                                    "description": "",
+                                                    "image": "http://d3el35u4qe4frz.cloudfront.net/njZMLMwy-720.jpg",
+                                                    "duration": "782"
+                                                    },
+                                                    {
+                                                    "title": "winter brook",
+                                                    "description": "",
+                                                    "image": "http://d3el35u4qe4frz.cloudfront.net/Vg7cPUdl-720.jpg"
+                                                    }
+                                                    ],
+                                         coverwidth: 360,
+                                         coverheight: 150,
+                                         fixedsize: true,
+                                         textoffset: 50,
+                                         backgroundcolor:"ffffff",
+                                         reflectionopacity:0.1,
+                                         coverdepth:120,
+                                         covergap:80
+                                         
+                                         })
+			.on('ready', function() {
+                
+//				this.on('focus', function(index) {
+//                        document.getElementById('focusindex').innerHTML = index;
+//                        });
+//				
+//				this.on('click', function(index, link) {
+//                        document.getElementById('clickindex').innerHTML = index;
+//                        console.log(link);
+//                        });
+                });
+		}
+        
+		reset();
+        
+		window.onresize = function() {
+			coverflow('container').resize();
+		}
+    </script>
 </html>

@@ -28,6 +28,16 @@
 		B75C213016F20296004B8CB3 /* testXML.xml in Resources */ = {isa = PBXBuildFile; fileRef = B75C212F16F20296004B8CB3 /* testXML.xml */; };
 		B75C213216F20F3B004B8CB3 /* IHScroll.js in Sources */ = {isa = PBXBuildFile; fileRef = B75C213116F20F3B004B8CB3 /* IHScroll.js */; };
 		B75C213416F21508004B8CB3 /* IHScrollTester.js in Sources */ = {isa = PBXBuildFile; fileRef = B75C213316F21508004B8CB3 /* IHScrollTester.js */; };
+		B766B49016F8577D00610BCB /* controller.js in Sources */ = {isa = PBXBuildFile; fileRef = B766B48616F8577D00610BCB /* controller.js */; };
+		B766B49116F8577D00610BCB /* cover.js in Sources */ = {isa = PBXBuildFile; fileRef = B766B48716F8577D00610BCB /* cover.js */; };
+		B766B49216F8577D00610BCB /* coverflow.js in Sources */ = {isa = PBXBuildFile; fileRef = B766B48816F8577D00610BCB /* coverflow.js */; };
+		B766B49316F8577D00610BCB /* flash.js in Sources */ = {isa = PBXBuildFile; fileRef = B766B48916F8577D00610BCB /* flash.js */; };
+		B766B49416F8577D00610BCB /* html5.js in Sources */ = {isa = PBXBuildFile; fileRef = B766B48A16F8577D00610BCB /* html5.js */; };
+		B766B49516F8577D00610BCB /* main.js in Sources */ = {isa = PBXBuildFile; fileRef = B766B48B16F8577D00610BCB /* main.js */; };
+		B766B49616F8577D00610BCB /* modernizr.js in Sources */ = {isa = PBXBuildFile; fileRef = B766B48C16F8577D00610BCB /* modernizr.js */; };
+		B766B49716F8577D00610BCB /* playlistloader.js in Sources */ = {isa = PBXBuildFile; fileRef = B766B48D16F8577D00610BCB /* playlistloader.js */; };
+		B766B49816F8577D00610BCB /* signal.js in Sources */ = {isa = PBXBuildFile; fileRef = B766B48E16F8577D00610BCB /* signal.js */; };
+		B766B49916F8577D00610BCB /* utils.js in Sources */ = {isa = PBXBuildFile; fileRef = B766B48F16F8577D00610BCB /* utils.js */; };
 		B785030116F6E4500045A26F /* plugin.js in Sources */ = {isa = PBXBuildFile; fileRef = B78502FC16F6E4500045A26F /* plugin.js */; };
 		B785030216F6E4500045A26F /* plugin.xml in Resources */ = {isa = PBXBuildFile; fileRef = B78502FD16F6E4500045A26F /* plugin.xml */; };
 		B785030916F6E5170045A26F /* plugin.js in Sources */ = {isa = PBXBuildFile; fileRef = B785030716F6E5170045A26F /* plugin.js */; };
@@ -99,6 +109,16 @@
 		B75C212F16F20296004B8CB3 /* testXML.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = testXML.xml; sourceTree = "<group>"; };
 		B75C213116F20F3B004B8CB3 /* IHScroll.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHScroll.js; sourceTree = "<group>"; };
 		B75C213316F21508004B8CB3 /* IHScrollTester.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHScrollTester.js; sourceTree = "<group>"; };
+		B766B48616F8577D00610BCB /* controller.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = controller.js; sourceTree = "<group>"; };
+		B766B48716F8577D00610BCB /* cover.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = cover.js; sourceTree = "<group>"; };
+		B766B48816F8577D00610BCB /* coverflow.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = coverflow.js; sourceTree = "<group>"; };
+		B766B48916F8577D00610BCB /* flash.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = flash.js; sourceTree = "<group>"; };
+		B766B48A16F8577D00610BCB /* html5.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = html5.js; sourceTree = "<group>"; };
+		B766B48B16F8577D00610BCB /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
+		B766B48C16F8577D00610BCB /* modernizr.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = modernizr.js; sourceTree = "<group>"; };
+		B766B48D16F8577D00610BCB /* playlistloader.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = playlistloader.js; sourceTree = "<group>"; };
+		B766B48E16F8577D00610BCB /* signal.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = signal.js; sourceTree = "<group>"; };
+		B766B48F16F8577D00610BCB /* utils.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = utils.js; sourceTree = "<group>"; };
 		B78502FC16F6E4500045A26F /* plugin.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = plugin.js; sourceTree = "<group>"; };
 		B78502FD16F6E4500045A26F /* plugin.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = plugin.xml; sourceTree = "<group>"; };
 		B785030716F6E5170045A26F /* plugin.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = plugin.js; sourceTree = "<group>"; };
@@ -186,6 +206,16 @@
 		B712F77216F0BF9600D193B7 /* ThirdPartFrameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B766B48616F8577D00610BCB /* controller.js */,
+				B766B48716F8577D00610BCB /* cover.js */,
+				B766B48816F8577D00610BCB /* coverflow.js */,
+				B766B48916F8577D00610BCB /* flash.js */,
+				B766B48A16F8577D00610BCB /* html5.js */,
+				B766B48B16F8577D00610BCB /* main.js */,
+				B766B48C16F8577D00610BCB /* modernizr.js */,
+				B766B48D16F8577D00610BCB /* playlistloader.js */,
+				B766B48E16F8577D00610BCB /* signal.js */,
+				B766B48F16F8577D00610BCB /* utils.js */,
 				B7F0CB1C16F4949B00BD49F3 /* jquery-1.9.1.js */,
 				B7F0CB3516F4949B00BD49F3 /* jquery-1.9.1.min.js */,
 				B7F0CB1D16F4949B00BD49F3 /* jquery-plugin-data.js */,
@@ -517,6 +547,16 @@
 				B7F0CB3A16F4949B00BD49F3 /* plugin.js in Sources */,
 				B785030116F6E4500045A26F /* plugin.js in Sources */,
 				B785030916F6E5170045A26F /* plugin.js in Sources */,
+				B766B49016F8577D00610BCB /* controller.js in Sources */,
+				B766B49116F8577D00610BCB /* cover.js in Sources */,
+				B766B49216F8577D00610BCB /* coverflow.js in Sources */,
+				B766B49316F8577D00610BCB /* flash.js in Sources */,
+				B766B49416F8577D00610BCB /* html5.js in Sources */,
+				B766B49516F8577D00610BCB /* main.js in Sources */,
+				B766B49616F8577D00610BCB /* modernizr.js in Sources */,
+				B766B49716F8577D00610BCB /* playlistloader.js in Sources */,
+				B766B49816F8577D00610BCB /* signal.js in Sources */,
+				B766B49916F8577D00610BCB /* utils.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
