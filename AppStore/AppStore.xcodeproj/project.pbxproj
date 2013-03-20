@@ -23,6 +23,8 @@
 		B712F79216F0C44500D193B7 /* IHObjectTester.js in Sources */ = {isa = PBXBuildFile; fileRef = B712F79116F0C44500D193B7 /* IHObjectTester.js */; };
 		B712F79416F0C6B000D193B7 /* IHTestCenter.js in Sources */ = {isa = PBXBuildFile; fileRef = B712F79316F0C6B000D193B7 /* IHTestCenter.js */; };
 		B725AB4D16F155570057A0A4 /* IHUtilsTester.js in Sources */ = {isa = PBXBuildFile; fileRef = B725AB4C16F155570057A0A4 /* IHUtilsTester.js */; };
+		B73FEA6616F96983003CFBE6 /* main-content.html in Resources */ = {isa = PBXBuildFile; fileRef = B73FEA6516F96983003CFBE6 /* main-content.html */; };
+		B73FEA8316F9E764003CFBE6 /* main-footer.html in Resources */ = {isa = PBXBuildFile; fileRef = B73FEA8216F9E764003CFBE6 /* main-footer.html */; };
 		B75C212B16F1F5B1004B8CB3 /* IHPackageTester.js in Sources */ = {isa = PBXBuildFile; fileRef = B75C212A16F1F5B1004B8CB3 /* IHPackageTester.js */; };
 		B75C212E16F1FF06004B8CB3 /* IHXMLTester.js in Sources */ = {isa = PBXBuildFile; fileRef = B75C212D16F1FF06004B8CB3 /* IHXMLTester.js */; };
 		B75C213016F20296004B8CB3 /* testXML.xml in Resources */ = {isa = PBXBuildFile; fileRef = B75C212F16F20296004B8CB3 /* testXML.xml */; };
@@ -104,6 +106,8 @@
 		B712F79116F0C44500D193B7 /* IHObjectTester.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHObjectTester.js; sourceTree = "<group>"; };
 		B712F79316F0C6B000D193B7 /* IHTestCenter.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHTestCenter.js; sourceTree = "<group>"; };
 		B725AB4C16F155570057A0A4 /* IHUtilsTester.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHUtilsTester.js; sourceTree = "<group>"; };
+		B73FEA6516F96983003CFBE6 /* main-content.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "main-content.html"; sourceTree = "<group>"; };
+		B73FEA8216F9E764003CFBE6 /* main-footer.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "main-footer.html"; sourceTree = "<group>"; };
 		B75C212A16F1F5B1004B8CB3 /* IHPackageTester.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHPackageTester.js; sourceTree = "<group>"; };
 		B75C212D16F1FF06004B8CB3 /* IHXMLTester.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHXMLTester.js; sourceTree = "<group>"; };
 		B75C212F16F20296004B8CB3 /* testXML.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = testXML.xml; sourceTree = "<group>"; };
@@ -347,6 +351,8 @@
 			children = (
 				B7F0CB3816F4949B00BD49F3 /* plugin.js */,
 				B7F0CB3916F4949B00BD49F3 /* plugin.xml */,
+				B73FEA6516F96983003CFBE6 /* main-content.html */,
+				B73FEA8216F9E764003CFBE6 /* main-footer.html */,
 			);
 			path = root;
 			sourceTree = "<group>";
@@ -501,6 +507,8 @@
 				B7F0CB3B16F4949B00BD49F3 /* plugin.xml in Resources */,
 				B785030216F6E4500045A26F /* plugin.xml in Resources */,
 				B785030A16F6E5170045A26F /* plugin.xml in Resources */,
+				B73FEA6616F96983003CFBE6 /* main-content.html in Resources */,
+				B73FEA8316F9E764003CFBE6 /* main-footer.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

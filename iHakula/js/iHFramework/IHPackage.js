@@ -147,6 +147,7 @@
         c = eval(name + '=' + window.__kinit);
         extend(c, staticObj);
         extend(c.prototype, proObj.prototype);
+ 
       }else{//Extend from super class
         if(!(superclass && superclass instanceof Function)){
           throw 'Define class : ' + 'Superclass ' + superclass + ' is invalid';

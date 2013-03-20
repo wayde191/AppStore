@@ -252,6 +252,7 @@ p
 a
 {
 	color: #08c;
+  cursor: pointer;
 }
 
 a:link, a:visited, a:active

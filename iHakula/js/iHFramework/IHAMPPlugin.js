@@ -16,10 +16,10 @@
     plugin.prototype.parentId = null;
     plugin.prototype.lazyLoad = true;
     plugin.prototype.scriptsLoaded = false;
-    plugin.prototype.childs = new ih.$A();
-    plugin.prototype.scripts = new ih.$A();
     
     plugin.prototype.init = function(pluginPath){
+      this.childs = new ih.$A();
+      this.scripts = new ih.$A();
       this.confXmlPath = pluginPath + "plugin.xml";
       this.initFromConfXMLFile();
     };
@@ -69,7 +69,7 @@
             if(rv.statu = "ok"){
               j++;
               if(j == this.scripts.length){
-                this.scriptNodes = true;
+                this.scriptsLoaded = true;
               }
             }
           }).bind(me));

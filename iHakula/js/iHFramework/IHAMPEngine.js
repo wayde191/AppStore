@@ -16,6 +16,7 @@
     eng.prototype.root = null;
     
     eng.prototype.init = function(confXMLPath){
+      ih.plugins = {};
       this.initFromConfXMLFile(confXMLPath);
     };
     
