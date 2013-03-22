@@ -10,6 +10,17 @@
 
 @implementation iHAppDelegate
 
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    
+    // se.korpen://se.korpen.www
+    if ([[url host] isEqualToString:@"se.korpen.www"]) {
+        UILabel *l = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
+        l.text = @"se.korpen://se.korpen.www";
+        [self.window addSubview:l];
+    }
+    return YES;
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];

@@ -69,6 +69,37 @@ a.button-fillet:hover{
 	background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#D6D6D6));
 }
 
+a.button-fillet3{
+    text-decoration:none;
+    cursor:pointer;
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	border-radius:20px;
+	
+	-moz-box-shadow:0 1px 0 rgba(0, 0, 0, 0.9);
+	-webkit-box-shadow:0 1px 0 rgba(0, 0, 0, 0.9);
+	box-shadow:0 1px 0 rgba(0, 0, 0, 0.9);
+	
+	background: -moz-linear-gradient(19% 75% 90deg, rgba(0,0,0,.45), rgba(75,75,75,1));
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, rgba(75,75,75,1), rgba(0,0,0,.45));
+	
+	color:#f0f0f0;
+	float:left;
+	font-family:arial,helvetica,sans-serif;
+	font-size:11px;
+	font-weight:bold;
+	padding:2px 16px;
+	text-shadow:0 -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+a.button-fillet3:hover{
+	background: -moz-linear-gradient(19% 75% 90deg, rgba(0,0,0,.45), rgba(75,75,75,1));
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,.45)), to(rgba(75,75,75,1)));
+	-moz-box-shadow:0 0 8px rgba(0, 0, 0, 0.6) inset;
+	-webkit-box-shadow: none;
+	box-shadow:0 0 8px rgba(0, 0, 0, 0.6) inset;
+}
+
 /* Button rectangle */
 
 a.button-rect1{

@@ -175,6 +175,19 @@ nav, #globalnav li, #globalnav li a {
     background-image: url(http://store.storeimages.cdn-apple.com/3250/as-images.apple.com/is/image/AppleInc/globalnav-text?wid=160&hei=240&fmt=png-alpha&.v=1347915994458);
 }
 
+#u-info {
+    display: block;
+    float: right;
+    padding-right: 8px;
+    padding-top: 5px;
+    color:white;
+}
+
+#u-info span {
+    float: left;
+    padding: 2px 10px 0 0;
+}
+
 
 article
 {
