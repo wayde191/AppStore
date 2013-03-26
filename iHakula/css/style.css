@@ -509,4 +509,191 @@ span.enlarge-image a
   display:inline;
 }
 
+#ih-mask
+{
+  width:100%;
+  height:800px;
+  position:absolute;
+  top:0px;left:0px;
+  background:#123;
+  z-index:1000;
+  -webkit-mask-image: -webkit-linear-gradient(#000,rgba(0,0,0,.9));
+}
+
+#ds_container #ih-login
+{
+  display:block;
+  border: 1px solid;
+  border-color: #e5e5e5 #dbdbdb #d2d2d2;
+  -webkit-box-shadow: rgba(0,0,0,0.3) 0 1px 3px;
+  -moz-box-shadow: rgba(0,0,0,0.3) 0 1px 3px;
+  box-shadow: rgba(0,0,0,0.3) 0 1px 3px;
+  
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  
+  margin: 0 auto;
+  margin-top: 85px;
+  padding: 37px 45px 0 50px !important;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#e7e7e7));
+  background: -moz-linear-gradient(100% 100% 90deg, #e7e7e7, #fff);
+  background: gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#e7e7e7));
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, .4);
+  
+  width: 405px;
+  min-height: 267px;
+  
+  font: 14px/20px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+  color: #333;
+}
+
+#ds_container #ih-login h3
+{
+  margin-bottom:0px;
+}
+
+#ds_container .ih-dialog
+{
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+#ds_container #accountname, #ds_container #accountpassword 
+{
+  float: left;
+  width: 307px;
+  margin-top: -22px;
+  margin-left: 83px;
+  padding: 0 4px 0 4px;
+  font-size: 14px;
+}
+
+#ds_container .dialog-cell
+{
+  margin-bottom: 15px;
+}
+
+#ds_container a:hover
+{
+	text-decoration: none;
+}
+
+#ds_container a.button.large {
+  float: left;
+  min-width: 102px;
+  height: 23px;
+  font-size: 13px;
+  line-height: 27px;
+  color: #666;
+  font-weight: bold;
+  text-shadow: #fff 1px 1px 1px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid;
+  border-color: #b9b9b9 #bababa #bababa #b9b9b9;
+  background-color: #fff;
+  background-image: none;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#d1d1d1));
+  background-image: -webkit-linear-gradient(top, #fff, #d1d1d1);
+  background-image: -moz-linear-gradient(top, #fff, #d1d1d1);
+  background-image: -o-linear-gradient(top, #fff, #d1d1d1);
+  background-image: linear-gradient(to bottom, #fff, #d1d1d1);
+
+  display: inline;
+  padding: 0px 0 8px 10px;
+  text-align: center;
+  zoom: 1;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+#ds_container a.button.large span,
+#ds_container a.button.large input { display:block; padding:2px 30px 10px 15px; margin-left:10px; height:19px; white-space:nowrap; color:inherit; text-shadow:inherit; font-size:inherit; background-image:none; }
+#ds_container a.button.large input { width:inherit; height:inherit; border:inherit; border-radius:inherit; line-height:inherit; font-weight:inherit; }
+#ds_container a.button.large:hover { color:#525252; cursor:pointer !important; background-color:#fefefe;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#ADADAD)); 
+	background-image: -webkit-linear-gradient(top, #fefefe, #ADADAD); 
+	background-image:    -moz-linear-gradient(top, #fefefe, #ADADAD);
+	background-image:      -o-linear-gradient(top, #fefefe, #ADADAD); 
+	background-image:         linear-gradient(to bottom, #fefefe, #ADADAD); 	   
+}
+#ds_container a.button.large:hover span,
+#ds_container a.button.large:hover input { color:inherit !important; cursor:pointer !important; }
+#ds_container a.button.large:active { color:#525252; background-color:#adadad;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#ADADAD), to(#fefefe)); 
+	background-image: -webkit-linear-gradient(top, #ADADAD, #fefefe); 
+	background-image:    -moz-linear-gradient(top, #ADADAD, #fefefe);
+	background-image:      -o-linear-gradient(top, #ADADAD, #fefefe); 
+	background-image:         linear-gradient(to bottom, #ADADAD, #fefefe);
+}
+
+#ds_container a.button.large.blue {
+color: #fff;
+text-shadow: -1px -1px 1px #215989;
+border-color: #037bb7 #037cb8 #027bb8 #017bb7;
+background-color: #3b9be3;
+background-image: -webkit-gradient(linear, left top, left bottom, from(#3B9BE3), to(#2872be));
+background-image: -webkit-linear-gradient(top, #3B9BE3, #2872be);
+background-image: -moz-linear-gradient(top, #3B9BE3, #2872be);
+background-image: -o-linear-gradient(top, #3B9BE3, #2872be);
+background-image: linear-gradient(to bottom, #3B9BE3, #2872be);
+}
+
+#ds_container a.button.large.blue span,
+#ds_container a.button.large.blue input { color:inherit; text-shadow:inherit; }
+#ds_container a.button.large.blue:hover { background-color:#3690d7;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#3690D7), to(#1F5C9B)); 
+	background-image: -webkit-linear-gradient(top, #3690D7, #1F5C9B);
+	background-image:    -moz-linear-gradient(top, #3690D7, #1F5C9B);
+	background-image:      -o-linear-gradient(top, #3690D7, #1F5C9B);
+	background-image:         linear-gradient(to bottom, #3690D7, #1F5C9B);
+}
+#ds_container a.button.large.blue:active { border-color:#006699 #0072AB #2B88C9 #2B88C9; background-color:#3b9be3;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#2872be), to(#3B9BE3)); 
+	background-image: -webkit-linear-gradient(top, #2872be, #3B9BE3); 
+	background-image:    -moz-linear-gradient(top, #2872be, #3B9BE3);
+	background-image:      -o-linear-gradient(top, #2872be, #3B9BE3); 
+	background-image:         linear-gradient(to bottom, #2872be, #3B9BE3); 	  
+}
+#ds_container a.button.large.blue.disabled { color:#98C3e8; text-shadow:-1px -1px 1px #215989; opacity:1; filter:inherit;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#3895DD), to(#2872be)); 
+	background-image: -webkit-linear-gradient(top, #3895DD, #2872be); 
+	background-image:    -moz-linear-gradient(top, #3895DD, #2872be);
+	background-image:      -o-linear-gradient(top, #3895DD, #2872be); 
+	background-image:         linear-gradient(to bottom, #3895DD, #2872be);
+}
+
+#ds_container a.signin-button {
+  position: relative;
+  left: 165px;
+}
+
+#ds_container a.register-button {
+  position: relative;
+  left: 160px;
+}
+
+#ds_container a.forgot-button {
+  float: left;
+  margin-top: 31px;
+  margin-left: 120px;
+  font-size: 14px;
+  color: #333 !important;
+  text-shadow: 1px 1px #fff;
+  cursor: pointer;
+}
+
+.divider {
+  width: 499px;
+  position: relative;
+  left: -51px;
+  margin: 22px 0 0 2px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #fff;
+}
+
 

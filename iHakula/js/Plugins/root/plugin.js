@@ -15,6 +15,14 @@
     root.prototype.buildMainPage = function(){
       this.buildRecommands();
       this.buildMainContent();
+      
+      
+      
+      var f = function(){$('#ih-login').cssAnimate('flip');
+      console.log($('#ih-login'));};
+      
+      window.setTimeout(f, 3000);
+      
     };
     
     root.prototype.buildMainContent = function(){
