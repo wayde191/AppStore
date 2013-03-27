@@ -10,18 +10,40 @@
       this.setupLanguage();
       this.setupSpinnerDefaultOptions();
       this.buildMainPage();
+      this.logoHtml = '<div id="ih-logo"></div>';
+      this.loginHtml = this.logoHtml + '<div id="ih-login" class="ih-dialog">' +
+            '<header class="hero">' +
+              '<hgroup>' +
+                '<h3>Sign in</h3>' +
+                '<p class="intro">Use the iHakula ID you used to register or register now.</p>' +
+              '</hgroup>' +
+            '</header>' +
+            '<div class="dialog-cell">' +
+              '<font size="2"><label for="accountname"><span class="dslabel">iHakula ID:</span></label></font>' +
+              '<input size="30" autocapitalize="off" autocorrect="off" maxlength="128" id="accountname" type="text" value="" name="theAccountName"/>' +
+            '</div>' +
+            '<div class="dialog-cell">' +
+              '<font size="2"><label for="accountpassword"><span class="dslabel">Password:</span></label></font>' +
+              '<input size="30" autocapitalize="off" oncut="return false ;" oncopy="return false ;" autocorrect="off" maxlength="32" id="accountpassword" type="password" name="theAccountPW"/>' +
+            '</div>' +
+            '<div style="height:33px;">' +
+              '<a class="button large register-button"><span>Register</span></a>' +
+              '<a class="button large blue signin-button"><span>Sign In</span></a>' +
+            '</div>' +
+            '<div class="divider"></div>' +
+            '<a class="forgot-button">Forgot ID or Password?</a>' +
+      
+          '</div>';
     };
     
     root.prototype.buildMainPage = function(){
       this.buildRecommands();
       this.buildMainContent();
       
-      
-      
-      var f = function(){$('#ih-login').cssAnimate('flip');
-      console.log($('#ih-login'));};
-      
-      window.setTimeout(f, 3000);
+//      var f = function(){$('#ih-login').cssAnimate('flip');
+//      console.log($('#ih-login'));};
+//      
+//      window.setTimeout(f, 3000);
       
     };
     

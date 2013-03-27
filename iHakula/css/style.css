@@ -62,10 +62,20 @@ nav
     box-shadow: rgba(0,0,0,0.3) 0 1px 2px;
 }
 
-#globalheader #globalnav li:first-child a { border-width:0 2px 0 0;
-	-moz-border-radius:9px 0 0 0px; -webkit-border-top-left-radius:9px; -webkit-border-bottom-left-radius:0px; border-radius:9px 0 0 0px;
+#globalheader #globalnav li:first-child a { 
+  border-width:0 2px 0 0;
+	-moz-border-radius:9px 0 0 0px; 
+  -webkit-border-top-left-radius:9px; 
+  -webkit-border-bottom-left-radius:0px; 
+  border-radius:9px 0 0 0px;
 }
-#globalheader #globalnav:last-child li:last-child a { border-width:0 0 0 1px; -moz-border-radius:0 9px 0px 0; -webkit-border-top-right-radius:4px; -webkit-border-bottom-right-radius:4px; border-radius:0 4px 4px 0; }
+#globalheader #globalnav:last-child li:last-child a { 
+  border-width:0 0 0 1px; 
+  -moz-border-radius:0 9px 0px 0; 
+  -webkit-border-top-right-radius:4px; 
+  -webkit-border-bottom-right-radius:4px; 
+  border-radius:0 4px 4px 0; 
+}
 
 
 #globalheader #globalnav {
@@ -520,9 +530,37 @@ span.enlarge-image a
   -webkit-mask-image: -webkit-linear-gradient(#000,rgba(0,0,0,.9));
 }
 
+#ih-logo
+{
+  margin: 20px auto;
+  width:100%;
+  height:128px;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-image: url("../images/logos/logo.png");
+}
+
 #ds_container #ih-login
 {
-  display:block;
+  height: 267px;
+}
+
+#ds_container #ih-register
+{
+  height: 267px;
+}
+
+#ds_container h3
+{
+  margin-bottom:0px;
+}
+
+#ds_container .ih-dialog
+{
+  content: ".";
+  display: block;
+  clear: both;
+  
   border: 1px solid;
   border-color: #e5e5e5 #dbdbdb #d2d2d2;
   -webkit-box-shadow: rgba(0,0,0,0.3) 0 1px 3px;
@@ -536,7 +574,6 @@ span.enlarge-image a
   -khtml-border-radius: 4px;
   
   margin: 0 auto;
-  margin-top: 85px;
   padding: 37px 45px 0 50px !important;
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#e7e7e7));
   background: -moz-linear-gradient(100% 100% 90deg, #e7e7e7, #fff);
@@ -550,20 +587,7 @@ span.enlarge-image a
   color: #333;
 }
 
-#ds_container #ih-login h3
-{
-  margin-bottom:0px;
-}
-
-#ds_container .ih-dialog
-{
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-}
-
-#ds_container #accountname, #ds_container #accountpassword 
+#ds_container #accountname, #ds_container #accountpassword, #ds_container #confirmpassword
 {
   float: left;
   width: 307px;

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B70FBEDE1703070100C00430 /* main-logo.html in Resources */ = {isa = PBXBuildFile; fileRef = B70FBEDD1703070100C00430 /* main-logo.html */; };
+		B70FBEE1170309EA00C00430 /* main-register.html in Resources */ = {isa = PBXBuildFile; fileRef = B70FBEE0170309EA00C00430 /* main-register.html */; };
 		B712F78416F0C12800D193B7 /* IHBlock.js in Sources */ = {isa = PBXBuildFile; fileRef = B712F77716F0C12800D193B7 /* IHBlock.js */; };
 		B712F78516F0C12800D193B7 /* IHCategory.js in Sources */ = {isa = PBXBuildFile; fileRef = B712F77816F0C12800D193B7 /* IHCategory.js */; };
 		B712F78616F0C12800D193B7 /* IHEngine.js in Sources */ = {isa = PBXBuildFile; fileRef = B712F77916F0C12800D193B7 /* IHEngine.js */; };
@@ -30,6 +32,7 @@
 		B75C213016F20296004B8CB3 /* testXML.xml in Resources */ = {isa = PBXBuildFile; fileRef = B75C212F16F20296004B8CB3 /* testXML.xml */; };
 		B75C213216F20F3B004B8CB3 /* IHScroll.js in Sources */ = {isa = PBXBuildFile; fileRef = B75C213116F20F3B004B8CB3 /* IHScroll.js */; };
 		B75C213416F21508004B8CB3 /* IHScrollTester.js in Sources */ = {isa = PBXBuildFile; fileRef = B75C213316F21508004B8CB3 /* IHScrollTester.js */; };
+		B7613B7C1702CE9500FE0B32 /* main-login.html in Resources */ = {isa = PBXBuildFile; fileRef = B7613B7B1702CE9400FE0B32 /* main-login.html */; };
 		B766B49016F8577D00610BCB /* controller.js in Sources */ = {isa = PBXBuildFile; fileRef = B766B48616F8577D00610BCB /* controller.js */; };
 		B766B49116F8577D00610BCB /* cover.js in Sources */ = {isa = PBXBuildFile; fileRef = B766B48716F8577D00610BCB /* cover.js */; };
 		B766B49216F8577D00610BCB /* coverflow.js in Sources */ = {isa = PBXBuildFile; fileRef = B766B48816F8577D00610BCB /* coverflow.js */; };
@@ -90,6 +93,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B70FBEDD1703070100C00430 /* main-logo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "main-logo.html"; sourceTree = "<group>"; };
+		B70FBEE0170309EA00C00430 /* main-register.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "main-register.html"; sourceTree = "<group>"; };
 		B712F77716F0C12800D193B7 /* IHBlock.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHBlock.js; sourceTree = "<group>"; };
 		B712F77816F0C12800D193B7 /* IHCategory.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHCategory.js; sourceTree = "<group>"; };
 		B712F77916F0C12800D193B7 /* IHEngine.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHEngine.js; sourceTree = "<group>"; };
@@ -113,6 +118,7 @@
 		B75C212F16F20296004B8CB3 /* testXML.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = testXML.xml; sourceTree = "<group>"; };
 		B75C213116F20F3B004B8CB3 /* IHScroll.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHScroll.js; sourceTree = "<group>"; };
 		B75C213316F21508004B8CB3 /* IHScrollTester.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHScrollTester.js; sourceTree = "<group>"; };
+		B7613B7B1702CE9400FE0B32 /* main-login.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "main-login.html"; sourceTree = "<group>"; };
 		B766B48616F8577D00610BCB /* controller.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = controller.js; sourceTree = "<group>"; };
 		B766B48716F8577D00610BCB /* cover.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = cover.js; sourceTree = "<group>"; };
 		B766B48816F8577D00610BCB /* coverflow.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = coverflow.js; sourceTree = "<group>"; };
@@ -353,6 +359,9 @@
 				B7F0CB3916F4949B00BD49F3 /* plugin.xml */,
 				B73FEA6516F96983003CFBE6 /* main-content.html */,
 				B73FEA8216F9E764003CFBE6 /* main-footer.html */,
+				B7613B7B1702CE9400FE0B32 /* main-login.html */,
+				B70FBEDD1703070100C00430 /* main-logo.html */,
+				B70FBEE0170309EA00C00430 /* main-register.html */,
 			);
 			path = root;
 			sourceTree = "<group>";
@@ -509,6 +518,9 @@
 				B785030A16F6E5170045A26F /* plugin.xml in Resources */,
 				B73FEA6616F96983003CFBE6 /* main-content.html in Resources */,
 				B73FEA8316F9E764003CFBE6 /* main-footer.html in Resources */,
+				B7613B7C1702CE9500FE0B32 /* main-login.html in Resources */,
+				B70FBEDE1703070100C00430 /* main-logo.html in Resources */,
+				B70FBEE1170309EA00C00430 /* main-register.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
