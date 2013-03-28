@@ -40,6 +40,18 @@
     
   };
   $.fn.cssAnimate = $.cssAnimate;
+ 
+ $.addAnimation = function(action){
+    var className = "animated " + action;
+    
+    var animateFct = ih.$F(function(name){
+      this.removeClass().addClass(name);
+    }).bind(this);
+    
+    animateFct(className);
+    
+  };
+  $.fn.addAnimation = $.addAnimation;
   
  
 })(jQuery);

@@ -7,44 +7,15 @@
   ih.defineClass('ih.plugins.root', null, null, function(ROOT, root){
   
     root.prototype.init = function(){
+      this.initHtmls();
       this.setupLanguage();
       this.setupSpinnerDefaultOptions();
       this.buildMainPage();
-      this.logoHtml = '<div id="ih-logo"></div>';
-      this.loginHtml = this.logoHtml + '<div id="ih-login" class="ih-dialog">' +
-            '<header class="hero">' +
-              '<hgroup>' +
-                '<h3>Sign in</h3>' +
-                '<p class="intro">Use the iHakula ID you used to register or register now.</p>' +
-              '</hgroup>' +
-            '</header>' +
-            '<div class="dialog-cell">' +
-              '<font size="2"><label for="accountname"><span class="dslabel">iHakula ID:</span></label></font>' +
-              '<input size="30" autocapitalize="off" autocorrect="off" maxlength="128" id="accountname" type="text" value="" name="theAccountName"/>' +
-            '</div>' +
-            '<div class="dialog-cell">' +
-              '<font size="2"><label for="accountpassword"><span class="dslabel">Password:</span></label></font>' +
-              '<input size="30" autocapitalize="off" oncut="return false ;" oncopy="return false ;" autocorrect="off" maxlength="32" id="accountpassword" type="password" name="theAccountPW"/>' +
-            '</div>' +
-            '<div style="height:33px;">' +
-              '<a class="button large register-button"><span>Register</span></a>' +
-              '<a class="button large blue signin-button"><span>Sign In</span></a>' +
-            '</div>' +
-            '<div class="divider"></div>' +
-            '<a class="forgot-button">Forgot ID or Password?</a>' +
-      
-          '</div>';
     };
     
     root.prototype.buildMainPage = function(){
       this.buildRecommands();
       this.buildMainContent();
-      
-//      var f = function(){$('#ih-login').cssAnimate('flip');
-//      console.log($('#ih-login'));};
-//      
-//      window.setTimeout(f, 3000);
-      
     };
     
     root.prototype.buildMainContent = function(){
@@ -53,14 +24,21 @@
     };
     
     root.prototype.setupClickEvent = function(){
-      $("#mf-ihakula").click(ih.$F(function(){
-        console.log(this);
+      $("#ih-login-button").click(ih.$F(function(){
+        this.onLoginBtnClicked();
       }).bind(this));
+    };
+    
+    root.prototype.onLoginBtnClicked = function(){
+      $("#ih-mask").css("display", "block");
+      $("#ih-mask").addAnimation("fadeIn");
+      $("#ds_container").html(this.loginHtml);
+      $("#ds_container").addAnimation("bounceInUp");
+      
     };
     
     root.prototype.localize = function(){
       // Main content
-      this.mainContent = '<h3 class="secondary"> @content-title </h3><div class="main-cols"><div class="main-col"><h4>@content-col-1-title</h4><p>@content-col-1-description</p><p><a id="content-col-1-link">@content-col-1-link</a></p></div><div class="main-col"><h4>@content-col-2-title</h4><p>@content-col-2-description</p><p><a id="content-col-2-link">@content-col-2-link</a></p></div><div class="main-col"><h4>@content-col-3-title</h4><p>@content-col-3-description</p><p><a id="content-col-3-link">@content-col-3-link</a></p></div></div>';
       this.mainContent = this.mainContent.replace(/@content-title/i, this.languages[this.selectedLanguage]["content-title"]);
       this.mainContent = this.mainContent.replace(/@content-col-1-title/i, this.languages[this.selectedLanguage]["content-col-1-title"]);
       this.mainContent = this.mainContent.replace(/@content-col-1-description/i, this.languages[this.selectedLanguage]["content-col-1-description"]);
@@ -75,7 +53,6 @@
       $("#ih-main").html(this.mainContent);
         
       // Footer
-      this.mainFooter = '<div class="ih-aux"><ul><li><a id="mf-ihakula">@footer-ihakula</a></li><li><a id="mf-aboutme">@footer-aboutme</a></li><li><a id="mf-privacy">@footer-privacy</a></li></ul></div>';
       this.mainFooter = this.mainFooter.replace(/@footer-ihakula/i, this.languages[this.selectedLanguage]["footer-ihakula"]);
       this.mainFooter = this.mainFooter.replace(/@footer-aboutme/i, this.languages[this.selectedLanguage]["footer-aboutme"]);
       this.mainFooter = this.mainFooter.replace(/@footer-privacy/i, this.languages[this.selectedLanguage]["footer-privacy"]);
@@ -186,6 +163,62 @@
           
         }
       };
+    };
+    
+    root.prototype.initHtmls = function(){
+      this.mainContent = '<h3 class="secondary"> @content-title </h3><div class="main-cols"><div class="main-col"><h4>@content-col-1-title</h4><p>@content-col-1-description</p><p><a id="content-col-1-link">@content-col-1-link</a></p></div><div class="main-col"><h4>@content-col-2-title</h4><p>@content-col-2-description</p><p><a id="content-col-2-link">@content-col-2-link</a></p></div><div class="main-col"><h4>@content-col-3-title</h4><p>@content-col-3-description</p><p><a id="content-col-3-link">@content-col-3-link</a></p></div></div>';
+      this.mainFooter = '<div class="ih-aux"><ul><li><a id="mf-ihakula">@footer-ihakula</a></li><li><a id="mf-aboutme">@footer-aboutme</a></li><li><a id="mf-privacy">@footer-privacy</a></li></ul></div>';
+      this.logoHtml = '<div id="ih-logo"></div>';
+      this.loginHtml = this.logoHtml + '<div id="ih-login" class="ih-dialog">' +
+            '<header class="hero">' +
+              '<hgroup>' +
+                '<h3>Sign in</h3>' +
+                '<p class="intro">Use the iHakula ID you used to register or register now.</p>' +
+              '</hgroup>' +
+            '</header>' +
+            '<div class="dialog-cell">' +
+              '<font size="2"><label for="accountname"><span class="dslabel">iHakula ID:</span></label></font>' +
+              '<input size="30" autocapitalize="off" autocorrect="off" maxlength="128" id="accountname" type="text" value="" name="theAccountName"/>' +
+            '</div>' +
+            '<div class="dialog-cell">' +
+              '<font size="2"><label for="accountpassword"><span class="dslabel">Password:</span></label></font>' +
+              '<input size="30" autocapitalize="off" oncut="return false ;" oncopy="return false ;" autocorrect="off" maxlength="32" id="accountpassword" type="password" name="theAccountPW"/>' +
+            '</div>' +
+            '<div style="height:33px;">' +
+              '<a class="button large register-button"><span>Register</span></a>' +
+              '<a class="button large blue signin-button"><span>Sign In</span></a>' +
+            '</div>' +
+            '<div class="divider"></div>' +
+            '<a class="forgot-button">Forgot ID or Password?</a>' +
+      
+          '</div>';
+    this.registerHtml = this.logoHtml + '<div id="ih-register" class="ih-dialog">' +
+            '<header class="hero">' +
+                '<hgroup>' +
+                    '<h3>Register</h3>' +
+                    '<p class="intro">Use email set as your iHakula ID.</p>' +
+                '</hgroup>' +
+            '</header>' +
+            '<div class="dialog-cell">' +
+                '<font size="2"><label for="accountname"><span class="dslabel">iHakula ID:</span></label></font>' +
+                '<input size="30" autocapitalize="off" autocorrect="off" maxlength="128" id="accountname" type="text" value="" name="theAccountName"/>' +
+            '</div>' +
+            '<div class="dialog-cell">' +
+                '<font size="2"><label for="accountpassword"><span class="dslabel">Password:</span></label></font>' +
+                '<input size="30" autocapitalize="off" oncut="return false ;" oncopy="return false ;" autocorrect="off" maxlength="32" id="accountpassword" type="password" name="theAccountPW"/>' +
+            '</div>' +
+            '<div class="dialog-cell">' +
+                '<font size="2"><label for="confirmpassword"><span class="dslabel">Confrim:</span></label></font>' +
+                '<input size="30" autocapitalize="off" oncut="return false ;" oncopy="return false ;" autocorrect="off" maxlength="32" id="confirmpassword" type="password" name="confirmAccountPW"/>' +
+            '</div>' +
+            
+            '<div style="height:33px;">' +
+                '<a class="button large register-button"><span>Cancel</span></a>' +
+                '<a class="button large blue signin-button"><span>Sure</span></a>' +
+            '</div>' +
+            '<div class="divider"></div>' +
+            
+        '</div>';
     };
 
   });

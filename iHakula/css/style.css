@@ -115,8 +115,8 @@ nav, #globalnav li, #globalnav li a {
 /* tab hover & active state */
 #globalheader #globalnav li a:hover,
 #globalheader #globalnav li a:focus,
-#globalheader #globalnav li#gn-apple a:hover,
-#globalheader #globalnav li#gn-apple a:focus,
+#globalheader #globalnav li#gn-home a:hover,
+#globalheader #globalnav li#gn-home a:focus,
 #globalheader #globalnav.tabs6-nosearch li.gn-last a:hover,
 #globalheader #globalnav.tabs6-nosearch li.gn-last a:focus,
 #globalheader #globalnav.tabs7-nosearch li.gn-last a:hover,
@@ -136,7 +136,7 @@ nav, #globalnav li, #globalnav li a {
 }
 
 #globalheader #globalnav li a:active,
-#globalheader #globalnav li#gn-apple a:active,
+#globalheader #globalnav li#gn-home a:active,
 #globalheader #globalnav.tabs6-nosearch li.gn-last a:active,
 #globalheader #globalnav.tabs7-nosearch li.gn-last a:active,
 #globalheader #globalnav.nosearch       li.gn-last a:active {
@@ -151,7 +151,7 @@ nav, #globalnav li, #globalnav li a {
 		rgba(0, 0, 0, .4);
 }
 
-#globalheader #globalnav li a.store
+#globalheader #globalnav li a.selecting
 {
     -o-border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAABCAQAAABTNcdGAAAADklEQVQIHWNg8GUAAV8AAnEAm4WyilcAAAAASUVORK5CYII%3D") 0 2 0 1;
     -ms-border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAABCAQAAABTNcdGAAAADklEQVQIHWNg8GUAAV8AAnEAm4WyilcAAAAASUVORK5CYII%3D") 0 2 0 1;
@@ -167,7 +167,7 @@ nav, #globalnav li, #globalnav li a {
     cursor: pointer;
 }
 
-#globalheader #globalnav li a.store span 
+#globalheader #globalnav li a.home span 
 {
     background-position: 50% -30px;
 }
@@ -182,7 +182,7 @@ nav, #globalnav li, #globalnav li a {
 }
 
 #globalheader #globalnav li a span {
-    background-image: url(http://store.storeimages.cdn-apple.com/3250/as-images.apple.com/is/image/AppleInc/globalnav-text?wid=160&hei=240&fmt=png-alpha&.v=1347915994458);
+    background-image: url(../images/globalnav-text.png);
 }
 
 #u-info {
@@ -523,6 +523,7 @@ span.enlarge-image a
 {
   width:100%;
   height:800px;
+  display:none;
   position:absolute;
   top:0px;left:0px;
   background:#123;
@@ -537,7 +538,7 @@ span.enlarge-image a
   height:128px;
   background-position: 50% 0;
   background-repeat: no-repeat;
-  background-image: url("../images/logos/logo.png");
+  background-image: url("../images/logos/logo_white_glass.png");
 }
 
 #ds_container #ih-login
