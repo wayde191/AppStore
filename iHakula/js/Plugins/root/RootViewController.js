@@ -4,9 +4,12 @@
   *@Time : 2010.3.4
   */
 
-  ih.defineClass('ih.plugins.root', null, null, function(ROOT, root){
+  ih.defineClass('ih.plugins.rootViewController', null, null, function(ROOT, root){
   
     root.prototype.init = function(){
+      ih.rootURL = "localhost/AppStore/iHakula/api/index.php/";
+      this.dm = new ih.plugins.rootDataModel();
+      this.dm.delegate = self;
       this.initHtmls();
       this.setupLanguage();
       this.setupSpinnerDefaultOptions();
@@ -27,6 +30,59 @@
       $("#ih-login-button").click(ih.$F(function(){
         this.onLoginBtnClicked();
       }).bind(this));
+      $("#mask-button").click(ih.$F(function(){
+        this.onCloseMaskBtnClicked();
+      }).bind(this));
+      
+    };
+    
+    root.prototype.onRegisterBtnClicked = function(){
+      $("#ds_container").html(this.registerHtml);
+      
+      $("#register-cancel").click(ih.$F(function(){
+        this.onCloseMaskBtnClicked();
+      }).bind(this));
+      $("#register-sure").click(ih.$F(function(){
+        this.onRegisterSureBtnClicked();
+      }).bind(this));
+    };
+    
+    root.prototype.onRegisterSureBtnClicked = function(){
+      var accountName = $("#accountname")[0].value;
+      var accountPassword = $("#accountpassword")[0].value;
+      var confirmPassword = $("#confirmpassword")[0].value;
+      
+      if(!accountName || !accountPassword || !confirmPassword){
+        this.showMessage({title:"温馨提示", text:"三项均不能为空"});
+        return;
+      } else if(accountPassword != confirmPassword) {
+        this.showMessage({title:"温馨提示", text:"密码确认不相等，请重新输入"});
+        $("#accountpassword").val("");
+        $("#confirmpassword").val("");
+        return;
+      }
+      
+      var target = document.getElementById('ds_container');
+      this.RegisterSpinner = new Spinner(this.spinnerDefaultOpts).spin(target);
+      
+      console.log(accountName + accountPassword + confirmPassword);
+    };
+    
+    root.prototype.onLoginBtnClicked = function(){
+      console.log("login");
+    };
+    root.prototype.onForgetPwdMaskBtnClicked = function(){
+      console.log("forget");
+    };
+    
+    root.prototype.onCloseMaskBtnClicked = function(){
+      $("#ds_container").addAnimation("bounceOutUp");
+      $("#ih-mask").addAnimation("fadeOut");
+      var tempF = function(){
+        $("#ih-mask").css("display", "none");
+      };
+      window.setTimeout(tempF, 2000);
+      
     };
     
     root.prototype.onLoginBtnClicked = function(){
@@ -34,6 +90,16 @@
       $("#ih-mask").addAnimation("fadeIn");
       $("#ds_container").html(this.loginHtml);
       $("#ds_container").addAnimation("bounceInUp");
+      
+      $("#ih-register-btn").click(ih.$F(function(){
+        this.onRegisterBtnClicked();
+      }).bind(this));
+      $("#ih-login-btn").click(ih.$F(function(){
+        this.onLoginBtnClicked();
+      }).bind(this));
+      $("#ih-forgetPwd-btn").click(ih.$F(function(){
+        this.onForgetPwdMaskBtnClicked();
+      }).bind(this));
       
     };
     
@@ -139,6 +205,23 @@
       };
     };
     
+    root.prototype.showMessage = function(dialogMsg){
+      // Dialog
+        $('#dialog').dialog({
+            autoOpen: false,
+            width: 600,
+            title: dialogMsg.title,
+            buttons: {
+                "Sure": function() {
+                    $(this).dialog("close");
+                }
+            }
+        });
+
+        // Dialog Link
+        $('#dialog').html(dialogMsg.text).dialog('open');
+    };
+    
     root.prototype.setupLanguage = function(){
       this.selectedLanguage = "zh";
       
@@ -185,11 +268,11 @@
               '<input size="30" autocapitalize="off" oncut="return false ;" oncopy="return false ;" autocorrect="off" maxlength="32" id="accountpassword" type="password" name="theAccountPW"/>' +
             '</div>' +
             '<div style="height:33px;">' +
-              '<a class="button large register-button"><span>Register</span></a>' +
-              '<a class="button large blue signin-button"><span>Sign In</span></a>' +
+              '<a id="ih-register-btn" class="button large register-button"><span>Register</span></a>' +
+              '<a id="ih-login-btn" class="button large blue signin-button"><span>Sign In</span></a>' +
             '</div>' +
             '<div class="divider"></div>' +
-            '<a class="forgot-button">Forgot ID or Password?</a>' +
+            '<a id="ih-forgetPwd-btn" class="forgot-button">Forgot ID or Password?</a>' +
       
           '</div>';
     this.registerHtml = this.logoHtml + '<div id="ih-register" class="ih-dialog">' +
@@ -213,8 +296,8 @@
             '</div>' +
             
             '<div style="height:33px;">' +
-                '<a class="button large register-button"><span>Cancel</span></a>' +
-                '<a class="button large blue signin-button"><span>Sure</span></a>' +
+                '<a id="register-cancel" class="button large register-button"><span>Cancel</span></a>' +
+                '<a id="register-sure" class="button large blue signin-button"><span>Sure</span></a>' +
             '</div>' +
             '<div class="divider"></div>' +
             
@@ -223,11 +306,4 @@
 
   });
 
-  ih.plugins.rootPlugin = new ih.plugins.root();
-
-
-//$.ajax({url:"./js/Plugins/root/main-content.html",
-//              type:"GET",
-//              complete: ih.$F(function(XMLHttpRequest, textStatus){
-//              setContent(XMLHttpRequest.responseText);
-//        }).bind(this)});
+  ih.plugins.rootPlugin = new ih.plugins.rootViewController();

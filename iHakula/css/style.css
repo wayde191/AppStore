@@ -531,6 +531,22 @@ span.enlarge-image a
   -webkit-mask-image: -webkit-linear-gradient(#000,rgba(0,0,0,.9));
 }
 
+#ih-mask #mask-button
+{
+  position:absolute;
+  top: 20px;
+  left: 20px;
+  width:40px;
+  height:48px;
+  background: url("../images/close-me.png") no-repeat 0% top;
+  z-index: 999;
+}
+
+#ih-mask #mask-button:hover
+{
+  background: url("../images/close-me.png") no-repeat 22% top;
+}
+
 #ih-logo
 {
   margin: 20px auto;
