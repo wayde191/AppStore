@@ -7,13 +7,18 @@
   ih.defineClass('ih.plugins.rootViewController', null, null, function(ROOT, root){
   
     root.prototype.init = function(){
-      ih.rootURL = "localhost/AppStore/iHakula/api/index.php/";
+      ih.rootUrl = "http://localhost/AppStore/iHakula/api/index.php/";
       this.dm = new ih.plugins.rootDataModel();
-      this.dm.delegate = self;
+      this.dm.delegate = this;
       this.initHtmls();
       this.setupLanguage();
+      this.setupErrorinfo();
       this.setupSpinnerDefaultOptions();
       this.buildMainPage();
+      
+      if(this.dm.sysUser.isLogin()) {
+        this.setUserinfo();
+      }
     };
     
     root.prototype.buildMainPage = function(){
@@ -63,16 +68,80 @@
       }
       
       var target = document.getElementById('ds_container');
-      this.RegisterSpinner = new Spinner(this.spinnerDefaultOpts).spin(target);
-      
-      console.log(accountName + accountPassword + confirmPassword);
+      this.registerSpinner = new Spinner(this.spinnerDefaultOpts).spin(target);
+      this.dm.doRegister({ihakulaID:accountName, password:accountPassword, confirmPwd:confirmPassword});
     };
     
-    root.prototype.onLoginBtnClicked = function(){
-      console.log("login");
+    root.prototype.registerSuccess = function(){
+      this.registerSpinner.stop();
+      $("#ds_container").html(this.loginHtml);
+      this.showMessage({title:"温馨提示", text:this.languages[this.selectedLanguage]["registerSucceed"]});
+      
     };
+    
+    root.prototype.registerFailed = function(errorCode){
+      this.registerSpinner.stop();
+      this.showMessage({title:"温馨提示", text:this.errorInfo[errorCode]});
+    };
+    
+    root.prototype.onSignInBtnClicked = function(){
+      var accountName = $("#accountname")[0].value;
+      var accountPassword = $("#accountpassword")[0].value;
+      
+      if(!accountName || !accountPassword){
+        this.showMessage({title:"温馨提示", text:"请输入用户名和密码"});
+        return;
+      }
+      
+      var target = document.getElementById('ds_container');
+      this.registerSpinner = new Spinner(this.spinnerDefaultOpts).spin(target);
+      this.dm.doLogin({ihakulaID:accountName, password:accountPassword});
+    };
+    
+    root.prototype.loginSuccess = function(){
+      this.registerSpinner.stop();
+      this.onCloseMaskBtnClicked();
+      this.setUserinfo();
+    };
+    
+    root.prototype.setUserinfo = function(){
+      $("#ih-hi").html("hi," + this.dm.sysUser.name);
+      $("#ih-login-button").html("Logout");
+      $("#ih-login-button").unbind("click");
+      $("#ih-login-button").click(ih.$F(function(){
+      var me = this;
+        $('#dialog').dialog({
+            autoOpen: false,
+            width: 600,
+            title: "温馨提示",
+            buttons: {
+                "Ok": function() {
+                  me.setUserLogout();
+                  $(this).dialog("close");
+                },
+                "Cancel": function() {
+                    $(this).dialog("close");
+                }
+            }
+        });
+
+        // Dialog Link
+        $('#dialog').html("确认登出？").dialog('open');
+      }).bind(this));
+    };
+    
+    root.prototype.setUserLogout = function(){
+      this.dm.sysUser.logout();
+      $("#ih-hi").html("");
+      $("#ih-login-button").html("Login");
+      $("#ih-login-button").unbind("click");
+      $("#ih-login-button").click(ih.$F(function(){
+        this.onLoginBtnClicked();
+      }).bind(this));
+    };
+    
     root.prototype.onForgetPwdMaskBtnClicked = function(){
-      console.log("forget");
+      this.showMessage({title:"温馨提示", text:"Coming soon"});
     };
     
     root.prototype.onCloseMaskBtnClicked = function(){
@@ -95,7 +164,7 @@
         this.onRegisterBtnClicked();
       }).bind(this));
       $("#ih-login-btn").click(ih.$F(function(){
-        this.onLoginBtnClicked();
+        this.onSignInBtnClicked();
       }).bind(this));
       $("#ih-forgetPwd-btn").click(ih.$F(function(){
         this.onForgetPwdMaskBtnClicked();
@@ -222,6 +291,12 @@
         $('#dialog').html(dialogMsg.text).dialog('open');
     };
     
+    root.prototype.setupErrorinfo = function(){
+      this.errorInfo = {
+        900 : this.languages[this.selectedLanguage]["errorcode_900"]
+      };
+    };
+    
     root.prototype.setupLanguage = function(){
       this.selectedLanguage = "zh";
       
@@ -240,7 +315,9 @@
           
           "footer-ihakula":"ihakula",
           "footer-aboutme":"关于我",
-          "footer-privacy":"隐私权和条款"
+          "footer-privacy":"隐私权和条款",
+          
+          "registerSucceed":"恭喜，注册成功，请登录"
         },
         "en" : {
           

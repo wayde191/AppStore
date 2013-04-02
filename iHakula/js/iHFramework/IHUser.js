@@ -14,7 +14,6 @@ ih.defineClass("ih.User", null, null, function(USER, user){
     user.prototype.init = function(){
         this.id = ih.getcookie("ihengine-utilities-session-sid");
         this.name = ih.getcookie("ihengine-utilities-session-uname");
-        this.sex = ih.getcookie("ihengine-utilities-session-usex");
     };
     
     user.prototype.isLogin = function(){
@@ -26,10 +25,15 @@ ih.defineClass("ih.User", null, null, function(USER, user){
     
     user.prototype.setUserInfo = function(user){
         this.id = user.id;
-        this.name = user.name;
-        this.sex = user.sex;
+        this.name = user.email;
         ih.setcookie("ihengine-utilities-session-sid", this.id);
         ih.setcookie("ihengine-utilities-session-uname", this.name);
-        ih.setcookie("ihengine-utilities-session-usex", this.sex);
     };
+    
+    user.prototype.logout = function(){
+        this.id = null;
+        this.name = null;
+        ih.setcookie("ihengine-utilities-session-sid", "", -1);
+        ih.setcookie("ihengine-utilities-session-uname", "", -1);
+    }
 });

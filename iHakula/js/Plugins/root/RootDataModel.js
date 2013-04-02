@@ -18,41 +18,26 @@
       this.awards = null;
     };
     
-    dm.prototype.doLogin = function(){
-      var username = $("#user_login")[0].value;
-      var password = $("#user_pass")[0].value;
-      if(username && password) {
-          this.request.callService({username:username, password:password}, ih.$F(function(response){
-                  console.log(response);
-                  if (1 == response.status) {
-                      this.sysUser.setUserInfo(response);
-                      this.delegate.loginSuccess();
-                  } else {
-                      
-                  }
-              }).bind(this), ih.rootUrl + "/user/login", "POST");
-      } else {
-          ih.userDefaultEngine.logConsole.push(new ih.HLog("HoneyDataModel", "doLogin username or passwrd is empty"));
-      }
+    dm.prototype.doLogin = function(paras){
+      this.request.callService(paras, ih.$F(function(response){
+        if (1 == response.status) {
+            this.sysUser.setUserInfo(response);
+            this.delegate.loginSuccess();
+        } else {
+            
+        }
+      }).bind(this), ih.rootUrl + "user/login", "POST");
     };
     
     dm.prototype.doRegister = function(paras){
       this.request.callService(paras, ih.$F(function(response){
               console.log(response);
               if (1 == response.status) {
-                  this.sysUser.setUserInfo(response);
-                  this.delegate.loginSuccess();
+                  this.delegate.registerSuccess();
               } else {
-                  
+                  this.delegate.registerFailed(response.errorCode);
               }
-          }).bind(this), ih.rootUrl + "/user/login", "POST");
+          }).bind(this), ih.rootUrl + "user/register", "POST");
     };
 
   });
-
-
-//$.ajax({url:"./js/Plugins/root/main-content.html",
-//              type:"GET",
-//              complete: ih.$F(function(XMLHttpRequest, textStatus){
-//              setContent(XMLHttpRequest.responseText);
-//        }).bind(this)});
