@@ -19,6 +19,7 @@
       if(this.dm.sysUser.isLogin()) {
         this.setUserinfo();
       }
+      
     };
     
     root.prototype.buildMainPage = function(){
