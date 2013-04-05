@@ -22,6 +22,7 @@
     };
     
     root.prototype.buildMainPage = function(){
+      $("#content").html('<div id="ih-recommands"></div><hr><div id="ih-main" role="main"></div>');
       this.buildRecommands();
       this.buildMainContent();
     };
@@ -37,6 +38,25 @@
       }).bind(this));
       $("#mask-button").click(ih.$F(function(){
         this.onCloseMaskBtnClicked();
+      }).bind(this));
+      
+      $("#content-col-1-link").click(ih.$F(function(){
+        this.showMessage({title:"温馨提示", text:"Coming soon"});
+      }).bind(this));
+      $("#content-col-2-link").click(ih.$F(function(){
+        this.showMessage({title:"温馨提示", text:"Coming soon"});
+      }).bind(this));
+      $("#content-col-3-link").click(ih.$F(function(){
+        this.showMessage({title:"温馨提示", text:"Coming soon"});
+      }).bind(this));
+      $("#mf-ihakula").click(ih.$F(function(){
+        this.showMessage({title:"温馨提示", text:"Coming soon"});
+      }).bind(this));
+      $("#mf-aboutme").click(ih.$F(function(){
+        this.showMessage({title:"温馨提示", text:"Coming soon"});
+      }).bind(this));
+      $("#mf-privacy").click(ih.$F(function(){
+        this.showMessage({title:"温馨提示", text:"Coming soon"});
       }).bind(this));
       
     };
