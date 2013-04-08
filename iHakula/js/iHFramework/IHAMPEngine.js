@@ -14,6 +14,7 @@
     eng.prototype.name = "ihakula.ampEngine";
     eng.prototype.version = "1.0";
     eng.prototype.root = null;
+    eng.prototype.row = 11111;
     
     eng.prototype.init = function(confXMLPath){
       ih.plugins = {};
@@ -36,5 +37,10 @@
       objXML.load(confXMLPath);
       
     };
+    
+    eng.prototype.test = ih.$F(function(value){
+      console.log(value);
+      console.log(this.row);
+    });
     
   });

@@ -404,4 +404,4 @@
 
   });
 
-  ih.plugins.rootPlugin = new ih.plugins.rootViewController();
+//  ih.plugins.rootPlugin = new ih.plugins.rootViewController();

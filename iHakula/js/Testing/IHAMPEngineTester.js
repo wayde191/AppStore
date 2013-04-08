@@ -13,10 +13,10 @@
 ih.defineClass("ih.AMPEngineTester", null, null, function(TESTER, tester) {
                
   tester.prototype.init = function(){
-    var ampE = new ih.AMPEngine("./js/Plugins/ampConf.xml");
+    ih.ampE = new ih.AMPEngine("./js/Plugins/ampConf.xml");
     
     var f = function(){
-      console.log(ampE.root);
+      console.log(ih.ampE.root);
     };
         
   };

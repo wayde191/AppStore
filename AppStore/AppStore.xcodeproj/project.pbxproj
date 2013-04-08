@@ -227,6 +227,7 @@
 		B712F79216F0C44500D193B7 /* IHObjectTester.js in Sources */ = {isa = PBXBuildFile; fileRef = B712F79116F0C44500D193B7 /* IHObjectTester.js */; };
 		B712F79416F0C6B000D193B7 /* IHTestCenter.js in Sources */ = {isa = PBXBuildFile; fileRef = B712F79316F0C6B000D193B7 /* IHTestCenter.js */; };
 		B725AB4D16F155570057A0A4 /* IHUtilsTester.js in Sources */ = {isa = PBXBuildFile; fileRef = B725AB4C16F155570057A0A4 /* IHUtilsTester.js */; };
+		B726B28C171314450079DA77 /* jquery.handsontable.removeRow.js in Sources */ = {isa = PBXBuildFile; fileRef = B726B28B171314450079DA77 /* jquery.handsontable.removeRow.js */; };
 		B738762C17057EFE0015ADC2 /* animated-overlay.gif in Resources */ = {isa = PBXBuildFile; fileRef = B738761B17057EFE0015ADC2 /* animated-overlay.gif */; };
 		B738762D17057EFE0015ADC2 /* ui-bg_flat_30_cccccc_40x100.png in Resources */ = {isa = PBXBuildFile; fileRef = B738761C17057EFE0015ADC2 /* ui-bg_flat_30_cccccc_40x100.png */; };
 		B738762E17057EFE0015ADC2 /* ui-bg_flat_50_5c5c5c_40x100.png in Resources */ = {isa = PBXBuildFile; fileRef = B738761D17057EFE0015ADC2 /* ui-bg_flat_50_5c5c5c_40x100.png */; };
@@ -535,6 +536,7 @@
 		B712F79116F0C44500D193B7 /* IHObjectTester.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHObjectTester.js; sourceTree = "<group>"; };
 		B712F79316F0C6B000D193B7 /* IHTestCenter.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHTestCenter.js; sourceTree = "<group>"; };
 		B725AB4C16F155570057A0A4 /* IHUtilsTester.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHUtilsTester.js; sourceTree = "<group>"; };
+		B726B28B171314450079DA77 /* jquery.handsontable.removeRow.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.handsontable.removeRow.js; sourceTree = "<group>"; };
 		B738761B17057EFE0015ADC2 /* animated-overlay.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "animated-overlay.gif"; sourceTree = "<group>"; };
 		B738761C17057EFE0015ADC2 /* ui-bg_flat_30_cccccc_40x100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_flat_30_cccccc_40x100.png"; sourceTree = "<group>"; };
 		B738761D17057EFE0015ADC2 /* ui-bg_flat_50_5c5c5c_40x100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_flat_50_5c5c5c_40x100.png"; sourceTree = "<group>"; };
@@ -1165,6 +1167,7 @@
 		B712F77216F0BF9600D193B7 /* ThirdPartFrameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B726B28B171314450079DA77 /* jquery.handsontable.removeRow.js */,
 				B766B48616F8577D00610BCB /* controller.js */,
 				B766B48716F8577D00610BCB /* cover.js */,
 				B766B48816F8577D00610BCB /* coverflow.js */,
@@ -1785,6 +1788,7 @@
 				B738764117057F350015ADC2 /* jquery-ui-1.10.2.custom.js in Sources */,
 				B738764217057F350015ADC2 /* jquery-ui-1.10.2.custom.min.js in Sources */,
 				B7387647170586430015ADC2 /* RootDataModel.js in Sources */,
+				B726B28C171314450079DA77 /* jquery.handsontable.removeRow.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
