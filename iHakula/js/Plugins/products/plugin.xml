@@ -1,11 +1,12 @@
 <?xml version="1.0"?>
 <plugin>
-	<info id="ihakula.plugins.products" parentId="" lazyLoad="false"></info>
+	<info id="ihakula.plugins.products" parentId="ihakula.plugins.root" lazyLoad="false"></info>
   
   <resource>
     <script path='./js/Plugins/products/plugin.js'></script>
 	</resource>
 	
 	<extension-point>
+    <child>./js/Plugins/gantt/</child>
 	</extension-point>
 </plugin>

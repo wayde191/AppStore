@@ -14,11 +14,11 @@
     eng.prototype.name = "ihakula.ampEngine";
     eng.prototype.version = "1.0";
     eng.prototype.root = null;
-    eng.prototype.row = 11111;
     
     eng.prototype.init = function(confXMLPath){
       ih.plugins = {};
       this.initFromConfXMLFile(confXMLPath);
+      this.pubsub = new ih.PubSub();
     };
     
     eng.prototype.initFromConfXMLFile = function(confXMLPath) {
@@ -38,9 +38,8 @@
       
     };
     
-    eng.prototype.test = ih.$F(function(value){
-      console.log(value);
-      console.log(this.row);
-    });
+    eng.prototype.engineStart = function(){
+      ih.plugins.rootPlugin = new ih.plugins.rootViewController();
+    };
     
   });

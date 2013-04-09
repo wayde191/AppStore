@@ -404,4 +404,4 @@
 
   });
 
-//  ih.plugins.rootPlugin = new ih.plugins.rootViewController();
+  window.ihSysEngine.pubsub.publish("ihRootPluginReady");

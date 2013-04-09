@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<plugin>
+	<info id="ihakula.plugins.gantt" parentId="ihakula.plugins.products" lazyLoad="true"></info>
+  
+  <resource>
+    <script path='./js/Plugins/root/GanttDataModel.js'></script>
+    <script path='./js/Plugins/root/GanttViewController.js'></script>
+	</resource>
+	
+	<extension-point>
+	</extension-point>
+</plugin>

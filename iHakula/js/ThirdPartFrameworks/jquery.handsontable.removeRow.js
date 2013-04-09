@@ -32,11 +32,7 @@
       var $div = $('<div class="btn">x</div>');
       $div.on('mouseup', function(){
         instance.alter("remove_row", row);
-        console.log(ih.ampE);
-        console.log(ih.ampE.test);
-        console.log(this.rootElement[0].id);
-        var f = ih.ampE.test.bind(ih.ampE);
-        f(row);
+        window.ihSysEngine.pubsub.publish(instance.rootElement[0].id + "Subject", row);
       });
 
       var $th = $(elem);

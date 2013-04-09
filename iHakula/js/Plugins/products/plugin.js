@@ -4,10 +4,9 @@
   *@Time : 2010.3.4
   */
 
-  ih.defineClass('ih.plugins.products', null, null, function(FRAMEWORK, framework){
+  ih.defineClass('ih.plugins.products', null, null, function(PRODUCTS, products){
   
-	framework.prototype.init = function(){
-    console.log('ih.plugin.products');
-  }
+    products.prototype.init = function(){
+    }
 
   });
