@@ -191,7 +191,5 @@
       console.log(e);
     }
   };
-  
-  console.log('System package : package.js loaded');
-  
+    
   })(window.ih = window.ih || {});

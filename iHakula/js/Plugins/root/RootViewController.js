@@ -7,13 +7,11 @@
   ih.defineClass('ih.plugins.rootViewController', null, null, function(ROOT, root){
   
     root.prototype.init = function(){
-      ih.rootUrl = "http://localhost/AppStore/iHakula/api/index.php/";
       this.dm = new ih.plugins.rootDataModel();
       this.dm.delegate = this;
       this.initHtmls();
       this.setupLanguage();
       this.setupErrorinfo();
-      this.setupSpinnerDefaultOptions();
       this.buildMainPage();
       
       if(this.dm.sysUser.isLogin()) {
@@ -89,7 +87,7 @@
       }
       
       var target = document.getElementById('ds_container');
-      this.registerSpinner = new Spinner(this.spinnerDefaultOpts).spin(target);
+      this.registerSpinner = new Spinner(ih.plugins.rootPlugin.spinnerDefaultOpts).spin(target);
       this.dm.doRegister({ihakulaID:accountName, password:accountPassword, confirmPwd:confirmPassword});
     };
     
@@ -115,7 +113,7 @@
       }
       
       var target = document.getElementById('ds_container');
-      this.registerSpinner = new Spinner(this.spinnerDefaultOpts).spin(target);
+      this.registerSpinner = new Spinner(ih.plugins.rootPlugin.spinnerDefaultOpts).spin(target);
       this.dm.doLogin({ihakulaID:accountName, password:accountPassword});
     };
     
@@ -218,13 +216,13 @@
     
     root.prototype.buildRecommands = function(){
       var target = document.getElementById('ih-recommands');
-      var spinner = new Spinner(this.spinnerDefaultOpts).spin(target);
+      var spinner = new Spinner(ih.plugins.rootPlugin.spinnerDefaultOpts).spin(target);
       
       var replacement = document.getElementById('ih-recommands');
 			replacement.id = "ih-recommands";
 			var el = document.getElementById('ih-recommands');
 			el.parentNode.replaceChild(replacement, el);
-            
+      
 			coverflow('ih-recommands').setup({
         width: '100%',
         item: 1,
@@ -265,34 +263,19 @@
           });
 				
           this.on('click', function(index, link) {
-            var ganttPlugin = ihSysEngine.root.findChildPluginById("ihakula.plugins.gantt");
-            
+            var ganttPlugin = ihSysEngine.root.findChildPluginById("ih.plugins.gantt");
+            if(!ganttPlugin.scriptsLoaded) {
+              ih.plugins.rootPlugin.showMaskSpinner();
+              ganttPlugin.loadScripts();
+            } else {
+              ganttPlugin.pluginAnchor.scriptsLoaded();
+            }
           });
         
         });
     
       window.onresize = function() {
         coverflow('ih-recommands').resize();
-      };
-    };
-    
-    root.prototype.setupSpinnerDefaultOptions = function(){
-      this.spinnerDefaultOpts = {
-        lines: 11, // The number of lines to draw
-        length: 1, // The length of each line
-        width: 6, // The line thickness
-        radius: 12, // The radius of the inner circle
-        corners: 1, // Corner roundness (0..1)
-        rotate: 0, // The rotation offset
-        color: '#000', // #rgb or #rrggbb
-        speed: 0.9, // Rounds per second
-        trail: 60, // Afterglow percentage
-        shadow: true, // Whether to render a shadow
-        hwaccel: true, // Whether to use hardware acceleration
-        className: 'spinner', // The CSS class to assign to the spinner
-        zIndex: 2e9, // The z-index (defaults to 2000000000)
-        top: 'auto', // Top position relative to parent in px
-        left: 'auto' // Left position relative to parent in px
       };
     };
     

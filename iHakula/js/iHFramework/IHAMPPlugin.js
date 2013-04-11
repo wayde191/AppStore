@@ -71,9 +71,10 @@
               if(j == this.scripts.length){
                 this.scriptsLoaded = true;
                 var pluginClassName = this.id + 'Plugin';
-                var pluginObj = eval(pluginClassName + '= new ' + pluginClassName + '();');
-                if(typeof(pluginObj.scriptsLoaded) == 'function'){
-                  pluginObj.scriptsLoaded();
+                this.pluginAnchor = eval(pluginClassName + '= new ' + pluginClassName + '();');
+                this.pluginAnchor.plugin = this;
+                if(typeof(this.pluginAnchor.scriptsLoaded) == 'function'){
+                  this.pluginAnchor.scriptsLoaded();
                 }
               }
             }

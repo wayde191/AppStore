@@ -276,6 +276,8 @@
 		B785030216F6E4500045A26F /* plugin.xml in Resources */ = {isa = PBXBuildFile; fileRef = B78502FD16F6E4500045A26F /* plugin.xml */; };
 		B785030916F6E5170045A26F /* productsPlugin.js in Sources */ = {isa = PBXBuildFile; fileRef = B785030716F6E5170045A26F /* productsPlugin.js */; };
 		B785030A16F6E5170045A26F /* plugin.xml in Resources */ = {isa = PBXBuildFile; fileRef = B785030816F6E5170045A26F /* plugin.xml */; };
+		B7AAE3241716EB76006D013D /* jquery.handsontable.full.js in Sources */ = {isa = PBXBuildFile; fileRef = B7AAE3221716EB76006D013D /* jquery.handsontable.full.js */; };
+		B7AAE3251716EB76006D013D /* spin.js in Sources */ = {isa = PBXBuildFile; fileRef = B7AAE3231716EB76006D013D /* spin.js */; };
 		B7B8D1FF1716BE48009BDD35 /* rootPlugin.js in Sources */ = {isa = PBXBuildFile; fileRef = B7B8D1FE1716BE48009BDD35 /* rootPlugin.js */; };
 		B7B8D2021716C1B6009BDD35 /* ganttPlugin.js in Sources */ = {isa = PBXBuildFile; fileRef = B7B8D2011716C1B6009BDD35 /* ganttPlugin.js */; };
 		B7BBF7FD16E7377800D86F69 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = B7BBF7FC16E7377800D86F69 /* index.html */; };
@@ -592,6 +594,8 @@
 		B78502FD16F6E4500045A26F /* plugin.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = plugin.xml; sourceTree = "<group>"; };
 		B785030716F6E5170045A26F /* productsPlugin.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = productsPlugin.js; sourceTree = "<group>"; };
 		B785030816F6E5170045A26F /* plugin.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = plugin.xml; sourceTree = "<group>"; };
+		B7AAE3221716EB76006D013D /* jquery.handsontable.full.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.handsontable.full.js; sourceTree = "<group>"; };
+		B7AAE3231716EB76006D013D /* spin.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = spin.js; sourceTree = "<group>"; };
 		B7B8D1FE1716BE48009BDD35 /* rootPlugin.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = rootPlugin.js; sourceTree = "<group>"; };
 		B7B8D2011716C1B6009BDD35 /* ganttPlugin.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ganttPlugin.js; sourceTree = "<group>"; };
 		B7BBF7FC16E7377800D86F69 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
@@ -1181,6 +1185,8 @@
 		B712F77216F0BF9600D193B7 /* ThirdPartFrameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B7AAE3221716EB76006D013D /* jquery.handsontable.full.js */,
+				B7AAE3231716EB76006D013D /* spin.js */,
 				B726B28B171314450079DA77 /* jquery.handsontable.removeRow.js */,
 				B766B48616F8577D00610BCB /* controller.js */,
 				B766B48716F8577D00610BCB /* cover.js */,
@@ -1825,6 +1831,8 @@
 				B7261F5F17144D2D006D2F58 /* GanttViewController.js in Sources */,
 				B7B8D1FF1716BE48009BDD35 /* rootPlugin.js in Sources */,
 				B7B8D2021716C1B6009BDD35 /* ganttPlugin.js in Sources */,
+				B7AAE3241716EB76006D013D /* jquery.handsontable.full.js in Sources */,
+				B7AAE3251716EB76006D013D /* spin.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
