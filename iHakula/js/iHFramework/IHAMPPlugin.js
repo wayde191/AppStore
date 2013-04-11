@@ -70,6 +70,11 @@
               j++;
               if(j == this.scripts.length){
                 this.scriptsLoaded = true;
+                var pluginClassName = this.id + 'Plugin';
+                var pluginObj = eval(pluginClassName + '= new ' + pluginClassName + '();');
+                if(typeof(pluginObj.scriptsLoaded) == 'function'){
+                  pluginObj.scriptsLoaded();
+                }
               }
             }
           }).bind(me));
@@ -79,12 +84,18 @@
     };
     
     plugin.prototype.findChildPluginById = function(id){
-      return this.childs.find(ih.$F(function(obj){
-        if(obj.id == id) {
-          return true;
+      var me = this;
+      
+      for(var i = 0; i < this.childs.length; i++) {
+        var plg = this.childs[i];
+        if(plg.id == id) {
+          return plg;
         }
-        return false;
-      }).bind(this));
+        
+        if(plg.childs.length){
+          return plg.findChildPluginById(id);
+        }
+      }
     };
     
   });

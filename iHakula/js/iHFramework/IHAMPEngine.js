@@ -38,8 +38,4 @@
       
     };
     
-    eng.prototype.engineStart = function(){
-      ih.plugins.rootPlugin = new ih.plugins.rootViewController();
-    };
-    
   });

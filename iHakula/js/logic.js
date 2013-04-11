@@ -10,6 +10,5 @@
  */
 
   window.ihSysEngine = new ih.AMPEngine("./js/Plugins/ampConf.xml");
-  window.ihSysEngine.pubsub.subscribe("ihRootPluginReady", window.ihSysEngine, window.ihSysEngine.engineStart);
   
 

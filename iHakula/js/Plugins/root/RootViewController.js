@@ -265,7 +265,8 @@
           });
 				
           this.on('click', function(index, link) {
-            console.log("click" + index);
+            var ganttPlugin = ihSysEngine.root.findChildPluginById("ihakula.plugins.gantt");
+            
           });
         
         });

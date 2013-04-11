@@ -1,8 +1,9 @@
 <?xml version="1.0"?>
 <plugin>
-	<info id="ihakula.plugins.root" parentId="" lazyLoad="false"></info>
+	<info id="ih.plugins.root" parentId="" lazyLoad="false"></info>
   
   <resource>
+    <script path='./js/Plugins/root/rootPlugin.js'></script>
     <script path='./js/Plugins/root/RootDataModel.js'></script>
     <script path='./js/Plugins/root/RootViewController.js'></script>
 	</resource>

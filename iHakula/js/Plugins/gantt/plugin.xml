@@ -3,8 +3,9 @@
 	<info id="ihakula.plugins.gantt" parentId="ihakula.plugins.products" lazyLoad="true"></info>
   
   <resource>
-    <script path='./js/Plugins/root/GanttDataModel.js'></script>
-    <script path='./js/Plugins/root/GanttViewController.js'></script>
+    <script path='./js/Plugins/gantt/ganttPlugin.js'></script>
+    <script path='./js/Plugins/gantt/GanttDataModel.js'></script>
+    <script path='./js/Plugins/gantt/GanttViewController.js'></script>
 	</resource>
 	
 	<extension-point>

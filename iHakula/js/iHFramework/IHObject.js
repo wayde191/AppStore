@@ -19,7 +19,7 @@
 //    }
 //    return this;
 //  };
-  
+ 
   var extend = function(targetObj, sourceObj){
     for(var f in sourceObj){
       targetObj[f] = sourceObj[f];
