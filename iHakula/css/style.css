@@ -167,9 +167,20 @@ nav, #globalnav li, #globalnav li a {
     cursor: pointer;
 }
 
-#globalheader #globalnav li a.home span 
-{
-    background-position: 50% -30px;
+#globalheader #globalnav li a.home span {
+    background-position: 50% -7px;
+}
+
+#globalheader #globalnav li a.products span {
+    background-position: 50% -43px;
+}
+
+#globalheader #globalnav li a.us span {
+    background-position: 50% -76px;
+}
+
+#globalheader #globalnav li a.blog span {
+    background-position: 50% -109px;
 }
 
 #globalheader #globalnav li a span {
