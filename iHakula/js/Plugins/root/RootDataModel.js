@@ -14,6 +14,7 @@
     dm.prototype.init = function(){
       this.request = new ih.Service();
       this.sysUser = new ih.User();
+      this.pubsub = new ih.PubSub();
       this.delegate = null;
       this.awards = null;
     };
@@ -23,6 +24,7 @@
         if (1 == response.status) {
             this.sysUser.setUserInfo(response);
             this.delegate.loginSuccess();
+            this.pubsub.publish("loginSucceed");
         } else {
             
         }

@@ -288,6 +288,7 @@
 		B7BBF80B16E739F800D86F69 /* 1.ico in Resources */ = {isa = PBXBuildFile; fileRef = B7BBF80616E739F800D86F69 /* 1.ico */; };
 		B7BBF80C16E739F800D86F69 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B7BBF80816E739F800D86F69 /* logo.png */; };
 		B7BBF80D16E739F800D86F69 /* texture.png in Resources */ = {isa = PBXBuildFile; fileRef = B7BBF80916E739F800D86F69 /* texture.png */; };
+		B7E78913171C13D4005F25B9 /* project.php in Resources */ = {isa = PBXBuildFile; fileRef = B7E78912171C13D4005F25B9 /* project.php */; };
 		B7F0CB1616F48FAF00BD49F3 /* IHPubSubTester.js in Sources */ = {isa = PBXBuildFile; fileRef = B7F0CB1516F48FAF00BD49F3 /* IHPubSubTester.js */; };
 		B7F0CB1916F4949B00BD49F3 /* IHMessageTester.js in Sources */ = {isa = PBXBuildFile; fileRef = B7F0CB1816F4949B00BD49F3 /* IHMessageTester.js */; };
 		B7F0CB1B16F4949B00BD49F3 /* IH$Service.js in Sources */ = {isa = PBXBuildFile; fileRef = B7F0CB1A16F4949B00BD49F3 /* IH$Service.js */; };
@@ -606,6 +607,7 @@
 		B7BBF80616E739F800D86F69 /* 1.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = 1.ico; sourceTree = "<group>"; };
 		B7BBF80816E739F800D86F69 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		B7BBF80916E739F800D86F69 /* texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture.png; sourceTree = "<group>"; };
+		B7E78912171C13D4005F25B9 /* project.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = project.php; sourceTree = "<group>"; };
 		B7F0CB1516F48FAF00BD49F3 /* IHPubSubTester.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHPubSubTester.js; sourceTree = "<group>"; };
 		B7F0CB1816F4949B00BD49F3 /* IHMessageTester.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHMessageTester.js; sourceTree = "<group>"; };
 		B7F0CB1A16F4949B00BD49F3 /* IH$Service.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IH$Service.js; sourceTree = "<group>"; };
@@ -732,6 +734,7 @@
 				B70FBEFB170332A900C00430 /* suggestions.php */,
 				B70FBEFC170332A900C00430 /* user.php */,
 				B70FBEFD170332A900C00430 /* welcome.php */,
+				B7E78912171C13D4005F25B9 /* project.php */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -1767,6 +1770,7 @@
 				B738763E17057F050015ADC2 /* coverflow.css in Resources */,
 				B7261F5D17144D2D006D2F58 /* plugin.xml in Resources */,
 				B7261F6117145008006D2F58 /* gantt.html in Resources */,
+				B7E78913171C13D4005F25B9 /* project.php in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

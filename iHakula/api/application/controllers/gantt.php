@@ -1,15 +1,9 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-global $WP_ROOTPATH;
-require( $WP_ROOTPATH . 'wp-load.php' );
-
 class Gantt extends CI_Controller {
 
 	public function index()
 	{
-//		$tmphour = date("g")+8;
-//                $tmpnow = date("Y-n-j ").$tmphour.date(":i:s");
-//        echo $tmpnow;
 	}
     
   public function getTasks() {
@@ -26,14 +20,14 @@ class Gantt extends CI_Controller {
         if ($_SESSION[$IH_SESSION_LOGGEDIN]) {
             $this->load->database();
             
-            $query = 'SELECT count(id) as total from wp_scrum_task where project_id=' . $projectID;
+            $query = 'SELECT count(id) as total from ih_scrum_task where project_id=' . $projectID;
             $query = $this->db->query($query);
             $countString = $query->result();
             $countResult = (int)($countString[0]->total);
             $totalPage = ceil($countResult / $rowsPerPage);
             
             // 11 ~ 20
-            $query = 'SELECT * FROM wp_scrum_task where project_id='. $projectID .' limit ' . $recordStartIndex . ',' . $rowsPerPage . ';';
+            $query = 'SELECT * FROM ih_scrum_task where project_id='. $projectID .' limit ' . $recordStartIndex . ',' . $rowsPerPage . ';';
             $query = $this->db->query($query);
             foreach ($query->result() as $row)
             {
