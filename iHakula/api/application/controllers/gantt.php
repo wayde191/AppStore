@@ -52,7 +52,7 @@ class Gantt extends CI_Controller {
         if ($_SESSION[$IH_SESSION_LOGGEDIN]) {
             $this->load->database();
             
-            $query = 'SELECT * FROM wp_scrum_task WHERE project_id='. $projectID .';';
+            $query = 'SELECT * FROM ih_scrum_task WHERE project_id='. $projectID .';';
             $query = $this->db->query($query);
             foreach ($query->result() as $row)
             {
@@ -89,10 +89,10 @@ class Gantt extends CI_Controller {
             
             $sql;
             if($schedule != "100%"){
-                $sql = "UPDATE  `wp_scrum_task` SET  `name` ='" . $name . "', `begin_date` = '". $beginDate . "', `end_date` = '". $endDate . "', `principal` = '". $principal . "', `schedule` = '". $schedule ."' WHERE  `ID` =" . $id;
+                $sql = "UPDATE  `ih_scrum_task` SET  `name` ='" . $name . "', `begin_date` = '". $beginDate . "', `end_date` = '". $endDate . "', `principal` = '". $principal . "', `schedule` = '". $schedule ."' WHERE  `ID` =" . $id;
             } else {
                 date_default_timezone_set('Asia/Chongqing');
-                $sql = "UPDATE  `wp_scrum_task` SET  `name` ='" . $name . "', `begin_date` = '". $beginDate . "', `end_date` = '". $endDate . "', `principal` = '". $principal . "', `schedule` = '". $schedule . "', `done_date` = '". date("Y-m-d") . "' WHERE  `ID` =" . $id;
+                $sql = "UPDATE  `ih_scrum_task` SET  `name` ='" . $name . "', `begin_date` = '". $beginDate . "', `end_date` = '". $endDate . "', `principal` = '". $principal . "', `schedule` = '". $schedule . "', `done_date` = '". date("Y-m-d") . "' WHERE  `ID` =" . $id;
             }
             $this->db->query($sql);
               
@@ -116,7 +116,7 @@ class Gantt extends CI_Controller {
         if ($_SESSION[$IH_SESSION_LOGGEDIN]) {
             $this->load->database();
             
-            $sql = "DELETE FROM `ihakula`.`wp_scrum_task` WHERE `wp_scrum_task`.`id` =" . $id;
+            $sql = "DELETE FROM `ihakula`.`ih_scrum_task` WHERE `wp_scrum_task`.`id` =" . $id;
             $this->db->query($sql);
               
             if (1 == $this->db->affected_rows()) {
@@ -150,7 +150,7 @@ class Gantt extends CI_Controller {
         if (1 || $_SESSION[$IH_SESSION_LOGGEDIN]) {
             $this->load->database();
             
-            $sql = "INSERT INTO  `wp_scrum_task` (
+            $sql = "INSERT INTO  `ih_scrum_task` (
                       `name` ,
                       `type` ,
                       `begin_date` ,

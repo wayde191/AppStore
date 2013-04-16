@@ -45,5 +45,15 @@
         }).bind(this), ih.rootUrl + "gantt/getTasks", "POST");
     }
     
+    dm.prototype.doUpdateTask = function(paras){
+      this.request.callService(paras, ih.$F(function(response){
+          if (1 == response.status) {
+            this.delegate.updateSuccess();
+          } else {
+            this.delegate.updateSuccess();
+          }
+        }).bind(this), ih.rootUrl + "gantt/update", "POST");
+    }
+    
       
   });

@@ -43,7 +43,6 @@
     };
     
     gantt.prototype.updateTasks = function(){
-      console.log(this.dm.tasks);
       var data = [];
       for(var i = 0; i < this.dm.tasks.length; i++) {
         var item = this.dm.tasks[i];
@@ -57,7 +56,11 @@
         data.push(task);
       }
       
-      $('#ih-gantt-table').handsontable('loadData', data)
+      $('#ih-gantt-table').handsontable('loadData', data);
+    };
+    
+    gantt.prototype.updateSuccess = function(){
+      ih.plugins.rootPlugin.hideMaskSpinner();
     };
     
     gantt.prototype.onProjectSelected = function(){
@@ -84,6 +87,29 @@
       });
     };
     
+    gantt.prototype.onTableValueChanged = function(selectedValue){
+      if(selectedValue[2] && selectedValue[2] != selectedValue[3]) {
+        // index 3 is new data
+        var refreshedData = me.dm.tasks[selectedValue[0]];
+        var columnName = selectedValue[1];
+        var tableName = me.columnAdapter[columnName];
+        refreshedData[tableName] = selectedValue[3];
+        ih.plugins.rootPlugin.showMaskSpinner();
+        me.dm.doUpdateTask(refreshedData);
+      } else if(!selectedValue[2]){
+        var row = selectedValue[0];
+        var name = $('#ih-gantt-table').handsontable('getDataAtCell', row, 0);
+        var beginDate = $('#ih-gantt-table').handsontable('getDataAtCell', row, 1);
+        var endDate = $('#ih-gantt-table').handsontable('getDataAtCell', row, 2);
+        var principal = $('#ih-gantt-table').handsontable('getDataAtCell', row, 3);
+        var schedule = $('#ih-gantt-table').handsontable('getDataAtCell', row, 4);
+        
+        if(name && beginDate && endDate && principal && schedule) {
+          console.log("hahaha");
+        }
+      }
+    };
+    
     gantt.prototype.loadContent = function(){
       this.tableStyle = '<style class="common">' +
                           '.handsontable .currentRow {' +
@@ -103,12 +129,25 @@
                           '</div>';
       $("#content").html(this.tableStyle + this.contentHtml);
 
+      this.columnAdapter = {
+        "工作任务":"name",
+        "开始时间":"beginDate",
+        "结束时间":"endDate",
+        "主要负责人":"principal",
+        "任务进度":"schedule"
+      };
+      var me = this;
       $('#ih-gantt-table').handsontable({
           colWidths: [140, 140, 140, 140, 140],
           currentRowClassName: 'currentRow',
           currentColClassName: 'currentCol',
-          onChange: function () {
-            console.log(arguments[0][0]);
+          onChange: function (data) {
+            if(data) {
+              var selectedValue = data[0];
+              if(selectedValue) {
+                me.onTableValueChanged(selectedValue);
+              }
+            }
           },
           colHeaders: ["工作任务", "开始时间", "结束时间", "主要负责人", "任务进度"],
           columns: [
