@@ -55,5 +55,25 @@
         }).bind(this), ih.rootUrl + "gantt/update", "POST");
     }
     
+    dm.prototype.insert = function(paras){
+      this.request.callService(paras, ih.$F(function(response){
+          if (1 == response.status) {
+            this.delegate.updateSuccess();
+          } else {
+            this.delegate.updateSuccess();
+          }
+        }).bind(this), ih.rootUrl + "gantt/insert", "POST");
+    }
+    
+    dm.prototype.deleteTask = function(paras){
+      this.request.callService(paras, ih.$F(function(response){
+          if (1 == response.status) {
+            this.delegate.updateSuccess();
+          } else {
+            this.delegate.updateSuccess();
+          }
+        }).bind(this), ih.rootUrl + "gantt/delete", "POST");
+    }
+    
       
   });

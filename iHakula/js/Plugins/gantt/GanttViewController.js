@@ -73,9 +73,15 @@
     };
     
     gantt.prototype.setupEvents = function(){
+      
       $("#ih-new-project-button").click(ih.$F(function(){
-        
+        $("#ih-gantt-content").html(this.projectHtml);
+        $("#ih-create-project-button").click(ih.$F(function(){
+          var projectName = $("#newprojectname")[0].value;
+          console.log(projectName);
+        }).bind(this));
       }).bind(this));
+      
       $("#ih-draw-gantt-button").click(ih.$F(function(){
         
       }).bind(this));
@@ -95,7 +101,8 @@
         var tableName = me.columnAdapter[columnName];
         refreshedData[tableName] = selectedValue[3];
         ih.plugins.rootPlugin.showMaskSpinner();
-        me.dm.doUpdateTask(refreshedData);
+        this.dm.doUpdateTask(refreshedData);
+        
       } else if(!selectedValue[2]){
         var row = selectedValue[0];
         var name = $('#ih-gantt-table').handsontable('getDataAtCell', row, 0);
@@ -105,12 +112,35 @@
         var schedule = $('#ih-gantt-table').handsontable('getDataAtCell', row, 4);
         
         if(name && beginDate && endDate && principal && schedule) {
-          console.log("hahaha");
+          var newRow = {
+            "name":name,
+            "beginDate":beginDate,
+            "endDate":endDate,
+            "principal":principal,
+            "schedule":schedule,
+            "projectID":this.dm.selectedProject.id
+          };
+          ih.plugins.rootPlugin.showMaskSpinner();
+          this.dm.insert(newRow);
         }
       }
     };
     
+    gantt.prototype.onDeleteBtnClicked = function(row){
+      var refreshedData = this.dm.tasks[row];
+      if(refreshedData) {
+        var paras = {
+          "id":refreshedData.id,
+          "projectID":this.dm.selectedProject.id
+        };
+        ih.plugins.rootPlugin.showMaskSpinner();
+        this.dm.deleteTask(paras);
+      }
+    };
+    
     gantt.prototype.loadContent = function(){
+      this.projectHtml = '<font size="2"><label for="projectname"><span class="dslabel">Project Name:</span></label></font>' +
+              '<input size="30" autocapitalize="off" autocorrect="off" maxlength="128" id="newprojectname" type="text" value="" name="theProjectName"/><a id="ih-create-project-button" class="button-fillet" style="text-decoration: none;float:right; margin-left:8px;">New</a>';
       this.tableStyle = '<style class="common">' +
                           '.handsontable .currentRow {' +
                             'background-color: #E7E8EF;' +
@@ -126,6 +156,8 @@
                             '<a id="ih-new-project-button" class="button-fillet" style="text-decoration: none;float:right; margin-left:8px;">New Project</a>' +
                             '<select id="ih-project-select" style="float:right;"><option>good game</option><option>good choice</option></select>' +
                             '<div id="ih-gantt-table" style="margin-top:20px;"></div>' +
+                            '<div id="ih-gantt-content" style="margin-top:20px;height:200px;">' +
+                            '</div>' +
                           '</div>';
       $("#content").html(this.tableStyle + this.contentHtml);
 
@@ -173,11 +205,7 @@
             minSpareRows: 1
         });
         
-        window.f = function(para){
-          console.log(para + " delete");
-        };
-        
-        window.ihSysEngine.pubsub.subscribe("ih-gantt-tableSubject", window, f);
+        window.ihSysEngine.pubsub.subscribe("ih-gantt-tableSubject", this, this.onDeleteBtnClicked);
     };
     
     

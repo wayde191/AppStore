@@ -77,13 +77,6 @@ class Gantt extends CI_Controller {
         $principal = $_POST['principal'];
         $schedule = $_POST['schedule'];
         
-//        $id = 1;
-//        $name = "hahaha";
-//        $beginDate = "2012-12-12";
-//        $endDate = "2012-11-12";
-//        $principal = "waydesun";
-//        $schedule = "100%";
-        
         if ($_SESSION[$IH_SESSION_LOGGEDIN]) {
             $this->load->database();
             
@@ -112,11 +105,12 @@ class Gantt extends CI_Controller {
         session_start();
 
         $id = $_POST['id'];
+        $projectID = $_POST['projectID'];
         
         if ($_SESSION[$IH_SESSION_LOGGEDIN]) {
             $this->load->database();
             
-            $sql = "DELETE FROM `ihakula`.`ih_scrum_task` WHERE `wp_scrum_task`.`id` =" . $id;
+            $sql = "DELETE FROM `ihakula`.`ih_scrum_task` WHERE `ih_scrum_task`.`id` =" . $id . " And `ih_scrum_task`.`project_id` =" . $projectID;
             $this->db->query($sql);
               
             if (1 == $this->db->affected_rows()) {
@@ -141,13 +135,7 @@ class Gantt extends CI_Controller {
         $schedule = $_POST['schedule'];
         $projectID = $_POST['projectID'];
         
-//        $name = "waydesuntest";
-//        $beginDate = "2012-12-12";
-//        $endDate = "2012-11-12";
-//        $principal = "waydesun";
-//        $schedule = "10%";
-        
-        if (1 || $_SESSION[$IH_SESSION_LOGGEDIN]) {
+        if ($_SESSION[$IH_SESSION_LOGGEDIN]) {
             $this->load->database();
             
             $sql = "INSERT INTO  `ih_scrum_task` (
