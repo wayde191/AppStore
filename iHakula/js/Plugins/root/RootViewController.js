@@ -230,7 +230,7 @@
           {
           "title": "snow-motion",
           "description": "what a massive and unbelievable winter we're having!",
-          "image": "http://d3el35u4qe4frz.cloudfront.net/eawtAP1q-720.jpg",
+          "image": "http://localhost/AppStore/iHakula/images/product-bg.png",
           "link": "http://www.google.com/",
           "duration": "183"
           },
