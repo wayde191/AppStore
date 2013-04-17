@@ -29,10 +29,12 @@ class Gantt extends CI_Controller {
             // 11 ~ 20
             $query = 'SELECT * FROM ih_scrum_task where project_id='. $projectID .' limit ' . $recordStartIndex . ',' . $rowsPerPage . ';';
             $query = $this->db->query($query);
+            $i = 1;
             foreach ($query->result() as $row)
             {
-              $award = array('arrayIndex'=>count($tasksArr), 'class' => 'suggestted', 'text' => $row->id . ' : ' . $row->name, 'id' => $row->id, 'name' => $row->name, 'beginDate' => $row->begin_date, 'endDate' => $row->end_date, 'principal' => $row->principal, 'schedule' => $row->schedule);
+              $award = array('arrayIndex'=>count($tasksArr), 'class' => 'suggestted', 'text' => $i . ' : ' . $row->name, 'id' => $row->id, 'name' => $row->name, 'beginDate' => $row->begin_date, 'endDate' => $row->end_date, 'principal' => $row->principal, 'schedule' => $row->schedule);
               array_push($tasksArr, $award);
+              $i++;
             }
 
             echo json_encode(array("status" => 1, "totalPage" => $totalPage, "data" => $tasksArr));

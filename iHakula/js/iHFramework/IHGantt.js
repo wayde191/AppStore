@@ -146,7 +146,8 @@ ih.defineClass("ih.Gantt", null, null, function(GANTT, gantt){
         for(i = 0; i < this._taskList.length; i++) {
             _offSet = (Date.parse(this._taskList[i].getFrom()) - Date.parse(this._minDate)) / (24 * 60 * 60 * 1000);
             _dateDiff = (Date.parse(this._taskList[i].getTo()) - Date.parse(this._taskList[i].getFrom())) / (24 * 60 * 60 * 1000) + 1;
-            this._gStr += "<div style='position:absolute; top:" + (20 * (i + 2)) + "px; left:" + (_offSet * 27 + 304) + "px; width:" + (27 * _dateDiff - 1 + 100) + "px'><div title='" + this._taskList[i].getTask() + "' class='GTask' style='float:left; width:" + (27 * _dateDiff - 1) + "px;'>" + this.getProgressDiv(this._taskList[i].getProgress()) + "</div><div style='float:left; padding-left:3px'>" + this._taskList[i].getResource() + "</div></div>";
+               
+            this._gStr += "<div style='position:absolute; top:" + (20 * (i + 2) + 8) + "px; left:" + (_offSet * 25 + 302) + "px; width:" + (25 * _dateDiff + 100) + "px'><div title='" + this._taskList[i].getTask() + "' class='GTask' style='float:left; width:" + (25 * _dateDiff - 1) + "px;'>" + this.getProgressDiv(this._taskList[i].getProgress()) + "</div><div style='float:left; padding-left:3px'>" + this._taskList[i].getResource() + "</div></div>";
             this._gStr += "<div style='position:absolute; top:" + (20 * (i + 2) + 1) + "px; left:5px'>" + this._taskList[i].getTask() + "</div>";
         }
     };
@@ -171,7 +172,6 @@ ih.defineClass("ih.Gantt", null, null, function(GANTT, gantt){
             this._gStr = this._firstRowStr + this._gStr;
             
             this.drawTasks();
-            console.log(this._gStr);
             this._ganttDiv.innerHTML = this._gStr;
         }
     }

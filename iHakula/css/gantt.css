@@ -9,11 +9,27 @@
  * @website: www.ihakula.com
  */
 
-    .Gantt
+  .Gantt
 	{
 		font-family:tahoma, arial, verdana;
 		font-size:11px;
 	}
+  
+  .Gantt table
+  {
+    width:auto;
+    border-spacing: 2px;
+  }
+  
+  .Gantt tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+  }
+  
+  .Gantt td {
+    padding:0px;
+  }
 	
 	.GTaskTitle
 	{
@@ -27,7 +43,7 @@
 		padding-left:5px;
 		font-family:tahoma, arial, verdana;
 		font-size:11px;
-		font-weight:bold;	
+		font-weight:bold;
 	}
 	
 	.GToday

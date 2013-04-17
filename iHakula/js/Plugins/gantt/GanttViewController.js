@@ -78,27 +78,41 @@
         $("#ih-gantt-content").html(this.projectHtml);
         $("#ih-create-project-button").click(ih.$F(function(){
           var projectName = $("#newprojectname")[0].value;
-          console.log(projectName);
+          if(projectName) {
+            var paras = {
+              "name":projectName,
+              "userID":ih.plugins.rootViewController.dm.sysUser.id
+            };
+            ih.plugins.rootPlugin.showMaskSpinner();
+            this.dm.newProject(paras);
+          }
         }).bind(this));
       }).bind(this));
       
       $("#ih-draw-gantt-button").click(ih.$F(function(){
-        
+        $("#ih-gantt-content").html(this.ganttHtml);
+        this.ganttTable = new ih.Gantt(document.all.GanttChart);
+        for(var i = 0; i < this.dm.tasks.length; i++){
+          var task = this.dm.tasks[i];
+          this.ganttTable.addTaskDetail(new this.ganttTable.task(task.beginDate, task.endDate, task.text, task.principal, task.schedule));
+        }
+        this.ganttTable.draw();
       }).bind(this));
       
+      var me = this;
       $("#ih-project-select").change(function(){
-        var indexId = this.getAttribute("index_id");
-        this.dm.selectedProject = this.dm.projects[indexId];
-        this.onProjectSelected();
+        var indexId = $("#ih-project-select").find("option:selected").attr("index_id");
+        me.dm.selectedProject = me.dm.projects[indexId];
+        me.onProjectSelected();
       });
     };
     
     gantt.prototype.onTableValueChanged = function(selectedValue){
       if(selectedValue[2] && selectedValue[2] != selectedValue[3]) {
         // index 3 is new data
-        var refreshedData = me.dm.tasks[selectedValue[0]];
+        var refreshedData = this.dm.tasks[selectedValue[0]];
         var columnName = selectedValue[1];
-        var tableName = me.columnAdapter[columnName];
+        var tableName = this.columnAdapter[columnName];
         refreshedData[tableName] = selectedValue[3];
         ih.plugins.rootPlugin.showMaskSpinner();
         this.dm.doUpdateTask(refreshedData);
@@ -139,6 +153,7 @@
     };
     
     gantt.prototype.loadContent = function(){
+      this.ganttHtml = '<h3>Gantt Table</h3><div style="position:relative;" class="Gantt" id="GanttChart"></div>';
       this.projectHtml = '<font size="2"><label for="projectname"><span class="dslabel">Project Name:</span></label></font>' +
               '<input size="30" autocapitalize="off" autocorrect="off" maxlength="128" id="newprojectname" type="text" value="" name="theProjectName"/><a id="ih-create-project-button" class="button-fillet" style="text-decoration: none;float:right; margin-left:8px;">New</a>';
       this.tableStyle = '<style class="common">' +
@@ -155,8 +170,8 @@
                             '<a id="ih-draw-gantt-button" class="button-fillet" style="text-decoration: none;float:right; margin-left:8px;">Draw Gantt</a>' +
                             '<a id="ih-new-project-button" class="button-fillet" style="text-decoration: none;float:right; margin-left:8px;">New Project</a>' +
                             '<select id="ih-project-select" style="float:right;"><option>good game</option><option>good choice</option></select>' +
-                            '<div id="ih-gantt-table" style="margin-top:20px;"></div>' +
-                            '<div id="ih-gantt-content" style="margin-top:20px;height:200px;">' +
+                            '<div id="ih-gantt-table" style="margin-top:20px;"></div><hr>' +
+                            '<div id="ih-gantt-content" style="margin-top:20px;min-height:200px;">' +
                             '</div>' +
                           '</div>';
       $("#content").html(this.tableStyle + this.contentHtml);

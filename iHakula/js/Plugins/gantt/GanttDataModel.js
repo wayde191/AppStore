@@ -29,6 +29,16 @@
       }).bind(this), ih.rootUrl + "project/getAllProjects", "POST");
     };
     
+    dm.prototype.newProject = function(paras){
+      this.request.callService(paras, ih.$F(function(response){
+          if (1 == response.status) {
+            this.delegate.updateSuccess();
+          } else {
+            this.delegate.updateSuccess();
+          }
+        }).bind(this), ih.rootUrl + "project/newProject", "POST");
+    }
+    
     dm.prototype.doLoadTasks = function(){
       paras = {
         rowsPerPage : 100,
