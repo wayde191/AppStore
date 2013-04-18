@@ -228,23 +228,19 @@
         item: 1,
         playlist: [
           {
-          "title": "snow-motion",
-          "description": "what a massive and unbelievable winter we're having!",
-          "image": "http://localhost/AppStore/iHakula/images/product-bg.png",
-          "link": "http://www.google.com/",
+          "title": "Gantts Everything",
+          "description": "Don't just make a plan, just do it!",
+          "image": "http://localhost/AppStore/iHakula/images/product-gantt.png",
+          "link": "http://www.ihakula.com/",
           "duration": "183"
           },
           {
-          "title": "driving rain",
-          "description": "",
-          "image": "http://d3el35u4qe4frz.cloudfront.net/njZMLMwy-720.jpg",
+          "title": "Life Assistant",
+          "description": "Account your life, it is a good life!",
+          "image": "http://localhost/AppStore/iHakula/images/product-iaccount.png",
           "duration": "782"
-          },
-          {
-          "title": "winter brook",
-          "description": "",
-          "image": "http://d3el35u4qe4frz.cloudfront.net/Vg7cPUdl-720.jpg"
-          }],
+          }
+          ],
         coverwidth: 360,
         coverheight: 150,
         fixedsize: true,
