@@ -13,6 +13,7 @@
   
     plugin.prototype.init = function(){
       ih.rootUrl = "http://localhost/AppStore/iHakula/api/index.php/";
+      ih.hostRoot = "http://localhost/AppStore/iHakula/";
       this.setupSysConfigurations();
     };
     

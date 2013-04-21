@@ -49,7 +49,7 @@
         this.showMessage({title:"温馨提示", text:"Coming soon"});
       }).bind(this));
       $("#mf-ihakula").click(ih.$F(function(){
-        this.showMessage({title:"温馨提示", text:"Coming soon"});
+        window.open(ih.hostRoot + "htmls/ihakula.html");
       }).bind(this));
       $("#mf-aboutme").click(ih.$F(function(){
         this.showMessage({title:"温馨提示", text:"Coming soon"});

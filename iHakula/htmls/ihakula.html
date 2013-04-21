@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title>The iOS Apprentice 1: Getting Started</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/objc.css"/>
+    </head>
+    <body>
+        <section>
+            <article style="width: 620px;margin: 0 auto;padding: 100px 0;">
+                
+                <div id="topheader">The iOS Apprentice 1</div>
+                
+                <h1>Getting Started</h1>
+                
+                <p>Hi! I am Matthijs Hollemans, a full-time iOS developer and a forum moderator and iOS tutorial team member at <a href="http://www.raywenderlich.com">raywenderlich.com</a>.</p>
+                
+                <p>You’re about to read the first epic-length tutorial from my ebook series <em>The iOS Apprentice: iPhone and iPad Programming for Beginners</em>. This first tutorial is completely standalone and teaches you how to write a complete iPhone game named Bull’s Eye. The best part is you can read it here in its entirety for free!</p>
+                
+                <p>The other tutorials in this series build on what you’ll learn here. Each tutorial describes a new app in full detail, and together they cover everything you need to know to make your own apps. By the end of the series you’ll be experienced enough to turn your ideas into real apps that you can sell on the App Store!</p>
+                
+                <p>Even if you’ve never programmed before or if you’re new to iOS, you should be able to follow along with the step-by-step instructions and understand how these apps are made. Each tutorial has a ton of illustrations to prevent you from getting lost. Not everything might make sense right away, but hang in there and all will become clear in time.</p>
+                
+                <p>Writing your own iPhone and iPad apps is a lot of fun, but it’s also hard work. If you have the imagination and perseverance there is no limit to what you can make these cool little devices do. It is my sincere belief that this ebook series can turn you from a complete newbie into an accomplished iOS developer, but you do have to put in the time and effort. By writing these tutorials I’ve done my part, now it’s up to you...</p>
+                
+                <p>Enjoy the first tutorial! If it works out for you, then I hope you’ll get the other parts of the series too.</p>
+                
+                <figure class="image"><figcaption>Some of the apps we’ll be making in The iOS Apprentice series</figcaption><img src="HTML/Figures/Series_preview.png" alt="Some of the apps we’ll be making in The iOS Apprentice series"/></figure>
+                
+                <hr>
+                
+                <h2>Introduction</h2>
+                
+                <p>Everyone likes games, so the first app we’re going to make is a game named <em>Bull’s Eye</em>. Even though the game will be very simple, this first tutorial might still be hard to follow &mdash; especially if you’ve never programmed before &mdash; because I will be introducing a lot of new concepts. It’s OK if you don’t understand everything right away, as long as you get the general hang of it. In the subsequent tutorials from this series we’ll go over many of these concepts again until they solidify in your mind.</p>
+                
+                <p>It is important that you not just read the instructions but actually <strong>follow them</strong>. Open Xcode, type in the source code fragments (or copy-paste them) and run the app in the Simulator. This helps you to see how the app gets built step by step. Even better, play around with the code. Feel free to modify any part of the program and see what the results are. Experiment and learn! Don’t worry about breaking stuff, that’s half the fun. You can always find your way back to the beginning.</p>
+                
+                <p>I’m assuming you’re a total beginner &mdash; you do not need to know anything about programming. Of course, if you do have programming experience, that helps. If you’re coming from other programming languages such as PHP or Java, the low-level nature and strange syntax of Objective-C may be overwhelming. Rest assured, most programming languages work in exactly the same way &mdash; their similarities are bigger than their differences &mdash; and you’ll pick up Objective-C in no-time, even if it’s a little quirky.</p>
+                
+                <p>It is not my aim with this ebook series to teach you all the ins and outs of iPhone and iPad development. The iOS SDK (Software Development Kit) is huge and there is no way we can cover everything &mdash; but fortunately we don’t need to. You just need to master the essential building blocks of Objective-C and the iOS SDK. Once you understand these fundamentals, you can easily find out for yourself how the other parts of the SDK work and teach yourself the rest.</p>
+                
+                <p>The most important thing I will be teaching you is how to think like a programmer. That will help you approach any programming task, whether it’s a game, a utility, a web service, or anything else you can imagine. As a programmer you’ll often have to think your way through difficult computational problems and find creative solutions. By methodically analyzing these problems, you will be able to solve them, no matter how complex. Once you possess this valuable skill, you can program anything!</p>
+                
+                <p>You will run into problems, guaranteed. Your programs will have strange bugs that will leave you stumped. Trust me, I’ve been programming for more than 20 years and that still happens to me too. We’re only humans and our brains have a limited capacity to deal with complex programming problems. I will give you tools for your mental toolbox that will allow you to find your way out of any hole you have dug for yourself.</p>
+                
+                <p>Too many people attempt to write iPhone apps by copy-pasting code that they find on blogs and other websites, without really knowing what that code does or how it should fit into their program. There is nothing wrong with looking on the web for solutions &mdash; I do it all the time &mdash; but I want to give you the instruments and knowledge to understand what you’re doing and why. That way you’ll learn quicker and write better programs.</p>
+                
+                <p>This is hands-on practical advice, not just a bunch of dry theory (although we can’t avoid some theory). We are going to build real apps right from the start and I’ll explain how everything works along the way, with lots of pictures that clearly illustrate what is going on. I’m not just going to give you a bunch of perfect code and tell you how it works. Instead, I will do my best to make it clear how everything fits together, why we do things a certain way, and what the alternatives are.</p>
+                
+                <p>I will also ask you to do some thinking of your own &mdash; yes, there are exercises! It’s in your best interest to actually do these exercises. There is a big difference between knowing the path and walking the path &mdash; the only way to learn programming is to do it. I encourage you to not just do the exercises but also to play with the code we’ll be writing. Experiment, make changes, try to add new features. Software is a complex piece of machinery and to find out how it works you sometimes have to put some spokes in the wheels and take the whole thing apart. That’s how you learn!</p>
+                
+                <p>Step by step we will build up your understanding of programming while making fun apps. By the end of the series you’ll have learned the essentials of Objective-C and the iOS development kit. More importantly, you should have a pretty good idea of how everything goes together and how to think like a programmer. It is my aim that after these tutorials you will have learned enough to stand on your own two feet as a developer. I am confident you’ll be able to write any iOS app you want as long as you get those basics down. You still may have a lot to learn, but you can do without the training wheels.</p>
+                
+                <p>Let’s get started and turn you into a real iOS developer!</p>
+                
+                
+                
+                <aside>
+                    <h3>iOS 5 and better only</h3>
+                    
+                    <p>Things move fast in the world of mobile computing. The iPhone 3G and version 3 of iPhone OS are only a few years old but both are quickly becoming obsolete. Even iOS version 4, which was released just in 2010, is starting to look dated now that iOS 5 has become available. And by the time you read this, you may already have your hands on iOS 6.</p>
+                    
+                    <p>The tutorials in this ebook series are aimed exclusively at iOS version 5.0 and later. The reason for this is the introduction of Automatic Reference Counting (ARC), a new feature in iOS 5 that largely changes the way you write apps. Before ARC, you had to be really careful to follow a certain set of rules for performing “manual memory management”. The slightest mistake would cause your app to mysteriously crash or at some point run out of available memory.</p>
+                    
+                    <p>While it’s still possible to make your app crash in mysterious ways, ARC automates all of the memory management tasks for you. This immensely simplifies the development process and makes apps much more robust. But it also requires us to do away with the old way of working. It just makes no sense to teach you programming techniques that were only needed on previous versions of the system now that we have something much better.</p>
+                    
+                    <p>Because we’re currently in a transitioning period from manual memory management to ARC, there may be times when you’ll need deal with old code that does not use Automatic Reference Counting. There are many older books and blog posts about iOS development that still use the old techniques. You may also want to use a third-party library that hasn’t yet been updated to use ARC. I will explain how to make such old source code work on iOS 5 and up, but most of the time we’ll be looking forward, not backward.</p>
+                    
+                    <p>The obvious downside is that the techniques you will learn here won’t work on devices that still run iOS 4 or earlier. Unless you want to do manual memory management, your apps will work on iOS 5 or better only. Will that be a problem? I don’t think so.</p>
+                    
+                    <p>The majority of iPhone, iPod touch and iPad users have already upgraded to iOS 5 and any stragglers will soon follow. Only users with older devices, such as the iPhone 3G and second generation iPod touch, may be stuck with iPhone OS 3 (or even OS 2) but this is a tiny portion of the market. The cost of supporting these older OS versions is usually greater than the handful of extra customers it brings you.</p>
+                    
+                    <p>It’s ultimately up to you to decide whether it’s worth supporting older devices and OS versions with your apps, but my recommendation is that you focus your efforts where they matter most. Some developers have already switched to iOS 6 exclusively but in my opinion it’s a little too early to leave customers with older devices that won’t run iOS 6 behind, such as the first iPad. That’s why the tutorials from the iOS Apprentice series still support iOS 5, but don’t let that stop you from taking advantage of iOS 6 in your own apps!</p>
+                    
+                </aside>
+                
+                <hr>
+                
+                <h2>What you need</h2>
+                
+                <p>It’s a lot of fun to develop for the iPhone and iPad but like most hobbies it will cost some money. Of course, once you get good at it and build an awesome app, you’ll have the potential to make that money back many times.</p>
+                
+                <p>You will have to invest in the following:</p>
+                
+                <ul>
+                    <li><strong>An iPhone, iPad or iPod touch.</strong> I’m assuming that you have at least one of these. Even though I mostly talk about the iPhone in this tutorial series, everything I say actually goes for all of these devices. Aside from small hardware differences, they all use iOS and you program them in exactly the same way. You should be able to run any of the apps we will be developing on your iPad or iPod touch without problems.</li>
+                    
+                    <li><strong>A Mac computer with an Intel processor.</strong> Any Mac that you’ve bought in the last few years will do, even a Mac mini. It needs to run at least OS X version 10.6 (Snow Leopard) or version 10.7 (Lion). Xcode, the development environment for iOS apps, is a memory-hungry tool so having at least 4 GB of RAM in your Mac is no luxury. You might be able to get by with less, but do yourself a favor and upgrade your Mac. The more RAM, the better. A smart developer invests in good tools!</li>
+                    
+                    <li><strong>A paid iOS Developer Program account.</strong> This will cost you $99 per year and it allows you to run your apps on your own iPhone, iPad or iPod touch while you’re developing, and to submit finished apps to the App Store. You can download all the development tools for free if you’re a paid member, including beta previews of upcoming versions of iOS.</li>
+                </ul>
+                
+                <p>With some workarounds it is possible to develop iOS apps on Windows or a Linux machine, or a regular PC that has OS X installed (a so-called “Hackintosh”), but you’ll save yourself a lot of hassle by just getting a Mac.</p>
+                
+                <p>If you can’t afford to buy the latest model, then you might consider getting a second-hand Mac from Ebay. Just make sure it meets the minimum requirements (Intel CPU, preferably more than 1 GB RAM). Should you buy a machine that has an older version of OS X (10.5 Leopard or earlier), then you can purchase an inexpensive upgrade to Snow Leopard and Lion from the Apple Store or a reseller.</p>
+                
+                <h3>Join the program</h3>
+                
+                <p>To sign up for the Developer Program, go to <a href="http://developer.apple.com/programs/ios/">http://developer.apple.com/programs/ios/</a> and click the Enroll Now button.</p>
+                
+                <p>Tip: Make sure you’re on the page for the iOS program. There are also Mac and Safari developer programs and you don’t want to sign up for the wrong one!</p>
+                
+                <p>On the sign-up page you’ll need to enter your Apple ID. Your developer program membership will be tied to this account. It’s OK to use the same Apple ID that you’re already using with iTunes and your iPhone, but if you run a business you might want to create a new Apple ID to keep these things separate.</p>
+                
+                <p>There are different types of iOS Developer Programs. You’ll probably want to go for the regular iOS Developer Program, either as an Individual or as a Company. There is also an Enterprise program but that’s for big companies who will be distributing apps within their own organization only. If you’re still in school, the University Program may be worth looking into.</p>
+                
+                <p>You will buy the Developer Program membership from the online Apple Store for your particular country. Once your payment is processed you’ll receive an activation code that you use to activate your account.</p>
+                
+                <p>It may take a few weeks to get signed up as Apple will check your credit card details and if they find anything out of the ordinary (such as a misspelled name) your application may run into delays. So make sure to enter your credit card details correctly or you’ll be in for an agonizing wait.</p>
+                
+                <p>You will have to renew your membership every year but if you’re serious about developing apps then that $99 will be worth it.</p>
+                
+                <h3>The free account</h3>
+                
+                <p>If you’re strapped for cash, you’ll be happy to know that it’s possible to develop for iOS without paying a dime. There is a free Apple developer account but this restricts you to running your apps in the Simulator but not on any of your devices and, more importantly, you can’t submit to the App Store.</p>
+                
+                <p>If you just want to get your feet wet with iOS development but you’re not sure yet whether you’ll like it, then stick to the free account for the time being. You can run all the apps from this tutorial in the Simulator just fine, but of course that isn’t as cool as seeing them on your own iPhone.</p>
+                
+                <p>To sign up for the free account, go to <a href="https://developer.apple.com/programs/register/">https://developer.apple.com/programs/register/</a>. You can always upgrade to the paid account later.</p>
+                
+                <h3>Xcode</h3>
+                
+                <p>After you sign up, the first order of business is to download and install Xcode and the iOS SDK (Software Development Kit).</p>
+                
+                <img alt="The Xcode icon" src="HTML/Figures/Xcode_icon.png" style="float:right;margin-left:9px;">
+                    
+                    <p>Xcode is the main development tool for iOS. It has a text editor where you’ll type in your source code and a visual tool for designing your app’s user interface. Xcode transforms the source code that you write into an executable app and launches it in the Simulator or on your iPhone. Because no app is bug-free, Xcode also has a debugger that helps you find defects in your code (unfortunately, it won’t automatically fix them for you, that’s still something you have to do yourself).</p>
+                    
+                    <p>You can download Xcode for free from the <a href="http://itunes.apple.com/app/xcode/id497799835?mt=12">Mac App Store</a>. This requires OS X Lion, so if you’re still running Snow Leopard you’ll first have to upgrade to Lion (also available from the Mac App Store). Alternatively, you can download Xcode for Snow Leopard from the <a href="http://developer.apple.com/devcenter/ios/">iOS Dev Center website</a>. Regardless of where you get your Xcode from, get ready for a big download as the full Xcode package is about 2 GB.</p>
+                    
+                    <p>Tip: You may already have a version of Xcode on your system that came pre-installed with OS X. That version is hopelessly outdated, so don’t use it. Apple puts out new releases on a regular basis and you are encouraged to always develop with the latest Xcode and the latest available SDK on the latest version of OS X.</p>
+                    
+                    <p>I originally wrote this ebook with Xcode version 4.2 and the iOS 5.0 SDK. For the latest revision, I used Xcode 4.5 on Mountain Lion with the iOS 6.0 SDK. By the time you’re reading this the version numbers have no doubt gone up again. I will do my best to keep the tutorials up-to-date with new releases of the development tools and iOS versions but don’t panic if the screenshots don’t correspond 100% to what you see on your screen. In most cases the differences will be minor.</p>
+                    
+                    <p>Because not everyone who is reading this will have switched to the latest-and-greatest already, the tutorials from the iOS Apprentice will continue to work on Xcode 4.2 and iOS 5, and I will point out major differences between the versions where necessary.</p>
+                    
+                    <p>For a long time Xcode 3 was the official development environment for iOS apps but it has now been superseded by Xcode 4. Some people still use Xcode 3 as version 4 is a radical departure from the old way of working. However, Xcode 4 is the future so that’s what we will be using. I mention this because many older books and blog posts talk about Xcode 3. So if you’re reading some article and you see a picture of Xcode that looks completely different from  yours, they’re talking about the older version. You may still be able to get something out of those articles as the programming examples are still valid, it’s just the tool that is slightly different.</p>
+                    
+                    <hr>
+                    
+                    <h2>The language of the computer</h2>
+                    
+                    <p>The iPhone may pretend it’s a phone but it’s really a pretty advanced computer that also happens to make phone calls. Like any computer, the iPhone works with ones and zeros. When you write software to run on it, you somehow have to translate the ideas in your head into those ones and zeros that the computer can understand.</p>
+                    
+                    <p>Fortunately, we don’t have to write any ones and zeros ourselves. Everyday English is not precise enough to use for programming computers, so we will use use an intermediary language, Objective-C, that is a little bit like English so it’s reasonably easy for us humans to understand, while at the same time it can be easily translated into something the computer can understand as well.</p>
+                    
+                    <p>This is the language that the computer speaks:</p>
+                    
+                    <figure class="image"><figcaption></figcaption><img src="HTML/Figures/Assembly.png" alt=""/></figure>
+                    
+                    <p>Actually, what the computer sees is this:</p>
+                    
+                    <figure class="image"><figcaption></figcaption><img src="HTML/Figures/Binary.png" alt=""/></figure>
+                    
+                    <p>The <code class="objc">movl</code> and <code class="objc">calll</code> instructions are just there to make things more readable for humans. Well, I don’t know about you, but for me it’s hard to make much sense out of it. It certainly is possible to write programs in that arcane language &mdash; that is what people used to do in the old days when computers cost a few million bucks apiece and took up a whole room &mdash; but I’d rather write programs that look like this:</p>
+                    
+                    <pre class="objc"><span class="kw1">void</span> HandleMidiEvent<span class="br0">&#40;</span><span class="kw4">char</span> byte1, <span class="kw4">char</span> byte2, <span class="kw4">char</span> byte3, <span class="kw4">int</span> deltaFrames<span class="br0">&#41;</span>
+                        <span class="br0">&#123;</span>
+                        <span class="kw4">char</span> command <span class="sy0">=</span> <span class="br0">&#40;</span>byte1 <span class="sy0">&amp;</span> 0xf0<span class="br0">&#41;</span>;
+                        &nbsp;
+                        <span class="kw1">if</span> <span class="br0">&#40;</span>command <span class="sy0">==</span> MIDI_NOTE_ON <span class="sy0">&amp;&amp;</span> byte3 <span class="sy0">!=</span> <span class="nu0">0</span><span class="br0">&#41;</span>
+                        <span class="br0">&#123;</span>
+                        PlayNote<span class="br0">&#40;</span>byte2 <span class="sy0">+</span> transpose, velocityCurve<span class="br0">&#91;</span>byte3<span class="br0">&#93;</span> <span class="sy0">/</span> 127.0f, deltaFrames<span class="br0">&#41;</span>;
+                        <span class="br0">&#125;</span>
+                        <span class="kw1">else</span> <span class="kw1">if</span> <span class="br0">&#40;</span><span class="br0">&#40;</span>command <span class="sy0">==</span> MIDI_NOTE_OFF<span class="br0">&#41;</span>
+                        ||  <span class="br0">&#40;</span>command <span class="sy0">==</span> MIDI_NOTE_ON <span class="sy0">&amp;&amp;</span> byte3 <span class="sy0">==</span> <span class="nu0">0</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+                        <span class="br0">&#123;</span>
+                        StopNote<span class="br0">&#40;</span>byte2 <span class="sy0">+</span> transpose, velocityCurve<span class="br0">&#91;</span>byte3<span class="br0">&#93;</span> <span class="sy0">/</span> 127.0f, deltaFrames<span class="br0">&#41;</span>;
+                        <span class="br0">&#125;</span>
+                        <span class="kw1">else</span> <span class="kw1">if</span> <span class="br0">&#40;</span>command <span class="sy0">==</span> MIDI_CONTROL_CHANGE<span class="br0">&#41;</span>
+                        <span class="br0">&#123;</span>
+                        <span class="kw1">if</span> <span class="br0">&#40;</span>data2 <span class="sy0">==</span> <span class="nu0">64</span><span class="br0">&#41;</span>
+                        DamperPedal<span class="br0">&#40;</span>data3, deltaFrames<span class="br0">&#41;</span>;
+                        <span class="kw1">else</span> <span class="kw1">if</span> <span class="br0">&#40;</span>data2 <span class="sy0">==</span> 0x7e || data2 <span class="sy0">==</span> 0x7b<span class="br0">&#41;</span>
+                        AllNotesOff<span class="br0">&#40;</span>deltaFrames<span class="br0">&#41;</span>;
+                        <span class="br0">&#125;</span>
+                        <span class="br0">&#125;</span></pre>
+                    
+                    <p>That looks like something that almost makes sense. Even if you’ve never programmed before, you can sort of figure out what’s going on, it’s almost English. The above snippet is from a sound synthesizer program. It is written the C language which was invented in the sixties by the same guys who also invented the Unix operating system. Both inventions had a big impact on the world of computing. (The core of iOS is largely based on Unix.)</p>
+                    
+                    <p>The language we use to program iOS apps is called Objective-C and it is basically an extension of the C language. Objective-C can do everything that C can but it also adds a lot of useful stuff of its own, most importantly Object-Oriented Programming (hence its name). Objective-C was almost extinct until the iPhone brought it back to life and now all the cool kids are using it.</p>
+                    
+                    <p>C++ is another language that adds Object-Oriented Programming to C and it is from around the same time as Objective-C. Unlike Objective-C &mdash; which tries to be as simple and lean as possible &mdash; C++ contains everything but the kitchen sink. It is very powerful but as a beginning programmer you probably want to stay away from it. I only mention it because C++ can also be used to write iOS apps, and there is an unholy marriage of C++ and Objective-C named Objective-C++ that you may come across from time to time.</p>
+                    
+                    <p>I could have started this ebook series with a in-depth treatise on Objective-C but you’d probably fall asleep halfway. So instead I will explain the language as we go along, very briefly at first but more in-depth later. In the beginning, the general concepts &mdash; what is a variable, what is an object, how do you call a method, and so on &mdash; are more important than the details. Slowly but surely, all the secrets of the Objective-C language will be revealed to you.</p>
+                    
+                    <p>Are you ready to begin writing your first iOS app?</p>
+                    
+                    <hr>
+                    
+                    <h2>The Bull’s Eye game</h2>
+                    
+                    <p>In this first lesson we’re going to create a game called Bull’s Eye.
+                    This is what the game will look like when we’re finished:</p>
+                    
+                    <figure class="image"><figcaption>The finished Bull’s Eye game</figcaption><img src="HTML/Figures/The_finished_Bulls_Eye_game.png" alt="The finished Bull’s Eye game"/></figure>
+                    
+                    <p>The objective of the game is to put the bull’s eye, which is on a slider that goes from 1 to 100, as close to a randomly chosen target value as you can. In the screenshot above, the aim is to put the bull’s eye at 33. Because you can’t see the current value of the slider, you’ll have to “eyeball” it.</p>
+                    
+                    <p>When you’re confident of your estimate you press the Hit Me! button and a popup, also known as an <em>alert view</em>, will tell you what your score is:</p>
+                    
+                    <figure class="image"><figcaption>An alert view popup shows the score</figcaption><img src="HTML/Figures/Alert_view_in_finished_game.png" alt="An alert view popup shows the score"/></figure>
+                    
+                    <p>The closer to the target value you are, the more points you score. After you dismiss the alert view by pressing the OK button, a new round begins with a new random target. The game repeats until the player presses the “Start Over” button (bottom-left corner), which resets the score to 0.</p>
+                    
+                    <p>This game probably won’t make you an instant millionaire on the App Store, but even future millionaires have to start somewhere!</p>
+                    
+                    <h3>The to-do list</h3>
+                    
+                    <p><strong>Exercise:</strong> Now that you’ve seen what the game will look like and what the gameplay rules are, make a list of all the things that you think we need to do in order to build this game. It’s OK if you draw a blank, but give it a shot anyway. <strong>◼</strong></p>
+                    
+                    <p>I’ll give you an example: “The app needs to put the Hit Me! button on the screen and show an alert popup when the user presses it.” Try to think of other things the app needs to do, no matter if you don’t actually know how to accomplish these tasks. The first step is to figure out <em>what</em> you need to do &mdash; <em>how</em> to do these things is not important yet.</p>
+                    
+                    <p>Once you know <em>what</em> you want, you can also figure out <em>how</em> to do it, even if you have to ask someone or look it up. But the “what” comes first. (You’ll be surprised at how many people start programming without a clear idea of what they’re actually trying to achieve. No wonder they get stuck!)</p>
+                    
+                    <p>Whenever I start working on a new app, I first make a list of all the different pieces of functionality I think the app will need. This becomes my programming to-do list. Having a list that breaks up a design into several smaller steps is a great way to deal with the complexity of a project.</p>
+                    
+                    <p>You may have a cool idea for an app but when you sit down to program it the whole thing can seem overwhelming. There is so much to do... and where to begin? By cutting up the workload into small steps you make the project less daunting &mdash; you can always find a step that is simple and small enough to make a good starting point and take it from there.</p>
+                    
+                    <p>It’s no big deal if this exercise is giving you difficulty. You’re new to all of this! As your understanding grows of how software works, it will become easier to identify the different parts that make up a design and to split it into manageable pieces.</p>
+                    
+                    <p>This is what I came up with. I simply took the gameplay description and cut it into very small chunks:</p>
+                    
+                    <ul>
+                        <li>Put a button on the screen and label it “Hit Me!”.</li>
+                        <li>When the player presses the Hit Me button the app has to show an alert popup to inform the player how well he did. Somehow we have to calculate the score and put that into this alert.</li>
+                        <li>Put text on the screen, such as the “Score:” and “Round:” labels. Some of this text changes over time, such as the score, which increases when the player finishes a round.</li>
+                        <li>Put a slider on the screen and make it go between the values 1 and 100.</li>
+                        <li>Read the value of the slider after the user presses the Hit Me button.</li>
+                        <li>Generate a random number at the start of each round and display it on the screen. This is the target value.</li>
+                        <li>Compare the value of the slider to that random number and calculate a score based on how far off the player is. We show this score in the alert view.</li>
+                        <li>Put the Start Over button on the screen. Make it reset the score and put the player back into the first round.</li>
+                        <li>Put the app in landscape orientation.</li>
+                        <li>Make it look pretty. :-)</li>
+                    </ul>
+                    
+                    <p>I might have missed a thing or two, but this looks like a decent list to start with. Even for a game as basic as this, that’s already quite a few things we need to do.</p>
+                    
+                    <hr>
+                    
+                    <h2>The one-button app</h2>
+                    
+                    <p>Let’s start at the top of the list and make an extremely simple first version of the game that just displays a single button. When you press the button, the app pops up an alert message. That’s all we are going to do for now. Once we have this working, we can build the rest of the game on this foundation.</p>
+                    
+                    <p>The app will look like this:</p>
+                    
+                    <figure class="image"><figcaption>The app contains a single button (left) that shows an alert when pressed (right)</figcaption><img src="HTML/Figures/One-button_app.png" alt="The app contains a single button (left) that shows an alert when pressed (right)"/></figure>
+                    
+                    <p>Time to start coding! I’m assuming you have downloaded and installed the latest version of the SDK and the development tools at this point. In this tutorial, we’ll be working with Xcode 4.2 or better. Newer versions of Xcode will also work but anything older than version 4.2 is a no-go. So please update to the latest and greatest if you haven’t already.</p>
+                    
+                    <p>There are some pretty big differences between iOS 5 and its predecessors as far as programming is concerned, so rather than teaching you how to code for iOS the <em>old way</em>, I’m going to focus on iOS 5 and better only. Don’t worry, you’ll still be able to write apps that also work on older versions of iOS, but to keep things simple in the first couple of tutorials we’ll focus on iOS 5+ exclusively.</p>
+                    
+                    <p><strong>&raquo;</strong> Launch Xcode. If you have trouble locating the Xcode application, you can find it in the folder /Developer/Applications/Xcode. If you installed Xcode from the Mac App Store, it will be in your Launchpad. Because I use Xcode all the time, I placed its icon in my dock for easy access.</p>
+                    
+                    <p>Xcode shows the “Welcome to Xcode” window when it starts:</p>
+                    
+                    <figure class="image"><figcaption>Xcode bids you welcome</figcaption><img src="HTML/Figures/Welcome_to_Xcode.png" alt="Xcode bids you welcome"/></figure>
+                    
+                    <p>Choose “Create a new Xcode project”. The main Xcode window appears with an assistant that lets you choose a template:</p>
+                    
+                    <figure class="image"><figcaption>Choosing the template for the new project</figcaption><img src="HTML/Figures/Xcode_template.png" alt="Choosing the template for the new project"/></figure>
+                    
+                    <p>On Xcode 4.3 and better, the window looks slightly different:</p>
+                    
+                    <figure class="image"><figcaption>Choosing the template for the new project in Xcode 4.3</figcaption><img src="HTML/Figures/Xcode_template_43.png" alt="Choosing the template for the new project in Xcode 4.3"/></figure>
+                    
+                    <p>There are templates for a variety of application styles. Xcode will make a pre-configured project for you based on the template you choose. The new project will already include many of the source files you need. These templates are handy because they can save you a lot of typing. They are ready-made starting points.</p>
+                    
+                    <p>Note: One of the differences between Xcode 4.2 and 4.3 is that these templates have changed. In this tutorial I’ll include instructions for both sets of templates, so you can use either version of Xcode. There’s a good chance that the templates will change again with an upcoming version of Xcode.</p>
+                    
+                    <p><strong>&raquo;</strong> Select the “Single View Application” and press Next.</p>
+                    
+                    <p>This opens a screen where you can enter options for the new app:</p>
+                    
+                    <figure class="image"><figcaption>Configuring the new project</figcaption><img src="HTML/Figures/Xcode_template_options.png" alt="Configuring the new project"/></figure>
+                    
+                    <p><strong>&raquo;</strong> Fill out these options as follows:</p>
+                    
+                    <ul>
+                        <li>Product Name: BullsEye. If you want to use proper English, you can name the project Bull’s Eye instead of BullsEye, but I like to avoid spaces and other special characters in my project names.</li>
+                        <li>Company Identifier: Mine says “com.hollance”. That is the identifier I use for my apps and as is customary, it is my domain name written the other way around. If you already have registered for the paid iOS Developer Program, Xcode will fill this in for you. If not, choose something that is unique to you, either the domain name of your website (but backwards) or simply your own name. You can always change this later.</li>
+                        <li>Class Prefix: BullsEye</li>
+                        <li>Device Family: iPhone</li>
+                        <li>Use Storyboard: Uncheck this box. We will not be using Storyboards in this lesson.</li>
+                        <li>Use Automatic Reference Counting: Keep this box checked.</li>
+                        <li>Include Unit Tests: Leave this box unchecked.</li>
+                    </ul>
+                    
+                    <p>Press Next. Now Xcode will ask where to save your project:</p>
+                    
+                    <figure class="image"><figcaption>Choosing where to save the project</figcaption><img src="HTML/Figures/Xcode_project_location.png" alt="Choosing where to save the project"/></figure>
+                    
+                    <p><strong>&raquo;</strong> Choose a location for the project files, for example the Desktop or your Documents folder.</p>
+                    
+                    <p>Xcode will automatically make a new folder for the project using the Product Name that you entered in the previous step (in our case BullsEye), so you don’t need to make a new folder yourself.</p>
+                    
+                    <p>At the bottom of the window there is a checkbox that says “Create local git repository for this project”. You can ignore this for now. We’ll talk about the Git version control system and how to use it from Xcode in a later tutorial.</p>
+                    
+                    <p><strong>&raquo;</strong> Press Create.</p>
+                    
+                    <p>Xcode will now create a new project named BullsEye, based on the Single View Application template, in the folder you specified. When it is done, the screen looks like this:</p>
+                    
+                    <figure class="image"><figcaption>The main Xcode window at the start of our project</figcaption><a href="HTML/Figures/Xcode_after_creating_project.png" target="_blank"><img src="HTML/Figures/Thumbnail-Xcode_after_creating_project.png" alt="The main Xcode window at the start of our project"/></a><br><span class="enlarge-image"><a href="HTML/Figures/Xcode_after_creating_project.png" target="_blank">(Click to enlarge)</a></span></figure>
+                    
+                    <p>If you’re using Xcode 4.5 and the iOS 6 SDK, then the Deployment Target field says “6.0” (or a higher number). Because we want this app to run on iOS 5 as well, click this box and choose “5.0”:</p>
+                    
+                    <figure class="image"><figcaption>Changing the deployment target</figcaption><img src="HTML/Figures/Change_deployment_target.png" alt="Changing the deployment target"/></figure>
+                    
+                    <p><strong>&raquo;</strong> Press the Run button in the top-left corner:</p>
+                    
+                    <figure class="image"><figcaption>Press Run to launch the app</figcaption><img src="HTML/Figures/Run_stop.png" alt="Press Run to launch the app"/></figure>
+                    
+                    <p>Xcode will rattle for a bit and then it launches our brand new app in the iOS Simulator. The app may not look like much yet &mdash; and there is not anything you can do with it either &mdash; but this is an important first milestone in our journey.</p>
+                    
+                    <figure class="image"><figcaption>What an app based on the Single View Application template looks like</figcaption><img src="HTML/Figures/Template_in_the_simulator.png" alt="What an app based on the Single View Application template looks like"/></figure>
+                    
+                    <p>If Xcode says “Build Failed” when you press the Run button, then make sure the select box labeled Scheme at the top-left of the window says “BullsEye | iPhone 5.0 Simulator” (or a later version). If your iPhone is currently connected to your Mac with the USB cable, Xcode may have attempted to run the app on your iPhone and that may not work without some additional setting up. At the end of this tutorial I’ll show you how to get the app to run on your iPhone so you can show it off to your friends, but for now we stick with the Simulator.</p>
+                    
+                    <figure class="image"><figcaption>Set the app to run on the simulator</figcaption><img src="HTML/Figures/Scheme_simulator.png" alt="Set the app to run on the simulator"/></figure>
+                    
+                    <p>Next to the Run button is the Stop button. Press that to exit the app. You might be tempted to press the home button on the Simulator, just as you would on your iPhone, but that won’t actually terminate the app. It will disappear from the Simulator’s screen but the app stays suspended in the Simulator’s memory, just as it would on a real iPhone.</p>
+                    
+                    <p>Until you press Stop, Xcode’s activity viewer at the top says “Running BullsEye on iPhone Simulator”:</p>
+                    
+                    <figure class="image"><figcaption>The Xcode activity viewer</figcaption><img src="HTML/Figures/Xcode_activity_viewer.png" alt="The Xcode activity viewer"/></figure>
+                    
+                    <p>It’s not really necessary to stop the app, as you can go back to Xcode and make changes to the source code while the app is still running. However, these changes will not become active until you press Run again. That will terminate any running version of the app, build a new version, and launch that newly built version in the Simulator.</p>
+                    
+                    <aside>
+                        <h3>What happens when you press Run?</h3>
+                        
+                        <p>Xcode will first <em>compile</em> your source code (that is: translate it) from Objective-C into a machine code that the iPhone (or the Simulator) can understand. Even though the programming language for writing iPhone apps is Objective-C, the iPhone itself doesn’t speak that language. So a translation step is necessary.</p>
+                        
+                        <p>The compiler is the part of Xcode that converts your Objective-C source code into executable binary code. It also gathers all the different components that make up the app &mdash; source files, images, xib files, and so on &mdash; and puts them into the so-called “application bundle”.</p>
+                        
+                        
+                        
+                        <p>This entire process is also known as <em>building</em> the app. If there are any errors (such as spelling mistakes), the build will fail. If everything goes according to plan, the application bundle is copied to the Simulator or the iPhone and the app is launched. All from a single press of the Run button.</p>
+                        
+                    </aside>
+                    
+                    <h3>Adding the button</h3>
+                    
+                    <p>I’m sure you’re as little impressed as I am with an app that just displays a dull gray screen, so let’s add a button to it.</p>
+                    
+                    <p>The left-hand side of the Xcode window is named the Navigator Area. The row of icons at the top determines which navigator is visible. Currently that is the Project Navigator, which shows the list of files that are in your project.</p>
+                    
+                    <p>The organization of these files roughly corresponds to the project folder on your hard disk, but that isn’t necessarily always so. You can move files around and put them in new groups to your heart’s content. We’ll talk more about the different files that your project has later.</p>
+                    
+                    <p><strong>&raquo;</strong> In the Project Navigator, find the item named “BullsEyeViewController.xib” and click it once to select it:</p>
+                    
+                    <figure class="image"><figcaption>The Project Navigator lists the files in the project</figcaption><img src="HTML/Figures/Project_navigator.png" alt="The Project Navigator lists the files in the project"/></figure>
+                    
+                    <p>Like a superhero changing his clothes in a phone booth, the main editing pane now transforms into the Interface Builder. This tool lets you drag-and-drop user interface components such as buttons into the app. (OK, bad analogy, but Interface Builder <em>is</em> a super tool in my opinion.)</p>
+                    
+                    <p><strong>&raquo;</strong> Click the “Hide or show utilities” button in Xcode’s toolbar:</p>
+                    
+                    <figure class="image"><figcaption>Click this button to show the Utilities pane</figcaption><img src="HTML/Figures/Show_utilities_pane.png" alt="Click this button to show the Utilities pane"/></figure>
+                    
+                    <p>These toolbar buttons change the appearance of Xcode. This one in particular opens a new pane on the right side of the Xcode window.</p>
+                    
+                    <p>Your Xcode should now look something like this:</p>
+                    
+                    <figure class="image"><figcaption>Editing BullsEyeViewController.xib</figcaption><a href="HTML/Figures/Empty_xib_open_in_Xcode.png" target="_blank"><img src="HTML/Figures/Thumbnail-Empty_xib_open_in_Xcode.png" alt="Editing BullsEyeViewController.xib"/></a><br><span class="enlarge-image"><a href="HTML/Figures/Empty_xib_open_in_Xcode.png" target="_blank">(Click to enlarge)</a></span></figure>
+                    
+                    <p>Important for users of Xcode 4.5 or later: iOS 6 introduced a new feature named Auto Layout. This is an advanced tool for making flexible user interface designs. We’re not going to use the Auto Layout feature in this tutorial, so you first need to disable it. You do this from the Utilities pane on the right. From the row of small icons at the top, click the first one to open the so-called File Inspector. Then simply uncheck the “Use Autolayout” option and you’re done:</p>
+                    
+                    <figure class="image"><figcaption>Disabling Auto Layout (on Xcode 4.5)</figcaption><img src="HTML/Figures/Disable_Auto_Layout.png" alt="Disabling Auto Layout (on Xcode 4.5)"/></figure>
+                    
+                    <p>At the bottom of the Utilities pane you will find the Object Library (make sure the third button, the one that looks like a box, is selected):</p>
+                    
+                    <figure class="image"><figcaption>The Object Library</figcaption><img src="HTML/Figures/Object_Library.png" alt="The Object Library"/></figure>
+                    
+                    <p>In the screenshot above, the first item in the Object Library’s list is “Round Rect Button”.</p>
+                    
+                    <p><strong>&raquo;</strong> Click on Round Rect Button and drag it into the working area, on top of the gray view.</p>
+                    
+                    <figure class="image"><figcaption>Dragging the button on top of the view</figcaption><a href="HTML/Figures/Drag_button_on_top_of_view.png" target="_blank"><img src="HTML/Figures/Thumbnail-Drag_button_on_top_of_view.png" alt="Dragging the button on top of the view"/></a><br><span class="enlarge-image"><a href="HTML/Figures/Drag_button_on_top_of_view.png" target="_blank">(Click to enlarge)</a></span></figure>
+                    
+                    <p>That’s how easy it is to add new buttons, just drag &amp; drop. That goes for all other user interface elements too. We’ll be doing a lot of this, so take some time to get familiar with the process.</p>
+                    
+                    <p><strong>&raquo;</strong> Drag-and-drop a few other controls, such as labels, sliders, switches, just to get the hang of it.</p>
+                    
+                    <p>This should give you some idea of the UI controls that are available in iOS. Notice that the Interface Builder helps you to layout your controls by snapping them to the edges of the view and to other objects. It’s a very handy tool!</p>
+                    
+                    <p><strong>&raquo;</strong> Double-click the button to edit its title. Call it “Hit Me!”.</p>
+                    
+                    <figure class="image"><figcaption>The button now has a title</figcaption><img src="HTML/Figures/Hit_Me_button.png" alt="The button now has a title"/></figure>
+                    
+                    <p>When you’re done playing with Interface Builder, press Xcode’s Run button. The app should now appear in the Simulator, complete with a nice Hit Me! button. However, when you tap the button it doesn’t do anything yet.</p>
+                    
+                    <aside>
+                        <h3>Xcode will autosave</h3>
+                        
+                        <p>You don’t have to save your files after you make changes to them because Xcode will automatically save any modified files when you press the Run button. Nevertheless, as I write this, Xcode 4 isn’t the most stable piece of software out there and occasionally it may crash on you before it has had a chance to save your changes, so I still like to press Cmd+S on a regular basis to save my files.</p>
+                        
+                    </aside>
+                    
+                    <h3>The source code editor</h3>
+                    
+                    <p>A button that doesn’t do anything when it is tapped is of no use to anyone, so let’s make it show an alert view popup. In the finished game the alert view will show the score for the round, but for now we shall limit ourselves to a simple text message (“Hello, World!”).</p>
+                    
+                    <p><strong>&raquo;</strong> In the Project Navigator, click on BullsEyeViewController.h.</p>
+                    
+                    <p>The Interface Builder will disappear and the editor area now contains a bunch of brightly-colored text. This is the Objective-C source code for our app:</p>
+                    
+                    <figure class="image"><figcaption>The source code editor</figcaption><a href="HTML/Figures/Source_code_editor.png" target="_blank"><img src="HTML/Figures/Thumbnail-Source_code_editor.png" alt="The source code editor"/></a><br><span class="enlarge-image"><a href="HTML/Figures/Source_code_editor.png" target="_blank">(Click to enlarge)</a></span></figure>
+                    
+                    <p><strong>&raquo;</strong> Add the following line directly above the line that says <code class="objc"><span class="kw1">@end</span></code>:</p>
+                    
+                    <pre class="objc"><span class="sy0">-</span> <span class="br0">&#40;</span><span class="kw4">IBAction</span><span class="br0">&#41;</span>showAlert;</pre>
+                    
+                    <p>The source code for BullsEyeViewController.h should now look like this:</p>
+                    
+                    <figure class="code"><figcaption>BullsEyeViewController.h</figcaption><pre class="objc"><span class="co2">//</span>
+                        <span class="co2">//  BullsEyeViewController.h</span>
+                        <span class="co2">//  BullsEye</span>
+                        <span class="co2">//</span>
+                        <span class="co2">//  Created by &lt;you&gt; on &lt;date&gt;.</span>
+                        <span class="co2">//  Copyright &lt;year&gt; &lt;you&gt;. All rights reserved.</span>
+                        <span class="co2">//</span>
+                        &nbsp;
+                        <span class="co1">#import &lt;UIKit/UIKit.h&gt;</span>
+                        &nbsp;
+                        <span class="kw1">@interface</span> BullsEyeViewController <span class="sy0">:</span> <span class="kw7">UIViewController</span>
+                        &nbsp;
+                        <span class="sy0">-</span> <span class="br0">&#40;</span><span class="kw4">IBAction</span><span class="br0">&#41;</span>showAlert;
+                        &nbsp;
+                        <span class="kw1">@end</span></pre></figure>
+                    
+                    <p>How do you like your first taste of Objective-C? Before I can tell you what this all means, I first have to introduce the concept of a view controller.</p>
+                    
+                    <h3>View controllers</h3>
+                    
+                    <p>We’ve edited the BullsEyeViewController.xib file to build the user interface of our app. It’s only a button on a gray background, but a user interface nonetheless. We also just added source code to BullsEyeViewController.h. You probably guessed that these two files have something to do with one another. There is also a BullsEyeViewController.m.</p>
+                    
+                    <p>These three files together &mdash; the .xib, .h and .m &mdash; form the implementation of a <em>view controller</em>. A lot of the work in building iOS apps is making view controllers. The job of a view controller is to manage a single screen from your app.</p>
+                    
+                    <p>Take a simple cookbook app, for example. When you launch the cookbook app, its main screen lists the available recipes. If you tap on a recipe, a new screen opens that shows the recipe in detail with an appetizing photo and cooking instructions. Each of these screens is managed by its own view controller.</p>
+                    
+                    <figure class="image"><figcaption>The view controllers in a simple cookbook app</figcaption><img src="HTML/Figures/Cookbook.png" alt="The view controllers in a simple cookbook app"/></figure>
+                    
+                    <p>What these two screens do is very different. One is a list of several items, the other a detail view of a single item. So you also need two view controllers: one that knows how to deal with lists, and another that can handle images and cooking instructions. One of the design principles of iOS is that each screen in your app gets its own view controller.</p>
+                    
+                    <p>Currently our app has only one screen (the gray one with the button on top) and thus only needs one view controller. That view controller is named <code class="objc">BullsEyeViewController</code> and the .xib, .h and .m files all work together to implement it.</p>
+                    
+                    <p>Simply put, the xib file contains the design of the view controller’s user interface, while the .h and .m files contain its functionality &mdash; the logic that makes the user interface work &mdash; which is written in the Objective-C language. It is customary to name these files after the view controller they represent, in our case <code class="objc">BullsEyeViewController</code>.</p>
+                    
+                    <p>Because we used the Single View Application template, Xcode automatically created the view controller for us and named it after the project. Later we will add a second screen to our game and we will create our own view controller for that.</p>
+                    
+                    <h3>Making connections</h3>
+                    
+                    <p>The line of source code we have just added to BullsEyeViewController.h lets Interface Builder know that the controller has a “showAlert” action, which presumably will show an alert view popup. We will now connect our button to that action.</p>
+                    
+                    <p><strong>&raquo;</strong> Click BullsEyeViewController.xib to go back into Interface Builder. Click the Hit Me button once to select it.</p>
+                    
+                    <p>With the Hit Me button selected, hold down the Ctrl key, click on the button and drag up to the File’s Owner item in the Placeholders section. You should see a blue line going from the button up to File’s Owner. (Instead of holding down Ctrl, you can also right-click and drag, but don’t let go of the mouse button before you start dragging.)</p>
+                    
+                    <figure class="image"><figcaption>Ctrl-drag from the button to File’s Owner</figcaption><img src="HTML/Figures/Ctrl_drag_from_button.png" alt="Ctrl-drag from the button to File’s Owner"/></figure>
+                    
+                    <p>Once you’re on File’s Owner, let go of the mouse button and a small menu will appear. It is titled “Sent Events” and contains one option, <code class="objc">showAlert</code>. This is the name of the action that we added earlier in the BullsEyeViewController.h file.</p>
+                    
+                    <figure class="image"><figcaption>The Sent Events menu from File’s Owner</figcaption><img src="HTML/Figures/Ctrl_drag_after.png" alt="The Sent Events menu from File’s Owner"/></figure>
+                    
+                    <p>Click on <code class="objc">showAlert</code> to select it. This instructs Interface Builder to make a connection between the button and <code class="objc">showAlert</code>. From now on, whenever the button is tapped, the <code class="objc">showAlert</code> action will be performed. That is how you make buttons and other controls do things: you define an action in the view controller’s .h file and then make the connection in Interface Builder.</p>
+                    
+                    <p>You can see that the connection was made, by going to the Connections Inspector in the Utilities pane on the right side of the Xcode window. You click the small arrow-shaped button at the top of the pane to switch to the Connections Inspector:</p>
+                    
+                    <figure class="image"><figcaption>The Connections Inspector shows the connections from the button to any other objects</figcaption><img src="HTML/Figures/Ctrl_drag_Connections_Inspector.png" alt="The Connections Inspector shows the connections from the button to any other objects"/></figure>
+                    
+                    <p>In the Sent Events section, the “Touch Up Inside” event is now connected to the <code class="objc">showAlert</code> action. If you wanted to remove this connection, you’d click the little X icon (but don’t do that right now!). You can also drag directly from any of these events to File’s Owner. Click on an open circle and the blue line will appear.</p>
+                    
+                    <aside>
+                        <h3>File’s Owner</h3>
+                        
+                        <p>A xib, the user interface of a view controller, is <em>owned</em> by that view controller. This means the view controller will load that xib file, put all of its objects on the screen, and make the connections. The view controller will dispose of the xib file when the screen closes. File’s Owner, therefore, refers to the view controller object.</p>
+                        
+                        <p>In our app we have a view controller named <code class="objc">BullsEyeViewController</code> that owns the xib file of the same name. The <code class="objc">showAlert</code> action also belongs to <code class="objc">BullsEyeViewController</code>. Because actions are logic, not user interface, they are not defined in the xib file. In order for the button to hook up with <code class="objc">showAlert</code>, it must have a way to refer to the view controller’s actions.</p>
+                        
+                        
+                        
+                        <p>File’s Owner is a convenient way to accomplish that. By dragging from the button to File’s Owner, you tell Interface Builder that you want to connect the button to an action from the view controller.</p>
+                        
+                        <p>If you’re ever wondering who the File’s Owner is for a xib, then select File’s Owner and open the Identity Inspector (the third button at the top of the inspector area). The Custom Class field will show you the owner’s name. If you do that for our nib, you’ll see that it says <code class="objc">BullsEyeViewController</code>.</p>
+                        
+                    </aside>
+                    
+                    <h3>Acting on the button</h3>
+                    
+                    <p>We now have a screen with a button and we have hooked it up to an action <code class="objc">showAlert</code> that will be performed when the user taps on the button. However, we haven’t yet told the app what the action actually does.</p>
+                    
+                    <p><strong>&raquo;</strong> Select BullsEyeViewController.m to edit it.</p>
+                    
+                    <p>In case you’re wondering what the difference is between the .h and .m files, the .h file tells the computer <em>what</em> the view controller does, while the .m file tells the computer <em>how</em> it does those things. Confused? Don’t worry about it, the next tutorials will explain it all in good time.</p>
+                    
+                    <p>There is a whole bunch of source code in BullsEyeViewController.m already but we can ignore that for now.</p>
+                    
+                    <p><strong>&raquo;</strong> Add the following to the bottom of the file, just before the line that says <code class="objc"><span class="kw1">@end</span></code>:</p>
+                    
+                    <figure class="code"><figcaption>BullsEyeViewController.m</figcaption><pre class="objc"><span class="sy0">-</span> <span class="br0">&#40;</span><span class="kw4">IBAction</span><span class="br0">&#41;</span>showAlert
+                        <span class="br0">&#123;</span>
+                        <span class="kw7">UIAlertView</span> <span class="sy0">*</span>alertView <span class="sy0">=</span> <span class="br0">&#91;</span><span class="br0">&#91;</span><span class="kw7">UIAlertView</span> alloc<span class="br0">&#93;</span>
+                        initWithTitle<span class="sy0">:</span><span class="co3">@</span><span class="st0">&quot;Hello, World&quot;</span>
+                        message<span class="sy0">:</span><span class="co3">@</span><span class="st0">&quot;This is my first app!&quot;</span>
+                        delegate<span class="sy0">:</span><span class="kw2">nil</span>
+                        cancelButtonTitle<span class="sy0">:</span><span class="co3">@</span><span class="st0">&quot;Awesome&quot;</span>
+                        otherButtonTitles<span class="sy0">:</span><span class="kw2">nil</span><span class="br0">&#93;</span>;
+                        &nbsp;
+                        <span class="br0">&#91;</span>alertView show<span class="br0">&#93;</span>;
+                        <span class="br0">&#125;</span></pre></figure>
+                    
+                    <p>When we added the <code class="objc"><span class="sy0">-</span> <span class="br0">&#40;</span><span class="kw4">IBAction</span><span class="br0">&#41;</span>showAlert;</code> line to the .h file we only said to Interface Builder, “the action <code class="objc">showAlert</code> is available,” but we did not specify what <code class="objc">showAlert</code> actually did. This time, however, we provide the actual functionality of this action. The commands between the <code class="objc"><span class="br0">&#123;</span> <span class="br0">&#125;</span></code> brackets tell the iPhone what to do, and they are performed from top to bottom.</p>
+                    
+                    <p>The code in <code class="objc">showAlert</code> creates an alert view with a title (“Hello, World”), a message (“This is my first app!”), and a single button labeled “Awesome”. If you’re not sure about the distinction between the title and the message: both show text, but the title is slightly bigger and in a bold typeface.</p>
+                    
+                    <p>Note: We’re only adding this to the .m file; we’re not changing BullsEyeViewController.h at this point. The .h file is only for declarations (the so-called “interface”), while the actual commands always go into the .m file (known as the “implementation”).</p>
+                    
+                    <p><strong>&raquo;</strong> Click the Run button from Xcode’s toolbar. If you didn’t make any typos, your app should launch in the Simulator and you should see the alert box when you tap the button.</p>
+                    
+                    <p>Congratulations, you’ve just written your first iOS app! What we just did may have been mostly gibberish to you, but that shouldn’t matter. We take it one small step at a time.</p>
+                    
+                    <figure class="image"><figcaption>The alert view in action</figcaption><img src="HTML/Figures/Your_first_app.png" alt="The alert view in action"/></figure>
+                    
+                    <p>We can strike off the first two items from our to-do list: putting a button on the screen and showing an alert when the user taps the button. Take a little break, let it all sink in, and come back when you’re ready for more! We’re only just getting started...</p>
+                    
+                    <p>You can find the project files for the app we’ve made thus far in the “01 - One Button App” folder inside the Source Code folder that comes with this tutorial.</p>
+                    
+                    <h3>Problems?</h3>
+                    
+                    <p>If Xcode gives you a “Build Failed” error message after you press Run, then make sure you typed in everything correctly. Even the smallest mistake will totally confuse Xcode. It can be quite overwhelming to make sense out of the error messages because a small typo at the top of the source code can produce several error messages elsewhere in that file.</p>
+                    
+                    <p>Typical mistakes are differences in capitalization. The Objective-C programming language is case-sensitive, which means it sees <code class="objc">AlertView</code> and <code class="objc">alertView</code> as two different names. Xcode complains about this with a “&lt;something&gt; undeclared” error.</p>
+                    
+                    <p>When Xcode says things like “Parse Issue” or “Expected &lt;something&gt;” then you probably forgot a semicolon somewhere. Forgetting to put semicolons in the right places is another common error. All statements in the Objective-C language must end with a semicolon, just like sentences in English end with a period (or a full stop if you’re British).</p>
+                    
+                    <p>Tiny details like this are very important when you’re programming. Even one single misplaced character can prevent the Objective-C compiler from building your app. Fortunately, such mistakes are easy to find.</p>
+                    
+                    <figure class="image"><figcaption>Xcode makes sure you can’t miss errors</figcaption><a href="HTML/Figures/Errors.png" target="_blank"><img src="HTML/Figures/Thumbnail-Errors.png" alt="Xcode makes sure you can’t miss errors"/></a><br><span class="enlarge-image"><a href="HTML/Figures/Errors.png" target="_blank">(Click to enlarge)</a></span></figure>
+                    
+                    <p>When Xcode detects an error it switches the pane on the left, where our project files used to be, to the Issue Navigator. (You can go back to the project files with the small buttons at the top.) This list shows all the errors and warnings that Xcode has found. Apparently I forgot a semicolon somewhere.</p>
+                    
+                    <p>Click on the error message and Xcode takes you to the line in the source code with the error. It even suggests what you need to do to resolve it:</p>
+                    
+                    <figure class="image"><figcaption>Fix-it suggests a solution to the problem</figcaption><a href="HTML/Figures/Fix-it.png" target="_blank"><img src="HTML/Figures/Thumbnail-Fix-it.png" alt="Fix-it suggests a solution to the problem"/></a><br><span class="enlarge-image"><a href="HTML/Figures/Fix-it.png" target="_blank">(Click to enlarge)</a></span></figure>
+                    
+                    <p>Sometimes it’s a bit of a puzzle to figure out what exactly you did wrong when your build fails, but fortunately Xcode lends a helping hand.</p>
+                    
+                    <hr>
+                    
+                    <h2>How does an app work?</h2>
+                    
+                    <p>It will be good at this point to get some sense of what goes on behind the scenes of an app. An app is essentially made up of objects that can send messages to each other. Many of the objects in your app are provided by iOS, for example the button (a <code class="objc"><span class="kw7">UIButton</span></code> object) and the alert view (<code class="objc"><span class="kw7">UIAlertView</span></code>). Some objects you will have to program yourself, such as the view controller.</p>
+                    
+                    <p>These objects communicate by passing messages to each other. When the user taps the Hit Me button in our app, for example, that <code class="objc"><span class="kw7">UIButton</span></code> object sends a message to our view controller that in turn may message more objects.</p>
+                    
+                    <p>On iOS, apps are event-driven, which means that the objects listen for certain events to occur and then process them. As strange as it may sound, an app spends most of its time doing... absolutely nothing. It just sits there waiting for something to happen. When the user taps the screen, the app springs to action for a few milliseconds and then it goes back to sleep again until the next event arrives.</p>
+                    
+                    <p>Your part in this scheme is that you write the source code that will be performed when your objects receive the messages for such events.</p>
+                    
+                    <figure class="image"><figcaption>The general flow of events in an app</figcaption><img src="HTML/Figures/How_an_app_works.png" alt="The general flow of events in an app"/></figure>
+                    
+                    <p>In our app, the button’s Touch Up Inside event is connected to the view controller’s <code class="objc">showAlert</code> action. When the button recognizes it has been tapped it sends the <code class="objc">showAlert</code> message to our view controller. Inside <code class="objc">showAlert</code>, the view controller sends the <code class="objc">show</code> message to the <code class="objc"><span class="kw7">UIAlertView</span></code> object. Your whole app will be made up of objects that communicate in this fashion.</p>
+                    
+                    <p>Maybe you have used PHP or ASP scripts on your web site. This event-based model is different from how a PHP script works. The PHP script will run from top-to-bottom, executing the statements one-by-one until it reaches the end and then it exits. Apps, on the other hand, don’t exit until the user terminates them (or when they crash!). They spend most of their time waiting for input events, then handle those events and go back to sleep.</p>
+                    
+                    <p>Input from the user, mostly in the form of touches and taps, is the most important source of events for your app but there are other types of events as well. The operating system will notify your app when the user receives an incoming phone call, when it has to redraw the screen, when a timer has counted down, and many more. Everything your app does is triggered by some event.</p>
+                    
+                    <hr>
+                    
+                    <h2>Going down the to-do list</h2>
+                    
+                    <p>Now that we have accomplished the first task of putting a button on the screen and making it show an alert, we’ll simply go down the list and tick off the other items. We don’t have to do this in any particular order, although some things make sense to do before others. For example, we cannot read the position of the slider if we don’t have a slider yet.</p>
+                    
+                    <p>So let’s add the rest of the controls &mdash; the slider and the text labels &mdash; to the screen and turn this app into a real game!</p>
+                    
+                    <p>When we’re done, the app will look like this:</p>
+                    
+                    <figure class="image"><figcaption>The Game screen with standard UIKit controls</figcaption><img src="HTML/Figures/Game_screen.png" alt="The Game screen with standard UIKit controls"/></figure>
+                    
+                    <p>That doesn’t quite look like the screenshot I showed you earlier! The difference is that these are the standard UIKit controls. This is what they look like straight out of the box. You’ve probably seen this look before because it is perfectly suitable for regular apps. But because the default look is a little boring for a game, we’ll put some special sauce on top  later in this lesson.</p>
+                    
+                    
+                    
+                    <aside>
+                        <h3>UIKit and other frameworks</h3>
+                        
+                        <p>iOS offers a lot of building blocks in the form of frameworks or “kits”. The UIKit framework provides the user interface controls such as buttons, labels and navigation bars. It manages the view controllers and generally takes care of anything else that deals with your app’s user interface.</p>
+                        
+                        <p>If you had to write all that stuff from scratch, you’d be busy for a while. Instead, you can build your app on top of the system-provided frameworks and take advantage of all the work the Apple engineers have already done for you.</p>
+                        
+                        <figure class="image"><figcaption>The frameworks in our project</figcaption><img src="HTML/Figures/Frameworks.png" alt="The frameworks in our project"/></figure>
+                        
+                        <p>Any object you see whose name starts with UI, such as <code class="objc"><span class="kw7">UIButton</span></code>, comes from UIKit. When you’re writing iOS apps, UIKit is the framework you’ll spend most of your time with but there are others as well. Foundation is the framework that provides many of the basic building blocks for writing Objective-C programs (its prefix is NS, as in <code class="objc"><span class="kw5">NSString</span></code>).</p>
+                        
+                        <p>Examples of other frameworks are Core Graphics, for drawing basic shapes such as lines, rectangles, gradients and images on the screen; Core Audio for playing sounds; CFNetwork for doing networking; and many others. The complete set of frameworks for iOS is known collectively as Cocoa Touch.</p>
+                        
+                    </aside>
+                    
+                    <h3>Portrait vs landscape</h3>
+                    
+                    <p>Notice that the dimensions of the screen are now slightly different from before: the iPhone is tilted on its side and the screen is wider but less tall. This is called <em>landscape</em> mode.</p>
+                    
+                    <p>You’ve no doubt seen landscape apps before on the iPhone. It’s a common display orientation for games but many other types of apps work in landscape mode too, usually in addition to the regular “upright” <em>portrait</em> orientation. For instance, many people prefer to write emails in the Mail app with their device flipped over because the wider screen allows for a bigger keyboard and easier typing.</p>
+                    
+                    <p>In portrait mode, the iPhone screen consists of 320 points horizontally and 480 points vertically. For landscape these dimensions are switched: 480 points horizontally and 320 vertically. In both orientations, you lose 20 vertical points for the status bar.</p>
+                    
+                    <figure class="image"><figcaption>Screen dimensions for portrait orientation</figcaption><img src="HTML/Figures/Portrait.png" alt="Screen dimensions for portrait orientation"/></figure>
+                    
+                    <figure class="image"><figcaption>Screen dimensions for landscape orientation</figcaption><img src="HTML/Figures/Landscape.png" alt="Screen dimensions for landscape orientation"/></figure>
+                    
+                    <p>So what is a <em>point</em>? On the iPhone 3GS and earlier models, as well as the corresponding iPod touch models and the iPad 1 and 2, one point corresponds to one pixel. That’s easy. (I’m sure you know what a <a href="http://en.wikipedia.org/wiki/Pixel">pixel</a> is. In case you don’t, it’s the smallest element that a screen is made up of. The display of your iPhone is a big matrix of pixels that each can have their own color. Images are produced by changing the color values of these pixels.)</p>
+                    
+                    <p>However, on the iPhone 4 and new iPad with their high-resolution Retina display, one point actually corresponds to two pixels horizontally and vertically, so <em>four</em> pixels in total. On older models, which I’ll collectively be referring to as “iPhone 3” or “low-resolution devices”, you only get 320x480 pixels but on the iPhone 4 (or “Retina devices”) those dimensions are doubled to 640x960 pixels, which gives you four times as many pixels to work with.</p>
+                    
+                    <p>The iPad has even more pixels because its screen is a lot bigger: 1024x768 pixels on the iPad 1 and 2, and a mind-blowing 2048x1536 pixels on the new Retina iPad. Insane!</p>
+                    
+                    <p>In older books and blog posts that were written before the Retina display existed (the summer of 2010), you’ll often find people referring to pixels when they really should be talking about points. The difference may be a little confusing, but if that is the only thing you’re confused about right now then I’m doing a pretty good job. ;-)</p>
+                    
+                    <p>We’ll get to Retina graphics later in this tutorial. Thanks to this points-vs-pixels issue, putting high-resolution graphics in your apps is actually pretty straightforward.</p>
+                    
+                    <h3>Converting the app to landscape</h3>
+                    
+                    <p>To convert our app from portrait into landscape, we have to do three things:</p>
+                    
+                    <ol>
+                        <li>Make the view from BullsEyeViewController.xib landscape instead of portrait.</li>
+                        <li>Change one line of code in BullsEyeViewController.m that will allow the view controller to <em>autorotate</em> to landscape mode.</li>
+                        <li>Change the “Supported Device Orientations” settings of our app.</li>
+                    </ol>
+                    
+                    <p><strong>&raquo;</strong> Open BullsEyeViewController.xib in the Interface Builder. Click on the gray background to select it.</p>
+                    
+                    <p>Tip: You can also click in the Objects pane. The Objects pane shows the view hierarchy of the xib. Here you can see that the main view (which is simply named View) currently contains one sub-view, the button. Sometimes it is easier to select the item you want from this list, especially if your screen design is getting crowded.</p>
+                    
+                    <figure class="image"><figcaption>The Objects pane shows the view hierarchy of our xib</figcaption><img src="HTML/Figures/Objects_pane.png" alt="The Objects pane shows the view hierarchy of our xib"/></figure>
+                    
+                    <p><strong>&raquo;</strong> Go to the Inspector pane, which is at the other end of the Xcode window, and click on the Attributes Inspector.</p>
+                    
+                    <figure class="image"><figcaption>The Attributes Inspector</figcaption><img src="HTML/Figures/Attributes_Inspector.png" alt="The Attributes Inspector"/></figure>
+                    
+                    <p>If you haven’t already played with this part of Interface Builder: the Inspector area shows various aspects of the selected item. The Attributes Inspector, for example, lets you change the background color of the view. As you become more proficient with Interface Builder, you’ll be using all of these inspector panes to configure your views.</p>
+                    
+                    <p>We’re looking for the Orientation setting in the Simulated Metrics section. It is currently set to Portrait.</p>
+                    
+                    <p><strong>&raquo;</strong> Change Orientation to Landscape.</p>
+                    
+                    <p>This changes the dimensions of the view and it probably puts the button in an awkward place.</p>
+                    
+                    <p><strong>&raquo;</strong> Move the button back to the center of the view because an untidy user interface just won’t do in this day and age.</p>
+                    
+                    <figure class="image"><figcaption>The view in landscape orientation</figcaption><img src="HTML/Figures/Landscape_view.png" alt="The view in landscape orientation"/></figure>
+                    
+                    <p>That takes care of the view layout. Now we have to change the view controller itself.</p>
+                    
+                    <p><strong>&raquo;</strong> Open BullsEyeViewController.m and find the bit of code that says:</p>
+                    
+                    <figure class="code"><figcaption>BullsEyeViewController.m</figcaption><pre class="objc"><span class="sy0">-</span> <span class="br0">&#40;</span><span class="kw4">BOOL</span><span class="br0">&#41;</span>shouldAutorotateToInterfaceOrientation<span class="sy0">:</span><span class="br0">&#40;</span><span class="kw7">UIInterfaceOrientation</span><span class="br0">&#41;</span>interfaceOrientation
+                        <span class="br0">&#123;</span>
+                        <span class="co2">// Return YES for supported orientations</span>
+                        <span class="kw1">return</span> <span class="br0">&#40;</span>interfaceOrientation <span class="sy0">!=</span> <span class="kw7">UIInterfaceOrientationPortraitUpsideDown</span><span class="br0">&#41;</span>;
+                        <span class="br0">&#125;</span></pre></figure>
+                    
+                    <p>This was automatically put into the view controller by Xcode when it created the project from the Single View Application template. (If you’re using Xcode 4.3, it does not include the green text.) This particular piece of functionality is queried by UIKit when the user rotates his iPhone. UIKit essentially asks the view controller: “Do you want to rotate to this new orientation?”</p>
+                    
+                    <p>If your view controller says “yes”, then the screen will rotate with the device from portrait to landscape or the other way around. If the view controller says “no” to that new orientation, the view stays the same and the user will have to turn his head to properly read what is on the screen. UIKit doesn’t assume that all apps always want to rotate, so it nicely asks the view controller for permission.</p>
+                    
+                    <p><strong>&raquo;</strong> Our app should allow landscape only, so change the code to the following:</p>
+                    
+                    <figure class="code"><figcaption>BullsEyeViewController.m</figcaption><pre class="objc"><span class="sy0">-</span> <span class="br0">&#40;</span><span class="kw4">BOOL</span><span class="br0">&#41;</span>shouldAutorotateToInterfaceOrientation<span class="sy0">:</span><span class="br0">&#40;</span><span class="kw7">UIInterfaceOrientation</span><span class="br0">&#41;</span>interfaceOrientation
+                        <span class="br0">&#123;</span>
+                        <span class="kw1">return</span> <span class="kw3">UIInterfaceOrientationIsLandscape</span><span class="br0">&#40;</span>interfaceOrientation<span class="br0">&#41;</span>;
+                        <span class="br0">&#125;</span></pre></figure>
+                    
+                    <p>Even though you may not speak much Objective-C yet, you should be able to get the gist of what is going on here. This piece of source code returns “yes” if the new interface orientation is landscape and “no” if it isn’t, effectively always forcing the view controller into landscape mode.</p>
+                    
+                    <p>When the app starts up, UIKit asks the view controller, “Do you want to run in portrait orientation?” because that is probably how you’re holding the iPhone. Thanks to our modification, <code class="objc">BullsEyeViewController</code> says: “Nope.” Then UIKit asks again, this time for landscape orientation. Our view controller confirms and the screen is flipped to landscape. Even if the user rotates his device back to portrait later, the app stays in landscape.</p>
+                    
+                    <p><strong>&raquo;</strong> Run the app now and the screen shows up as landscape.</p>
+                    
+                    <p>(If it doesn’t, choose Hardware → Rotate Left or Rotate Right from the iOS Simulator’s menubar at the top of the screen, or hold Cmd and press the left or right arrow keys on your keyboard. This will flip the simulator around.)</p>
+                    
+                    <figure class="image"><figcaption>The app in landscape orientation</figcaption><img src="HTML/Figures/Landscape_app.png" alt="The app in landscape orientation"/></figure>
+                    
+                    <p>We really should do one more thing. If you look closely when the app starts up, it first assumes the portrait orientation (the position of the status bar makes this obvious) and then abruptly switches to landscape as our view controller is loaded. This happens because until <code class="objc">BullsEyeViewController</code> is active, iOS doesn’t know we want our app to be in landscape.</p>
+                    
+                    <p>It takes a few seconds for the operating system to load the app into memory and start it up, and during that time the screen appears in portrait. It’s only a small detail but the difference between a mediocre app and a great app is that great apps do all the small details right. Fortunately, this is an easy thing to fix.</p>
+                    
+                    <p>We can set a configuration option that lets iOS know right from the beginning that the app should be launched in landscape orientation, even before it has had a chance to ask our view controller.</p>
+                    
+                    <p><strong>&raquo;</strong> Click the BullsEye project icon at the top of the Project Navigator. The main pane of the Xcode window now reveals a bunch of settings for the project. Under Targets click the BullsEye target and switch to the Summary tab:</p>
+                    
+                    <figure class="image"><figcaption>The settings for the project</figcaption><a href="HTML/Figures/Target_summary.png" target="_blank"><img src="HTML/Figures/Thumbnail-Target_summary.png" alt="The settings for the project"/></a><br><span class="enlarge-image"><a href="HTML/Figures/Target_summary.png" target="_blank">(Click to enlarge)</a></span></figure>
+                    
+                    <p>In the section iPhone / iPod Deployment Info, there is an option for Supported Device Orientations. In the image above the orientations Portrait, Landscape Left and Landscape Right are selected.</p>
+                    
+                    <p><strong>&raquo;</strong> Click Portrait to de-select it. If you now Run the app again, it properly launches in the landscape orientation right from the beginning.</p>
+                    
+                    <hr>
+                    
+                    <h2>Objects, messages and methods</h2>
+                    
+                    <p>Time for some programming theory.</p>
+                    
+                    <p>Objective-C is a so-called “object-oriented” programming language, which means that most of the stuff you do involves objects of some kind. I already mentioned a few times that an app consists of objects that send messages to each other.</p>
+                    
+                    <p>When you write an iOS app, you’ll be using objects that are provided for you by the system, such as the <code class="objc"><span class="kw7">UIButton</span></code> object from UIKit, and you’ll be making objects of your own, such as view controllers.</p>
+                    
+                    <p>So what exactly <em>is</em> an object? Think of an object as a building block of your program. Programmers like to group related functionality into objects. <em>This</em> object takes care of parsing an RSS feed, <em>that</em> object knows how to draw an image on the screen, and that object over there can perform a difficult calculation. Each object takes care of a specific part of the program. In a full-blown app you will have many different types of objects (tens or even hundreds).</p>
+                    
+                    <p>Even our small starter app already contains several different objects. The one we have spent the most time with is <code class="objc">BullsEyeViewController</code>. The Hit Me button is also an object, as is the alert view. Our project also has an object named <code class="objc">BullsEyeAppDelegate</code>, even though we’re going to ignore that for this lesson (but feel free to look inside its files if you’re curious). And the texts that we put on the alert view &mdash; “Hello, World” and “This is my first app!” &mdash; are also objects. These object thingies are everywhere!</p>
+                    
+                    <p>An object can have both <em>data</em> and <em>functionality</em>:</p>
+                    
+                    <ul>
+                        <li>An example of data is the Hit Me button that we added to the view controller’s screen. When we dragged the button into the xib, it actually became part of the view controller’s data. Data <em>contains</em> something. In this case, the view controller contains the button.</li>
+                        <li>An example of functionality is the <code class="objc">showAlert</code> action that we added to respond to that button. Functionality <em>does</em> something.</li>
+                    </ul>
+                    
+                    <p>The button itself also has data and functionality. Examples of button data are the text and color of its label, its position on the screen, its width and height, and so on. The button also has functionality: it can recognize that the user taps on it and will trigger an action in response.</p>
+                    
+                    <p>The thing that provides functionality to an object is commonly called a <em>method</em>. Other programming languages may call this a “function”, “procedure” or “subroutine”, but method is the term in Objective-C.</p>
+                    
+                    <p>Our <code class="objc">showAlert</code> action is an example of a method. Another method we’ve already seen is <code class="objc">shouldAutorotateToInterfaceOrientation</code>. If you look through the rest of BullsEyeViewController.m you’ll see several other methods, such as <code class="objc">viewDidLoad</code> and <code class="objc">didReceiveMemoryWarning</code>. These currently don’t do much; they were placed there by the Xcode template for our convenience. These specific methods are often used by view controllers, so it’s likely that we will need to fill them in at some point.</p>
+                    
+                    <p>The concept of methods may still feel a little weird, so here’s an example:</p>
+                    
+                    <figure class="image"><figcaption>Every party needs ice cream!</figcaption><img src="HTML/Figures/Objects_and_methods.png" alt="Every party needs ice cream!"/></figure>
+                    
+                    <p>You (or at least an object named “You”) wants to throw a party but you forgot to buy ice cream. Fortunately, you have invited the object named Steve who happens to live next door to a convenience store. It won’t be much of a party without ice cream, so at some point during your party preparations you send object Steve a message asking him to bring some ice cream.</p>
+                    
+                    <p>The computer now switches to object Steve and executes the commands from his <code class="objc">buyIceCream</code> method, one by one, from top to bottom. When his method is done, the computer returns to your <code class="objc">throwParty</code> method and continues with that, so you and your friends can eat the ice cream that Steve brought back with him.</p>
+                    
+                    <p>The Steve object also has data. Before he goes to the store he has money. At the store he exchanges this money data for other, much more important, data: ice cream! After making that transaction, he brings the ice cream data over to the party, if he doesn’t eat it all along the way.</p>
+                    
+                    <p>“Sending a message” sounds more involved than it really is. It’s a good way to think conceptually of how objects communicate, but there really aren’t any pigeons or mailmen involved. The computer simply jumps from the <code class="objc">throwParty</code> method to the <code class="objc">buyIceCream</code> method and back again.</p>
+                    
+                    <p>Often the terms “calling a method” or “invoking a method” are used instead. That means the exact same thing as sending a message: the computer jumps to the method you’re calling and returns to where it left off when that method is done.</p>
+                    
+                    <p>The important thing to remember is that objects have methods (the steps involved in buying ice cream) and data (the actual ice cream and the money to buy it with). Objects can look at each other’s data (to some extent anyway, Steve may not approve if you peek inside his wallet) and can ask other objects to perform their methods. That’s how you get your app to do things.</p>
+                    
+                    <hr>
+                    
+                    <h2>Adding the rest of the controls</h2>
+                    
+                    <p>Our screen already has a button, but we still need to add the rest of the UI controls. Here is the screen again, this time annotated with the different types of views:</p>
+                    
+                    <figure class="image"><figcaption>The different views in the game screen</figcaption><img src="HTML/Figures/Game_screen_views.png" alt="The different views in the game screen"/></figure>
+                    
+                    <p>As you can see, I put placeholder values into some of the labels (for example, “999”). The reason for this is that it makes it easier to see how the labels will fit on the screen when they’re actually used. The score label could potentially hold a large value, so we’d better make sure the label has room for it.</p>
+                    
+                    <p><strong>&raquo;</strong> Try to re-create this screen on your own by dragging the various controls from the Object Library. You can see in the screenshot above how big the items should (roughly) be. It’s OK if you’re a few points off.</p>
+                    
+                    <p>Tip: The (i) button is actually a regular Round Rect button, but its Type is set to Info Light in the Attributes Inspector:</p>
+                    
+                    <figure class="image"><figcaption>The button type lets you change the look of the button</figcaption><img src="HTML/Figures/Info_button_attributes.png" alt="The button type lets you change the look of the button"/></figure>
+                    
+                    <p><strong>&raquo;</strong> Set the attributes for the slider. Its minimum value should be 1, its maximum 100, and its current value 50. (Note that slider values can have numbers behind the decimal point; on my system the decimal point is actually a comma because I’m in Europe. We want to use integral values with the slider, so just type the whole number and Interface Builder will take care of the decimal point for you. It’s also possible that your version of Xcode doesn’t show decimal points.)</p>
+                    
+                    <figure class="image"><figcaption>The slider attributes</figcaption><img src="HTML/Figures/Slider_attributes.png" alt="The slider attributes"/></figure>
+                    
+                    <p>When you’re done, you should have 12 user interface elements in your view: one slider, three buttons and a whole bunch of labels. Excellent.</p>
+                    
+                    <p><strong>&raquo;</strong> Run the app and play with it for a minute. The controls don’t really do much yet (except for the button that should still pop up the alert view), but you can at least drag the slider around.</p>
+                    
+                    <p>We can tick a few more items off our to-do list, all without any programming! That is going to change really soon, because we will have to write Objective-C code to actually make the controls do anything.</p>
+                    
+                    <aside>
+                        <h3>Xib or nib</h3>
+                        
+                        <p>Xib files are also known as “nib” files. Say what? Technically speaking, a xib file is compiled into a nib file that is put into your application bundle. The term nib mostly stuck for historical reasons. You can just consider the terms “xib file” and “nib file” to be equivalent. The preferred term seems to be nib, so that is what I will be using from now on. (This won’t be the last time computer terminology is confusing, ambiguous or inconsistent. The world of programming is full of colorful slang.)</p>
+                        
+                    </aside>
+                    
+                    <hr>
+                    
+                   
+                    
+                    <p>Thanks for reading!</p>
+                    
+                    <h3>Revision history</h3>
+                    
+                    <ul>
+                        <li>v1.4 (14 Aug 2012) - Updated for iOS 6. Removed explanation of <code class="objc">viewDidUnload</code>, as its use is no longer recommended by Apple.</li>
+                        <li>v1.3 (6 June 2012) - Updated for Xcode 4.3. Added PDF version.</li>
+                        <li>v1.2 (18 Dec 2011) - Added tutorial 4, StoreSearch</li>
+                        <li>v1.1 (18 Sept 2011) - Updated for iOS 5</li>
+                        <li>v1.0 (5 July 2011) - First version (iOS 4)</li>
+                    </ul>
+                    
+                    <p>© 2011-2012 M.I. Hollemans</p>
+                    
+                    
+            </article>
+        </section>
+    </body>
+</html>

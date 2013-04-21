@@ -272,6 +272,7 @@
 		B766B49716F8577D00610BCB /* playlistloader.js in Sources */ = {isa = PBXBuildFile; fileRef = B766B48D16F8577D00610BCB /* playlistloader.js */; };
 		B766B49816F8577D00610BCB /* signal.js in Sources */ = {isa = PBXBuildFile; fileRef = B766B48E16F8577D00610BCB /* signal.js */; };
 		B766B49916F8577D00610BCB /* utils.js in Sources */ = {isa = PBXBuildFile; fileRef = B766B48F16F8577D00610BCB /* utils.js */; };
+		B76951EB1723984E00F7B60E /* ihakula.html in Resources */ = {isa = PBXBuildFile; fileRef = B76951EA1723984E00F7B60E /* ihakula.html */; };
 		B785030116F6E4500045A26F /* homePlugin.js in Sources */ = {isa = PBXBuildFile; fileRef = B78502FC16F6E4500045A26F /* homePlugin.js */; };
 		B785030216F6E4500045A26F /* plugin.xml in Resources */ = {isa = PBXBuildFile; fileRef = B78502FD16F6E4500045A26F /* plugin.xml */; };
 		B785030916F6E5170045A26F /* productsPlugin.js in Sources */ = {isa = PBXBuildFile; fileRef = B785030716F6E5170045A26F /* productsPlugin.js */; };
@@ -591,6 +592,7 @@
 		B766B48D16F8577D00610BCB /* playlistloader.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = playlistloader.js; sourceTree = "<group>"; };
 		B766B48E16F8577D00610BCB /* signal.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = signal.js; sourceTree = "<group>"; };
 		B766B48F16F8577D00610BCB /* utils.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = utils.js; sourceTree = "<group>"; };
+		B76951EA1723984E00F7B60E /* ihakula.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ihakula.html; sourceTree = "<group>"; };
 		B78502FC16F6E4500045A26F /* homePlugin.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = homePlugin.js; sourceTree = "<group>"; };
 		B78502FD16F6E4500045A26F /* plugin.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = plugin.xml; sourceTree = "<group>"; };
 		B785030716F6E5170045A26F /* productsPlugin.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = productsPlugin.js; sourceTree = "<group>"; };
@@ -1279,6 +1281,14 @@
 			path = images;
 			sourceTree = "<group>";
 		};
+		B76951E91723984E00F7B60E /* htmls */ = {
+			isa = PBXGroup;
+			children = (
+				B76951EA1723984E00F7B60E /* ihakula.html */,
+			);
+			path = htmls;
+			sourceTree = "<group>";
+		};
 		B78502FB16F6E4500045A26F /* home */ = {
 			isa = PBXGroup;
 			children = (
@@ -1304,6 +1314,7 @@
 				B7BBF7F816E7376400D86F69 /* css */,
 				B7BBF7F916E7376400D86F69 /* images */,
 				B7BBF7FA16E7376400D86F69 /* js */,
+				B76951E91723984E00F7B60E /* htmls */,
 				B7BBF7FC16E7377800D86F69 /* index.html */,
 			);
 			name = iHakula;
@@ -1771,6 +1782,7 @@
 				B7261F5D17144D2D006D2F58 /* plugin.xml in Resources */,
 				B7261F6117145008006D2F58 /* gantt.html in Resources */,
 				B7E78913171C13D4005F25B9 /* project.php in Resources */,
+				B76951EB1723984E00F7B60E /* ihakula.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
