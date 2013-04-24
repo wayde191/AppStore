@@ -233,6 +233,7 @@
 		B7261F5F17144D2D006D2F58 /* GanttViewController.js in Sources */ = {isa = PBXBuildFile; fileRef = B7261F5C17144D2D006D2F58 /* GanttViewController.js */; };
 		B7261F6117145008006D2F58 /* gantt.html in Resources */ = {isa = PBXBuildFile; fileRef = B7261F6017145007006D2F58 /* gantt.html */; };
 		B726B28C171314450079DA77 /* jquery.handsontable.removeRow.js in Sources */ = {isa = PBXBuildFile; fileRef = B726B28B171314450079DA77 /* jquery.handsontable.removeRow.js */; };
+		B731A6271727D12C0084491C /* termsandprivacy.html in Resources */ = {isa = PBXBuildFile; fileRef = B731A6261727D12C0084491C /* termsandprivacy.html */; };
 		B738762C17057EFE0015ADC2 /* animated-overlay.gif in Resources */ = {isa = PBXBuildFile; fileRef = B738761B17057EFE0015ADC2 /* animated-overlay.gif */; };
 		B738762D17057EFE0015ADC2 /* ui-bg_flat_30_cccccc_40x100.png in Resources */ = {isa = PBXBuildFile; fileRef = B738761C17057EFE0015ADC2 /* ui-bg_flat_30_cccccc_40x100.png */; };
 		B738762E17057EFE0015ADC2 /* ui-bg_flat_50_5c5c5c_40x100.png in Resources */ = {isa = PBXBuildFile; fileRef = B738761D17057EFE0015ADC2 /* ui-bg_flat_50_5c5c5c_40x100.png */; };
@@ -553,6 +554,7 @@
 		B7261F5C17144D2D006D2F58 /* GanttViewController.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = GanttViewController.js; sourceTree = "<group>"; };
 		B7261F6017145007006D2F58 /* gantt.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = gantt.html; sourceTree = "<group>"; };
 		B726B28B171314450079DA77 /* jquery.handsontable.removeRow.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.handsontable.removeRow.js; sourceTree = "<group>"; };
+		B731A6261727D12C0084491C /* termsandprivacy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = termsandprivacy.html; sourceTree = "<group>"; };
 		B738761B17057EFE0015ADC2 /* animated-overlay.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "animated-overlay.gif"; sourceTree = "<group>"; };
 		B738761C17057EFE0015ADC2 /* ui-bg_flat_30_cccccc_40x100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_flat_30_cccccc_40x100.png"; sourceTree = "<group>"; };
 		B738761D17057EFE0015ADC2 /* ui-bg_flat_50_5c5c5c_40x100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_flat_50_5c5c5c_40x100.png"; sourceTree = "<group>"; };
@@ -1285,6 +1287,7 @@
 			isa = PBXGroup;
 			children = (
 				B76951EA1723984E00F7B60E /* ihakula.html */,
+				B731A6261727D12C0084491C /* termsandprivacy.html */,
 			);
 			path = htmls;
 			sourceTree = "<group>";
@@ -1783,6 +1786,7 @@
 				B7261F6117145008006D2F58 /* gantt.html in Resources */,
 				B7E78913171C13D4005F25B9 /* project.php in Resources */,
 				B76951EB1723984E00F7B60E /* ihakula.html in Resources */,
+				B731A6271727D12C0084491C /* termsandprivacy.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
