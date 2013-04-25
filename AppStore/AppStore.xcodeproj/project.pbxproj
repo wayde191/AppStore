@@ -278,6 +278,7 @@
 		B785030216F6E4500045A26F /* plugin.xml in Resources */ = {isa = PBXBuildFile; fileRef = B78502FD16F6E4500045A26F /* plugin.xml */; };
 		B785030916F6E5170045A26F /* productsPlugin.js in Sources */ = {isa = PBXBuildFile; fileRef = B785030716F6E5170045A26F /* productsPlugin.js */; };
 		B785030A16F6E5170045A26F /* plugin.xml in Resources */ = {isa = PBXBuildFile; fileRef = B785030816F6E5170045A26F /* plugin.xml */; };
+		B7A175741728E93D0006E46B /* aboutme.html in Resources */ = {isa = PBXBuildFile; fileRef = B7A175731728E93D0006E46B /* aboutme.html */; };
 		B7AAE3241716EB76006D013D /* jquery.handsontable.full.js in Sources */ = {isa = PBXBuildFile; fileRef = B7AAE3221716EB76006D013D /* jquery.handsontable.full.js */; };
 		B7AAE3251716EB76006D013D /* spin.js in Sources */ = {isa = PBXBuildFile; fileRef = B7AAE3231716EB76006D013D /* spin.js */; };
 		B7B8D1FF1716BE48009BDD35 /* rootPlugin.js in Sources */ = {isa = PBXBuildFile; fileRef = B7B8D1FE1716BE48009BDD35 /* rootPlugin.js */; };
@@ -599,6 +600,7 @@
 		B78502FD16F6E4500045A26F /* plugin.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = plugin.xml; sourceTree = "<group>"; };
 		B785030716F6E5170045A26F /* productsPlugin.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = productsPlugin.js; sourceTree = "<group>"; };
 		B785030816F6E5170045A26F /* plugin.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = plugin.xml; sourceTree = "<group>"; };
+		B7A175731728E93D0006E46B /* aboutme.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = aboutme.html; sourceTree = "<group>"; };
 		B7AAE3221716EB76006D013D /* jquery.handsontable.full.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.handsontable.full.js; sourceTree = "<group>"; };
 		B7AAE3231716EB76006D013D /* spin.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = spin.js; sourceTree = "<group>"; };
 		B7B8D1FE1716BE48009BDD35 /* rootPlugin.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = rootPlugin.js; sourceTree = "<group>"; };
@@ -1288,6 +1290,7 @@
 			children = (
 				B76951EA1723984E00F7B60E /* ihakula.html */,
 				B731A6261727D12C0084491C /* termsandprivacy.html */,
+				B7A175731728E93D0006E46B /* aboutme.html */,
 			);
 			path = htmls;
 			sourceTree = "<group>";
@@ -1787,6 +1790,7 @@
 				B7E78913171C13D4005F25B9 /* project.php in Resources */,
 				B76951EB1723984E00F7B60E /* ihakula.html in Resources */,
 				B731A6271727D12C0084491C /* termsandprivacy.html in Resources */,
+				B7A175741728E93D0006E46B /* aboutme.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
