@@ -8,8 +8,6 @@
  * @email: hakula@ihakula.com
  * @website: www.ihakula.com
  */
-
-(function(ih){
   
   ih.defineClass("ih.PubSub", null, null, function(smethod, pmethod){
     
@@ -52,5 +50,3 @@
     };
     
   });
-  
-})(window.ih = window.ih || {});

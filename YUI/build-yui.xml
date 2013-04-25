@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="MyTask" basedir="." default="compress-js">
-    <property name="src.dir"     value="./src"/>
+<project name="MyTask" basedir="." default="compress-css">
+    <property name="cssdest.dir" value="../../ihakula/"/>
+    <property name="dest.dir" value="../../ihakula/js"/>
+    <property name="src.dir" value="./src/"/>
   
-    <target name="compress-js">
+    <target name="ihakula-js">
       <apply executable="java" parallel="false" failonerror="true"
-       dest="${src.dir}/dest"
+       dest="${dest.dir}/iHFramework/"
        append="false" force="true">
        <fileset
         dir="${src.dir}"
-        includes="js/1/**.js, js/2/**.js" />
+        includes="ihakula.js" />
        <arg line="-jar" />
        <arg path="yuicompressor-2.4.8pre.jar" />
        <arg line="--charset utf-8" />
@@ -17,15 +19,32 @@
        <mapper type="glob" from="*.js" to="*-min.js" />
        <targetfile />
       </apply>
-  </target>
+    </target>
   
-    <target name="compress-css">
+    <target name="tools-js" depends="ihakula-js">
+      <apply executable="java" parallel="false" failonerror="true"
+       dest="${dest.dir}/ThirdPartFrameworks/"
+       append="false" force="true">
+       <fileset
+        dir="${src.dir}"
+        includes="tools.js" />
+       <arg line="-jar" />
+       <arg path="yuicompressor-2.4.8pre.jar" />
+       <arg line="--charset utf-8" />
+       <srcfile />
+       <arg line="-o" />
+       <mapper type="glob" from="*.js" to="*-min.js" />
+       <targetfile />
+      </apply>
+    </target>
+  
+    <target name="compress-css" depends="tools-js">
         <apply executable="java" parallel="false" failonerror="true"
-            dest="${src.dir}/dest"
+            dest="${cssdest.dir}/css"
         append="false" force="true">
         <fileset
             dir="${src.dir}"
-            includes="css/**.css" />
+            includes="main.css" />
         <arg line="-jar" />
         <arg path="yuicompressor-2.4.8pre.jar" />
         <arg line="--charset utf-8" />
