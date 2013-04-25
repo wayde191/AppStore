@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="MyTask" basedir="." default="compress-js">
+    <property name="src.dir"     value="./src"/>
+  
+    <target name="compress-js">
+      <apply executable="java" parallel="false" failonerror="true"
+       dest="${src.dir}/dest"
+       append="false" force="true">
+       <fileset
+        dir="${src.dir}"
+        includes="js/1/**.js, js/2/**.js" />
+       <arg line="-jar" />
+       <arg path="yuicompressor-2.4.8pre.jar" />
+       <arg line="--charset utf-8" />
+       <srcfile />
+       <arg line="-o" />
+       <mapper type="glob" from="*.js" to="*-min.js" />
+       <targetfile />
+      </apply>
+  </target>
+  
+    <target name="compress-css">
+        <apply executable="java" parallel="false" failonerror="true"
+            dest="${src.dir}/dest"
+        append="false" force="true">
+        <fileset
+            dir="${src.dir}"
+            includes="css/**.css" />
+        <arg line="-jar" />
+        <arg path="yuicompressor-2.4.8pre.jar" />
+        <arg line="--charset utf-8" />
+        <srcfile />
+        <arg line="-o" />
+        <mapper type="glob" from="*.css" to="*-min.css" />
+        <targetfile />
+        </apply>
+    </target>
+</project>

@@ -279,6 +279,9 @@
 		B785030916F6E5170045A26F /* productsPlugin.js in Sources */ = {isa = PBXBuildFile; fileRef = B785030716F6E5170045A26F /* productsPlugin.js */; };
 		B785030A16F6E5170045A26F /* plugin.xml in Resources */ = {isa = PBXBuildFile; fileRef = B785030816F6E5170045A26F /* plugin.xml */; };
 		B7A175741728E93D0006E46B /* aboutme.html in Resources */ = {isa = PBXBuildFile; fileRef = B7A175731728E93D0006E46B /* aboutme.html */; };
+		B7A17598172927840006E46B /* yuicompressor-2.4.8pre.jar in Frameworks */ = {isa = PBXBuildFile; fileRef = B7A17597172927840006E46B /* yuicompressor-2.4.8pre.jar */; };
+		B7A1759B172927BB0006E46B /* build-yui.xml in Resources */ = {isa = PBXBuildFile; fileRef = B7A1759A172927BB0006E46B /* build-yui.xml */; };
+		B7A175B1172939A00006E46B /* run.sh in Resources */ = {isa = PBXBuildFile; fileRef = B7A175B0172939A00006E46B /* run.sh */; };
 		B7AAE3241716EB76006D013D /* jquery.handsontable.full.js in Sources */ = {isa = PBXBuildFile; fileRef = B7AAE3221716EB76006D013D /* jquery.handsontable.full.js */; };
 		B7AAE3251716EB76006D013D /* spin.js in Sources */ = {isa = PBXBuildFile; fileRef = B7AAE3231716EB76006D013D /* spin.js */; };
 		B7B8D1FF1716BE48009BDD35 /* rootPlugin.js in Sources */ = {isa = PBXBuildFile; fileRef = B7B8D1FE1716BE48009BDD35 /* rootPlugin.js */; };
@@ -601,6 +604,9 @@
 		B785030716F6E5170045A26F /* productsPlugin.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = productsPlugin.js; sourceTree = "<group>"; };
 		B785030816F6E5170045A26F /* plugin.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = plugin.xml; sourceTree = "<group>"; };
 		B7A175731728E93D0006E46B /* aboutme.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = aboutme.html; sourceTree = "<group>"; };
+		B7A17597172927840006E46B /* yuicompressor-2.4.8pre.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = "yuicompressor-2.4.8pre.jar"; sourceTree = "<group>"; };
+		B7A1759A172927BB0006E46B /* build-yui.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "build-yui.xml"; sourceTree = "<group>"; };
+		B7A175B0172939A00006E46B /* run.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = run.sh; sourceTree = "<group>"; };
 		B7AAE3221716EB76006D013D /* jquery.handsontable.full.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.handsontable.full.js; sourceTree = "<group>"; };
 		B7AAE3231716EB76006D013D /* spin.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = spin.js; sourceTree = "<group>"; };
 		B7B8D1FE1716BE48009BDD35 /* rootPlugin.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = rootPlugin.js; sourceTree = "<group>"; };
@@ -662,6 +668,7 @@
 				B7FC971216BBA157006F6893 /* UIKit.framework in Frameworks */,
 				B7FC971416BBA157006F6893 /* Foundation.framework in Frameworks */,
 				B7FC971616BBA157006F6893 /* CoreGraphics.framework in Frameworks */,
+				B7A17598172927840006E46B /* yuicompressor-2.4.8pre.jar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1313,6 +1320,17 @@
 			path = products;
 			sourceTree = "<group>";
 		};
+		B7A17596172927840006E46B /* YUI */ = {
+			isa = PBXGroup;
+			children = (
+				B7A17597172927840006E46B /* yuicompressor-2.4.8pre.jar */,
+				B7A1759A172927BB0006E46B /* build-yui.xml */,
+				B7A175B0172939A00006E46B /* run.sh */,
+			);
+			name = YUI;
+			path = ../YUI;
+			sourceTree = "<group>";
+		};
 		B7BBF7F716E7376400D86F69 /* iHakula */ = {
 			isa = PBXGroup;
 			children = (
@@ -1413,6 +1431,7 @@
 		B7FC970216BBA157006F6893 = {
 			isa = PBXGroup;
 			children = (
+				B7A17596172927840006E46B /* YUI */,
 				B7BBF7F716E7376400D86F69 /* iHakula */,
 				B7FC974716BBA98E006F6893 /* index.html */,
 				B7FC972E16BBA172006F6893 /* css */,
@@ -1791,6 +1810,8 @@
 				B76951EB1723984E00F7B60E /* ihakula.html in Resources */,
 				B731A6271727D12C0084491C /* termsandprivacy.html in Resources */,
 				B7A175741728E93D0006E46B /* aboutme.html in Resources */,
+				B7A1759B172927BB0006E46B /* build-yui.xml in Resources */,
+				B7A175B1172939A00006E46B /* run.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
