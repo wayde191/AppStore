@@ -497,16 +497,7 @@
 		B7E1B4E617295F1A008F794D /* Xmlrpc.php in Resources */ = {isa = PBXBuildFile; fileRef = B7E1B3CC17295F1A008F794D /* Xmlrpc.php */; };
 		B7E1B4E717295F1A008F794D /* Xmlrpcs.php in Resources */ = {isa = PBXBuildFile; fileRef = B7E1B3CD17295F1A008F794D /* Xmlrpcs.php */; };
 		B7E1B4E817295F1A008F794D /* Zip.php in Resources */ = {isa = PBXBuildFile; fileRef = B7E1B3CE17295F1A008F794D /* Zip.php */; };
-		B7E1B4E917295F1A008F794D /* animate.css in Resources */ = {isa = PBXBuildFile; fileRef = B7E1B3D017295F1A008F794D /* animate.css */; };
-		B7E1B4EA17295F1A008F794D /* button.css in Resources */ = {isa = PBXBuildFile; fileRef = B7E1B3D117295F1A008F794D /* button.css */; };
-		B7E1B4EB17295F1A008F794D /* coverflow.css in Resources */ = {isa = PBXBuildFile; fileRef = B7E1B3D217295F1A008F794D /* coverflow.css */; };
-		B7E1B4EC17295F1A008F794D /* gantt.css in Resources */ = {isa = PBXBuildFile; fileRef = B7E1B3D317295F1A008F794D /* gantt.css */; };
-		B7E1B4ED17295F1A008F794D /* jquery-ui-1.8.21.custom.css in Resources */ = {isa = PBXBuildFile; fileRef = B7E1B3D417295F1A008F794D /* jquery-ui-1.8.21.custom.css */; };
-		B7E1B4EE17295F1A008F794D /* jquery.handsontable.full.css in Resources */ = {isa = PBXBuildFile; fileRef = B7E1B3D517295F1A008F794D /* jquery.handsontable.full.css */; };
-		B7E1B4EF17295F1A008F794D /* jquery.handsontable.removeRow.css in Resources */ = {isa = PBXBuildFile; fileRef = B7E1B3D617295F1A008F794D /* jquery.handsontable.removeRow.css */; };
-		B7E1B4F017295F1A008F794D /* objc.css in Resources */ = {isa = PBXBuildFile; fileRef = B7E1B3D717295F1A008F794D /* objc.css */; };
 		B7E1B4F117295F1A008F794D /* reset.css in Resources */ = {isa = PBXBuildFile; fileRef = B7E1B3D817295F1A008F794D /* reset.css */; };
-		B7E1B4F217295F1A008F794D /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = B7E1B3D917295F1A008F794D /* style.css */; };
 		B7E1B4F317295F1A008F794D /* animated-overlay.gif in Resources */ = {isa = PBXBuildFile; fileRef = B7E1B3DC17295F1A008F794D /* animated-overlay.gif */; };
 		B7E1B4F417295F1A008F794D /* ui-bg_flat_30_cccccc_40x100.png in Resources */ = {isa = PBXBuildFile; fileRef = B7E1B3DD17295F1A008F794D /* ui-bg_flat_30_cccccc_40x100.png */; };
 		B7E1B4F517295F1A008F794D /* ui-bg_flat_50_5c5c5c_40x100.png in Resources */ = {isa = PBXBuildFile; fileRef = B7E1B3DE17295F1A008F794D /* ui-bg_flat_50_5c5c5c_40x100.png */; };
@@ -522,7 +513,6 @@
 		B7E1B4FF17295F1A008F794D /* ui-icons_a83300_256x240.png in Resources */ = {isa = PBXBuildFile; fileRef = B7E1B3E817295F1A008F794D /* ui-icons_a83300_256x240.png */; };
 		B7E1B50017295F1A008F794D /* ui-icons_cccccc_256x240.png in Resources */ = {isa = PBXBuildFile; fileRef = B7E1B3E917295F1A008F794D /* ui-icons_cccccc_256x240.png */; };
 		B7E1B50117295F1A008F794D /* ui-icons_ffffff_256x240.png in Resources */ = {isa = PBXBuildFile; fileRef = B7E1B3EA17295F1A008F794D /* ui-icons_ffffff_256x240.png */; };
-		B7E1B50217295F1A008F794D /* jquery-ui-1.10.2.custom.css in Resources */ = {isa = PBXBuildFile; fileRef = B7E1B3EB17295F1A008F794D /* jquery-ui-1.10.2.custom.css */; };
 		B7E1B50317295F1A008F794D /* jquery-ui-1.10.2.custom.min.css in Resources */ = {isa = PBXBuildFile; fileRef = B7E1B3EC17295F1A008F794D /* jquery-ui-1.10.2.custom.min.css */; };
 		B7E1B50417295F1A008F794D /* aboutme.html in Resources */ = {isa = PBXBuildFile; fileRef = B7E1B3EE17295F1A008F794D /* aboutme.html */; };
 		B7E1B50517295F1A008F794D /* ihakula.html in Resources */ = {isa = PBXBuildFile; fileRef = B7E1B3EF17295F1A008F794D /* ihakula.html */; };
@@ -539,7 +529,6 @@
 		B7E1B51017295F1A008F794D /* product-iaccount.png in Resources */ = {isa = PBXBuildFile; fileRef = B7E1B3FD17295F1A008F794D /* product-iaccount.png */; };
 		B7E1B51117295F1A008F794D /* texture.png in Resources */ = {isa = PBXBuildFile; fileRef = B7E1B3FE17295F1A008F794D /* texture.png */; };
 		B7E1B51217295F1A008F794D /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = B7E1B3FF17295F1A008F794D /* index.html */; };
-		B7E1B51317295F1A008F794D /* ihakula.js in Sources */ = {isa = PBXBuildFile; fileRef = B7E1B40217295F1A008F794D /* ihakula.js */; };
 		B7E1B51417295F1A008F794D /* logic.js in Sources */ = {isa = PBXBuildFile; fileRef = B7E1B40317295F1A008F794D /* logic.js */; };
 		B7E1B51517295F1A008F794D /* ampConf.xml in Resources */ = {isa = PBXBuildFile; fileRef = B7E1B40517295F1A008F794D /* ampConf.xml */; };
 		B7E1B51617295F1A008F794D /* gantt.html in Resources */ = {isa = PBXBuildFile; fileRef = B7E1B40717295F1A008F794D /* gantt.html */; };
@@ -560,7 +549,6 @@
 		B7E1B52517295F1A008F794D /* RootDataModel.js in Sources */ = {isa = PBXBuildFile; fileRef = B7E1B41917295F1A008F794D /* RootDataModel.js */; };
 		B7E1B52617295F1A008F794D /* rootPlugin.js in Sources */ = {isa = PBXBuildFile; fileRef = B7E1B41A17295F1A008F794D /* rootPlugin.js */; };
 		B7E1B52717295F1A008F794D /* RootViewController.js in Sources */ = {isa = PBXBuildFile; fileRef = B7E1B41B17295F1A008F794D /* RootViewController.js */; };
-		B7E1B52817295F1A008F794D /* tools.js in Sources */ = {isa = PBXBuildFile; fileRef = B7E1B41D17295F1A008F794D /* tools.js */; };
 		B7E78913171C13D4005F25B9 /* project.php in Resources */ = {isa = PBXBuildFile; fileRef = B7E78912171C13D4005F25B9 /* project.php */; };
 		B7F0CB1616F48FAF00BD49F3 /* IHPubSubTester.js in Sources */ = {isa = PBXBuildFile; fileRef = B7F0CB1516F48FAF00BD49F3 /* IHPubSubTester.js */; };
 		B7F0CB1916F4949B00BD49F3 /* IHMessageTester.js in Sources */ = {isa = PBXBuildFile; fileRef = B7F0CB1816F4949B00BD49F3 /* IHMessageTester.js */; };
@@ -1089,16 +1077,7 @@
 		B7E1B3CC17295F1A008F794D /* Xmlrpc.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = Xmlrpc.php; sourceTree = "<group>"; };
 		B7E1B3CD17295F1A008F794D /* Xmlrpcs.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = Xmlrpcs.php; sourceTree = "<group>"; };
 		B7E1B3CE17295F1A008F794D /* Zip.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = Zip.php; sourceTree = "<group>"; };
-		B7E1B3D017295F1A008F794D /* animate.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = animate.css; sourceTree = "<group>"; };
-		B7E1B3D117295F1A008F794D /* button.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = button.css; sourceTree = "<group>"; };
-		B7E1B3D217295F1A008F794D /* coverflow.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = coverflow.css; sourceTree = "<group>"; };
-		B7E1B3D317295F1A008F794D /* gantt.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = gantt.css; sourceTree = "<group>"; };
-		B7E1B3D417295F1A008F794D /* jquery-ui-1.8.21.custom.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "jquery-ui-1.8.21.custom.css"; sourceTree = "<group>"; };
-		B7E1B3D517295F1A008F794D /* jquery.handsontable.full.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = jquery.handsontable.full.css; sourceTree = "<group>"; };
-		B7E1B3D617295F1A008F794D /* jquery.handsontable.removeRow.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = jquery.handsontable.removeRow.css; sourceTree = "<group>"; };
-		B7E1B3D717295F1A008F794D /* objc.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = objc.css; sourceTree = "<group>"; };
 		B7E1B3D817295F1A008F794D /* reset.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = reset.css; sourceTree = "<group>"; };
-		B7E1B3D917295F1A008F794D /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
 		B7E1B3DC17295F1A008F794D /* animated-overlay.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "animated-overlay.gif"; sourceTree = "<group>"; };
 		B7E1B3DD17295F1A008F794D /* ui-bg_flat_30_cccccc_40x100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_flat_30_cccccc_40x100.png"; sourceTree = "<group>"; };
 		B7E1B3DE17295F1A008F794D /* ui-bg_flat_50_5c5c5c_40x100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-bg_flat_50_5c5c5c_40x100.png"; sourceTree = "<group>"; };
@@ -1114,7 +1093,6 @@
 		B7E1B3E817295F1A008F794D /* ui-icons_a83300_256x240.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-icons_a83300_256x240.png"; sourceTree = "<group>"; };
 		B7E1B3E917295F1A008F794D /* ui-icons_cccccc_256x240.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-icons_cccccc_256x240.png"; sourceTree = "<group>"; };
 		B7E1B3EA17295F1A008F794D /* ui-icons_ffffff_256x240.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-icons_ffffff_256x240.png"; sourceTree = "<group>"; };
-		B7E1B3EB17295F1A008F794D /* jquery-ui-1.10.2.custom.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "jquery-ui-1.10.2.custom.css"; sourceTree = "<group>"; };
 		B7E1B3EC17295F1A008F794D /* jquery-ui-1.10.2.custom.min.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "jquery-ui-1.10.2.custom.min.css"; sourceTree = "<group>"; };
 		B7E1B3EE17295F1A008F794D /* aboutme.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = aboutme.html; sourceTree = "<group>"; };
 		B7E1B3EF17295F1A008F794D /* ihakula.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ihakula.html; sourceTree = "<group>"; };
@@ -1131,7 +1109,6 @@
 		B7E1B3FD17295F1A008F794D /* product-iaccount.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "product-iaccount.png"; sourceTree = "<group>"; };
 		B7E1B3FE17295F1A008F794D /* texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture.png; sourceTree = "<group>"; };
 		B7E1B3FF17295F1A008F794D /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
-		B7E1B40217295F1A008F794D /* ihakula.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ihakula.js; sourceTree = "<group>"; };
 		B7E1B40317295F1A008F794D /* logic.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = logic.js; sourceTree = "<group>"; };
 		B7E1B40517295F1A008F794D /* ampConf.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ampConf.xml; sourceTree = "<group>"; };
 		B7E1B40717295F1A008F794D /* gantt.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = gantt.html; sourceTree = "<group>"; };
@@ -1152,7 +1129,6 @@
 		B7E1B41917295F1A008F794D /* RootDataModel.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = RootDataModel.js; sourceTree = "<group>"; };
 		B7E1B41A17295F1A008F794D /* rootPlugin.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = rootPlugin.js; sourceTree = "<group>"; };
 		B7E1B41B17295F1A008F794D /* RootViewController.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = RootViewController.js; sourceTree = "<group>"; };
-		B7E1B41D17295F1A008F794D /* tools.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = tools.js; sourceTree = "<group>"; };
 		B7E78912171C13D4005F25B9 /* project.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = project.php; sourceTree = "<group>"; };
 		B7F0CB1516F48FAF00BD49F3 /* IHPubSubTester.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHPubSubTester.js; sourceTree = "<group>"; };
 		B7F0CB1816F4949B00BD49F3 /* IHMessageTester.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHMessageTester.js; sourceTree = "<group>"; };
@@ -2457,16 +2433,7 @@
 		B7E1B3CF17295F1A008F794D /* css */ = {
 			isa = PBXGroup;
 			children = (
-				B7E1B3D017295F1A008F794D /* animate.css */,
-				B7E1B3D117295F1A008F794D /* button.css */,
-				B7E1B3D217295F1A008F794D /* coverflow.css */,
-				B7E1B3D317295F1A008F794D /* gantt.css */,
-				B7E1B3D417295F1A008F794D /* jquery-ui-1.8.21.custom.css */,
-				B7E1B3D517295F1A008F794D /* jquery.handsontable.full.css */,
-				B7E1B3D617295F1A008F794D /* jquery.handsontable.removeRow.css */,
-				B7E1B3D717295F1A008F794D /* objc.css */,
 				B7E1B3D817295F1A008F794D /* reset.css */,
-				B7E1B3D917295F1A008F794D /* style.css */,
 				B7E1B3DA17295F1A008F794D /* ui-darkness */,
 			);
 			path = css;
@@ -2476,7 +2443,6 @@
 			isa = PBXGroup;
 			children = (
 				B7E1B3DB17295F1A008F794D /* images */,
-				B7E1B3EB17295F1A008F794D /* jquery-ui-1.10.2.custom.css */,
 				B7E1B3EC17295F1A008F794D /* jquery-ui-1.10.2.custom.min.css */,
 			);
 			path = "ui-darkness";
@@ -2562,7 +2528,6 @@
 		B7E1B40117295F1A008F794D /* iHFramework */ = {
 			isa = PBXGroup;
 			children = (
-				B7E1B40217295F1A008F794D /* ihakula.js */,
 			);
 			path = iHFramework;
 			sourceTree = "<group>";
@@ -2628,7 +2593,6 @@
 		B7E1B41C17295F1A008F794D /* ThirdPartFrameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B7E1B41D17295F1A008F794D /* tools.js */,
 			);
 			path = ThirdPartFrameworks;
 			sourceTree = "<group>";
@@ -3249,16 +3213,7 @@
 				B7E1B4E617295F1A008F794D /* Xmlrpc.php in Resources */,
 				B7E1B4E717295F1A008F794D /* Xmlrpcs.php in Resources */,
 				B7E1B4E817295F1A008F794D /* Zip.php in Resources */,
-				B7E1B4E917295F1A008F794D /* animate.css in Resources */,
-				B7E1B4EA17295F1A008F794D /* button.css in Resources */,
-				B7E1B4EB17295F1A008F794D /* coverflow.css in Resources */,
-				B7E1B4EC17295F1A008F794D /* gantt.css in Resources */,
-				B7E1B4ED17295F1A008F794D /* jquery-ui-1.8.21.custom.css in Resources */,
-				B7E1B4EE17295F1A008F794D /* jquery.handsontable.full.css in Resources */,
-				B7E1B4EF17295F1A008F794D /* jquery.handsontable.removeRow.css in Resources */,
-				B7E1B4F017295F1A008F794D /* objc.css in Resources */,
 				B7E1B4F117295F1A008F794D /* reset.css in Resources */,
-				B7E1B4F217295F1A008F794D /* style.css in Resources */,
 				B7E1B4F317295F1A008F794D /* animated-overlay.gif in Resources */,
 				B7E1B4F417295F1A008F794D /* ui-bg_flat_30_cccccc_40x100.png in Resources */,
 				B7E1B4F517295F1A008F794D /* ui-bg_flat_50_5c5c5c_40x100.png in Resources */,
@@ -3274,7 +3229,6 @@
 				B7E1B4FF17295F1A008F794D /* ui-icons_a83300_256x240.png in Resources */,
 				B7E1B50017295F1A008F794D /* ui-icons_cccccc_256x240.png in Resources */,
 				B7E1B50117295F1A008F794D /* ui-icons_ffffff_256x240.png in Resources */,
-				B7E1B50217295F1A008F794D /* jquery-ui-1.10.2.custom.css in Resources */,
 				B7E1B50317295F1A008F794D /* jquery-ui-1.10.2.custom.min.css in Resources */,
 				B7E1B50417295F1A008F794D /* aboutme.html in Resources */,
 				B7E1B50517295F1A008F794D /* ihakula.html in Resources */,
@@ -3368,7 +3322,6 @@
 				B7B8D2021716C1B6009BDD35 /* ganttPlugin.js in Sources */,
 				B7AAE3241716EB76006D013D /* jquery.handsontable.full.js in Sources */,
 				B7AAE3251716EB76006D013D /* spin.js in Sources */,
-				B7E1B51317295F1A008F794D /* ihakula.js in Sources */,
 				B7E1B51417295F1A008F794D /* logic.js in Sources */,
 				B7E1B51717295F1A008F794D /* GanttDataModel.js in Sources */,
 				B7E1B51817295F1A008F794D /* ganttPlugin.js in Sources */,
@@ -3378,7 +3331,6 @@
 				B7E1B52517295F1A008F794D /* RootDataModel.js in Sources */,
 				B7E1B52617295F1A008F794D /* rootPlugin.js in Sources */,
 				B7E1B52717295F1A008F794D /* RootViewController.js in Sources */,
-				B7E1B52817295F1A008F794D /* tools.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
