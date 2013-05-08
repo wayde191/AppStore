@@ -294,6 +294,12 @@
 		B7BBF80B16E739F800D86F69 /* 1.ico in Resources */ = {isa = PBXBuildFile; fileRef = B7BBF80616E739F800D86F69 /* 1.ico */; };
 		B7BBF80C16E739F800D86F69 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B7BBF80816E739F800D86F69 /* logo.png */; };
 		B7BBF80D16E739F800D86F69 /* texture.png in Resources */ = {isa = PBXBuildFile; fileRef = B7BBF80916E739F800D86F69 /* texture.png */; };
+		B7DC0A57173A1D7A0074001B /* main-min.css in Resources */ = {isa = PBXBuildFile; fileRef = B7DC0A56173A1D7A0074001B /* main-min.css */; };
+		B7DC0A5B173A1ED00074001B /* plugin.xml in Resources */ = {isa = PBXBuildFile; fileRef = B7DC0A5A173A1ED00074001B /* plugin.xml */; };
+		B7DC0A5D173A205D0074001B /* accountPlugin.js in Sources */ = {isa = PBXBuildFile; fileRef = B7DC0A5C173A205D0074001B /* accountPlugin.js */; };
+		B7DC0A5F173A222D0074001B /* AccountDataModel.js in Sources */ = {isa = PBXBuildFile; fileRef = B7DC0A5E173A222D0074001B /* AccountDataModel.js */; };
+		B7DC0A61173A22500074001B /* AccountViewController.js in Sources */ = {isa = PBXBuildFile; fileRef = B7DC0A60173A224F0074001B /* AccountViewController.js */; };
+		B7DC0A63173A227F0074001B /* account.html in Resources */ = {isa = PBXBuildFile; fileRef = B7DC0A62173A227E0074001B /* account.html */; };
 		B7E1B41E17295F1A008F794D /* .htaccess in Resources */ = {isa = PBXBuildFile; fileRef = B7E1B2E017295F1A008F794D /* .htaccess */; };
 		B7E1B41F17295F1A008F794D /* .htaccess in Resources */ = {isa = PBXBuildFile; fileRef = B7E1B2E217295F1A008F794D /* .htaccess */; };
 		B7E1B42017295F1A008F794D /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = B7E1B2E317295F1A008F794D /* index.html */; };
@@ -874,6 +880,12 @@
 		B7BBF80616E739F800D86F69 /* 1.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = 1.ico; sourceTree = "<group>"; };
 		B7BBF80816E739F800D86F69 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		B7BBF80916E739F800D86F69 /* texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture.png; sourceTree = "<group>"; };
+		B7DC0A56173A1D7A0074001B /* main-min.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "main-min.css"; sourceTree = "<group>"; };
+		B7DC0A5A173A1ED00074001B /* plugin.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = plugin.xml; sourceTree = "<group>"; };
+		B7DC0A5C173A205D0074001B /* accountPlugin.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = accountPlugin.js; sourceTree = "<group>"; };
+		B7DC0A5E173A222D0074001B /* AccountDataModel.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = AccountDataModel.js; sourceTree = "<group>"; };
+		B7DC0A60173A224F0074001B /* AccountViewController.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = AccountViewController.js; sourceTree = "<group>"; };
+		B7DC0A62173A227E0074001B /* account.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = account.html; sourceTree = "<group>"; };
 		B7E1B2E017295F1A008F794D /* .htaccess */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .htaccess; sourceTree = "<group>"; };
 		B7E1B2E217295F1A008F794D /* .htaccess */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .htaccess; sourceTree = "<group>"; };
 		B7E1B2E317295F1A008F794D /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
@@ -1110,7 +1122,7 @@
 		B7E1B3FE17295F1A008F794D /* texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture.png; sourceTree = "<group>"; };
 		B7E1B3FF17295F1A008F794D /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		B7E1B40317295F1A008F794D /* logic.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = logic.js; sourceTree = "<group>"; };
-		B7E1B40517295F1A008F794D /* ampConf.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ampConf.xml; sourceTree = "<group>"; };
+		B7E1B40517295F1A008F794D /* ampConf.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = ampConf.xml; path = Plugins/ampConf.xml; sourceTree = "<group>"; };
 		B7E1B40717295F1A008F794D /* gantt.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = gantt.html; sourceTree = "<group>"; };
 		B7E1B40817295F1A008F794D /* GanttDataModel.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = GanttDataModel.js; sourceTree = "<group>"; };
 		B7E1B40917295F1A008F794D /* ganttPlugin.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ganttPlugin.js; sourceTree = "<group>"; };
@@ -1910,6 +1922,18 @@
 			path = logos;
 			sourceTree = "<group>";
 		};
+		B7DC0A59173A1EA90074001B /* iAccount */ = {
+			isa = PBXGroup;
+			children = (
+				B7DC0A5A173A1ED00074001B /* plugin.xml */,
+				B7DC0A5C173A205D0074001B /* accountPlugin.js */,
+				B7DC0A5E173A222D0074001B /* AccountDataModel.js */,
+				B7DC0A60173A224F0074001B /* AccountViewController.js */,
+				B7DC0A62173A227E0074001B /* account.html */,
+			);
+			path = iAccount;
+			sourceTree = "<group>";
+		};
 		B7E1B2DD17295F1A008F794D /* ihakula */ = {
 			isa = PBXGroup;
 			children = (
@@ -2433,6 +2457,7 @@
 		B7E1B3CF17295F1A008F794D /* css */ = {
 			isa = PBXGroup;
 			children = (
+				B7DC0A56173A1D7A0074001B /* main-min.css */,
 				B7E1B3D817295F1A008F794D /* reset.css */,
 				B7E1B3DA17295F1A008F794D /* ui-darkness */,
 			);
@@ -2520,6 +2545,7 @@
 				B7E1B40117295F1A008F794D /* iHFramework */,
 				B7E1B40317295F1A008F794D /* logic.js */,
 				B7E1B40417295F1A008F794D /* Plugins */,
+				B7E1B40517295F1A008F794D /* ampConf.xml */,
 				B7E1B41C17295F1A008F794D /* ThirdPartFrameworks */,
 			);
 			path = js;
@@ -2535,7 +2561,7 @@
 		B7E1B40417295F1A008F794D /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				B7E1B40517295F1A008F794D /* ampConf.xml */,
+				B7DC0A59173A1EA90074001B /* iAccount */,
 				B7E1B40617295F1A008F794D /* gantt */,
 				B7E1B40C17295F1A008F794D /* home */,
 				B7E1B40F17295F1A008F794D /* products */,
@@ -3256,6 +3282,9 @@
 				B7E1B52217295F1A008F794D /* main-logo.html in Resources */,
 				B7E1B52317295F1A008F794D /* main-register.html in Resources */,
 				B7E1B52417295F1A008F794D /* plugin.xml in Resources */,
+				B7DC0A57173A1D7A0074001B /* main-min.css in Resources */,
+				B7DC0A5B173A1ED00074001B /* plugin.xml in Resources */,
+				B7DC0A63173A227F0074001B /* account.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3331,6 +3360,9 @@
 				B7E1B52517295F1A008F794D /* RootDataModel.js in Sources */,
 				B7E1B52617295F1A008F794D /* rootPlugin.js in Sources */,
 				B7E1B52717295F1A008F794D /* RootViewController.js in Sources */,
+				B7DC0A5D173A205D0074001B /* accountPlugin.js in Sources */,
+				B7DC0A5F173A222D0074001B /* AccountDataModel.js in Sources */,
+				B7DC0A61173A22500074001B /* AccountViewController.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
