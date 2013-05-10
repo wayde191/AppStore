@@ -257,6 +257,9 @@
 		B7387647170586430015ADC2 /* RootDataModel.js in Sources */ = {isa = PBXBuildFile; fileRef = B7387646170586430015ADC2 /* RootDataModel.js */; };
 		B73FEA6616F96983003CFBE6 /* main-content.html in Resources */ = {isa = PBXBuildFile; fileRef = B73FEA6516F96983003CFBE6 /* main-content.html */; };
 		B73FEA8316F9E764003CFBE6 /* main-footer.html in Resources */ = {isa = PBXBuildFile; fileRef = B73FEA8216F9E764003CFBE6 /* main-footer.html */; };
+		B740B11A173C900100775E0D /* account.php in Resources */ = {isa = PBXBuildFile; fileRef = B740B119173C900100775E0D /* account.php */; };
+		B740B11F173CCED300775E0D /* ihakula-min.js in Sources */ = {isa = PBXBuildFile; fileRef = B740B11E173CCED300775E0D /* ihakula-min.js */; };
+		B740B121173CCEE800775E0D /* tools-min.js in Sources */ = {isa = PBXBuildFile; fileRef = B740B120173CCEE800775E0D /* tools-min.js */; };
 		B75C212B16F1F5B1004B8CB3 /* IHPackageTester.js in Sources */ = {isa = PBXBuildFile; fileRef = B75C212A16F1F5B1004B8CB3 /* IHPackageTester.js */; };
 		B75C212E16F1FF06004B8CB3 /* IHXMLTester.js in Sources */ = {isa = PBXBuildFile; fileRef = B75C212D16F1FF06004B8CB3 /* IHXMLTester.js */; };
 		B75C213016F20296004B8CB3 /* testXML.xml in Resources */ = {isa = PBXBuildFile; fileRef = B75C212F16F20296004B8CB3 /* testXML.xml */; };
@@ -843,6 +846,9 @@
 		B7387646170586430015ADC2 /* RootDataModel.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = RootDataModel.js; sourceTree = "<group>"; };
 		B73FEA6516F96983003CFBE6 /* main-content.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "main-content.html"; sourceTree = "<group>"; };
 		B73FEA8216F9E764003CFBE6 /* main-footer.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "main-footer.html"; sourceTree = "<group>"; };
+		B740B119173C900100775E0D /* account.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = account.php; sourceTree = "<group>"; };
+		B740B11E173CCED300775E0D /* ihakula-min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "ihakula-min.js"; sourceTree = "<group>"; };
+		B740B120173CCEE800775E0D /* tools-min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "tools-min.js"; sourceTree = "<group>"; };
 		B75C212A16F1F5B1004B8CB3 /* IHPackageTester.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHPackageTester.js; sourceTree = "<group>"; };
 		B75C212D16F1FF06004B8CB3 /* IHXMLTester.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IHXMLTester.js; sourceTree = "<group>"; };
 		B75C212F16F20296004B8CB3 /* testXML.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = testXML.xml; sourceTree = "<group>"; };
@@ -2021,6 +2027,7 @@
 				B7E1B2F817295F1A008F794D /* suggestions.php */,
 				B7E1B2F917295F1A008F794D /* user.php */,
 				B7E1B2FA17295F1A008F794D /* welcome.php */,
+				B740B119173C900100775E0D /* account.php */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -2554,6 +2561,7 @@
 		B7E1B40117295F1A008F794D /* iHFramework */ = {
 			isa = PBXGroup;
 			children = (
+				B740B11E173CCED300775E0D /* ihakula-min.js */,
 			);
 			path = iHFramework;
 			sourceTree = "<group>";
@@ -2619,6 +2627,7 @@
 		B7E1B41C17295F1A008F794D /* ThirdPartFrameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B740B120173CCEE800775E0D /* tools-min.js */,
 			);
 			path = ThirdPartFrameworks;
 			sourceTree = "<group>";
@@ -3285,6 +3294,7 @@
 				B7DC0A57173A1D7A0074001B /* main-min.css in Resources */,
 				B7DC0A5B173A1ED00074001B /* plugin.xml in Resources */,
 				B7DC0A63173A227F0074001B /* account.html in Resources */,
+				B740B11A173C900100775E0D /* account.php in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3363,6 +3373,8 @@
 				B7DC0A5D173A205D0074001B /* accountPlugin.js in Sources */,
 				B7DC0A5F173A222D0074001B /* AccountDataModel.js in Sources */,
 				B7DC0A61173A22500074001B /* AccountViewController.js in Sources */,
+				B740B11F173CCED300775E0D /* ihakula-min.js in Sources */,
+				B740B121173CCEE800775E0D /* tools-min.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
