@@ -277,6 +277,8 @@
 		B766B49816F8577D00610BCB /* signal.js in Sources */ = {isa = PBXBuildFile; fileRef = B766B48E16F8577D00610BCB /* signal.js */; };
 		B766B49916F8577D00610BCB /* utils.js in Sources */ = {isa = PBXBuildFile; fileRef = B766B48F16F8577D00610BCB /* utils.js */; };
 		B76951EB1723984E00F7B60E /* ihakula.html in Resources */ = {isa = PBXBuildFile; fileRef = B76951EA1723984E00F7B60E /* ihakula.html */; };
+		B76967221755F02B007EB890 /* ProductsViewController.js in Sources */ = {isa = PBXBuildFile; fileRef = B76967211755F02A007EB890 /* ProductsViewController.js */; };
+		B76967251755F041007EB890 /* ProductsDataModel.js in Sources */ = {isa = PBXBuildFile; fileRef = B76967241755F041007EB890 /* ProductsDataModel.js */; };
 		B785030116F6E4500045A26F /* homePlugin.js in Sources */ = {isa = PBXBuildFile; fileRef = B78502FC16F6E4500045A26F /* homePlugin.js */; };
 		B785030216F6E4500045A26F /* plugin.xml in Resources */ = {isa = PBXBuildFile; fileRef = B78502FD16F6E4500045A26F /* plugin.xml */; };
 		B785030916F6E5170045A26F /* productsPlugin.js in Sources */ = {isa = PBXBuildFile; fileRef = B785030716F6E5170045A26F /* productsPlugin.js */; };
@@ -287,6 +289,8 @@
 		B7A175B1172939A00006E46B /* run.sh in Resources */ = {isa = PBXBuildFile; fileRef = B7A175B0172939A00006E46B /* run.sh */; };
 		B7AAE3241716EB76006D013D /* jquery.handsontable.full.js in Sources */ = {isa = PBXBuildFile; fileRef = B7AAE3221716EB76006D013D /* jquery.handsontable.full.js */; };
 		B7AAE3251716EB76006D013D /* spin.js in Sources */ = {isa = PBXBuildFile; fileRef = B7AAE3231716EB76006D013D /* spin.js */; };
+		B7B19F7A175CA10900A1E7E4 /* jquery.handsontable.removeRow.css in Resources */ = {isa = PBXBuildFile; fileRef = B7B19F79175CA10900A1E7E4 /* jquery.handsontable.removeRow.css */; };
+		B7B19F7D175CA10900A1E7E4 /* jquery.handsontable.full.css in Resources */ = {isa = PBXBuildFile; fileRef = B7B19F7C175CA10900A1E7E4 /* jquery.handsontable.full.css */; };
 		B7B8D1FF1716BE48009BDD35 /* rootPlugin.js in Sources */ = {isa = PBXBuildFile; fileRef = B7B8D1FE1716BE48009BDD35 /* rootPlugin.js */; };
 		B7B8D2021716C1B6009BDD35 /* ganttPlugin.js in Sources */ = {isa = PBXBuildFile; fileRef = B7B8D2011716C1B6009BDD35 /* ganttPlugin.js */; };
 		B7BBF7FD16E7377800D86F69 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = B7BBF7FC16E7377800D86F69 /* index.html */; };
@@ -866,6 +870,8 @@
 		B766B48E16F8577D00610BCB /* signal.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = signal.js; sourceTree = "<group>"; };
 		B766B48F16F8577D00610BCB /* utils.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = utils.js; sourceTree = "<group>"; };
 		B76951EA1723984E00F7B60E /* ihakula.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ihakula.html; sourceTree = "<group>"; };
+		B76967211755F02A007EB890 /* ProductsViewController.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ProductsViewController.js; sourceTree = "<group>"; };
+		B76967241755F041007EB890 /* ProductsDataModel.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ProductsDataModel.js; sourceTree = "<group>"; };
 		B78502FC16F6E4500045A26F /* homePlugin.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = homePlugin.js; sourceTree = "<group>"; };
 		B78502FD16F6E4500045A26F /* plugin.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = plugin.xml; sourceTree = "<group>"; };
 		B785030716F6E5170045A26F /* productsPlugin.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = productsPlugin.js; sourceTree = "<group>"; };
@@ -876,6 +882,8 @@
 		B7A175B0172939A00006E46B /* run.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = run.sh; sourceTree = "<group>"; };
 		B7AAE3221716EB76006D013D /* jquery.handsontable.full.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.handsontable.full.js; sourceTree = "<group>"; };
 		B7AAE3231716EB76006D013D /* spin.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = spin.js; sourceTree = "<group>"; };
+		B7B19F79175CA10900A1E7E4 /* jquery.handsontable.removeRow.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = jquery.handsontable.removeRow.css; sourceTree = "<group>"; };
+		B7B19F7C175CA10900A1E7E4 /* jquery.handsontable.full.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = jquery.handsontable.full.css; sourceTree = "<group>"; };
 		B7B8D1FE1716BE48009BDD35 /* rootPlugin.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = rootPlugin.js; sourceTree = "<group>"; };
 		B7B8D2011716C1B6009BDD35 /* ganttPlugin.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ganttPlugin.js; sourceTree = "<group>"; };
 		B7BBF7FC16E7377800D86F69 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
@@ -1730,8 +1738,8 @@
 			isa = PBXGroup;
 			children = (
 				B7AAE3221716EB76006D013D /* jquery.handsontable.full.js */,
-				B7AAE3231716EB76006D013D /* spin.js */,
 				B726B28B171314450079DA77 /* jquery.handsontable.removeRow.js */,
+				B7AAE3231716EB76006D013D /* spin.js */,
 				B766B48616F8577D00610BCB /* controller.js */,
 				B766B48716F8577D00610BCB /* cover.js */,
 				B766B48816F8577D00610BCB /* coverflow.js */,
@@ -1885,6 +1893,8 @@
 				B7BBF7FF16E739EC00D86F69 /* reset.css */,
 				B7BBF80016E739EC00D86F69 /* style.css */,
 				B738763D17057F050015ADC2 /* coverflow.css */,
+				B7B19F79175CA10900A1E7E4 /* jquery.handsontable.removeRow.css */,
+				B7B19F7C175CA10900A1E7E4 /* jquery.handsontable.full.css */,
 			);
 			path = css;
 			sourceTree = "<group>";
@@ -2604,6 +2614,8 @@
 			children = (
 				B7E1B41017295F1A008F794D /* plugin.xml */,
 				B7E1B41117295F1A008F794D /* productsPlugin.js */,
+				B76967211755F02A007EB890 /* ProductsViewController.js */,
+				B76967241755F041007EB890 /* ProductsDataModel.js */,
 			);
 			path = products;
 			sourceTree = "<group>";
@@ -3295,6 +3307,8 @@
 				B7DC0A5B173A1ED00074001B /* plugin.xml in Resources */,
 				B7DC0A63173A227F0074001B /* account.html in Resources */,
 				B740B11A173C900100775E0D /* account.php in Resources */,
+				B7B19F7A175CA10900A1E7E4 /* jquery.handsontable.removeRow.css in Resources */,
+				B7B19F7D175CA10900A1E7E4 /* jquery.handsontable.full.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3375,6 +3389,8 @@
 				B7DC0A61173A22500074001B /* AccountViewController.js in Sources */,
 				B740B11F173CCED300775E0D /* ihakula-min.js in Sources */,
 				B740B121173CCEE800775E0D /* tools-min.js in Sources */,
+				B76967221755F02B007EB890 /* ProductsViewController.js in Sources */,
+				B76967251755F041007EB890 /* ProductsDataModel.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
